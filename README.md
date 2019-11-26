@@ -102,3 +102,4 @@ Se ainda houver alguma dúvida sobre como entregar seu projeto, [aqui tem um vid
 Os monitores também farão a revisão de todos os projetos, e irão avaliar tanto o seu _Pull Request_, quanto as revisões que você fizer nos _Pull Requests_ dos seus colegas!!!
 
 Use o material que você já viu sobre [Code Review](https://course.betrybe.com/real-life-engineer/code-review/) para te ajudar a revisar os projetos que chegaram para você.
+aads
