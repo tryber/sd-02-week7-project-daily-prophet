@@ -1,14 +1,24 @@
 @media only screen and (max-width: 760px) {
   body {
-    background-color: bisque;
+    background-color: white;
   }
 
+  h2 {
+    margin-top: 10px;
+    font-family: "BodoniXT";
+    src: url(BodoniXT.ttf) format("truetype");
+  }
+
+
   #top-bar {
-    background-color: darkslategray
+    background-color: rgb(37, 37, 37);
+    height: 25px;
   }
 
   #top-text {
     color: rgb(197, 197, 197);
+    padding-top: 3px;
+    font-weight: 700;
   }
 
   #header {
@@ -20,17 +30,49 @@
     width: 100%;
     margin: auto;
   }
-  ul {
-      display: flex;
-      flex-flow: wrap;
-      justify-content: space-around;
+
+  p {
+    text-indent: 2em;
   }
 
+  #hermione {
+    display: none;
+  }
+
+  #granger {
+    width: 600px;
+
+  }
+
+  ul {
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-around;
+    list-style: inside;
+  }
+
+  .external-links {
+    color: rgb(197, 197, 197);
+  }
 
   footer {
-    background-color: darkslategray;
+    background-color: rgb(37, 37, 37);
+    height: 25px;
+    flex-flow: wrap;
+    justify-content: space-around;
+    margin-top: 20px;
+    text-align: center;
   }
 }
+
+
+
+
+
+
+
+
+
 
 @media (min-width: 760px) {
   * {
@@ -39,8 +81,14 @@
     cursor: url(wand.png), auto;
   }
 
+  h2 {
+    margin-top: 10px;
+    font-family: "BodoniXT";
+    src: url(BodoniXT.ttf) format("truetype");
+  }
+
   body {
-    background-color: bisque;
+    background-color: white;
   }
 
   #top-bar {
@@ -55,7 +103,25 @@
     width: 100%;
   }
 
+  #granger {
+    display: none;
+  }
+
+  p {
+    text-indent: 2em;
+  }
+
+  .external-links {
+    color: rgb(197, 197, 197);
+    font-size: 20px;
+  }
+
   footer {
-    background-color: darkslategray;
+    background-color: rgb(37, 37, 37);
+    text-align: center;
+    flex-flow: wrap;
+    justify-content: space-around;
+    height: 25px;
+    margin-top: 25px;
   }
 }
