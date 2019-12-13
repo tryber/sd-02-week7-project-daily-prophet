@@ -1,42 +1,61 @@
-@media (max-width: 760px){
-    body {
-        background-color: bisque;
-    }
+@media only screen and (max-width: 760px) {
+  body {
+    background-color: bisque;
+  }
 
-    #top-bar {
-        background-color: darkslategray
-    }
+  #top-bar {
+    background-color: darkslategray
+  }
 
-    #top-text {
-        color: rgb( 197 , 197 , 197 );
-    }
+  #top-text {
+    color: rgb(197, 197, 197);
+  }
 
-    #header {
-        width: 100%;
-    }
+  #header {
+    align-content: center;
+    margin: auto;
+  }
 
-    footer {
-        background-color: darkslategray;
-    }
+  .container-top {
+    width: 100%;
+    margin: auto;
+  }
+  ul {
+      display: flex;
+      flex-flow: wrap;
+      justify-content: space-around;
+  }
+
+
+  footer {
+    background-color: darkslategray;
+  }
 }
 
 @media (min-width: 760px) {
-    body {
-        background-color: bisque;
-    }
-    
-    #top-bar {
-        background-color: darkslategray
-    }
+  * {
+    padding: 0;
+    margin: 0;
+    cursor: url(wand.png), auto;
+  }
 
-    #top-text {
-        color: rgb( 197 , 197 , 197 );
-    }
+  body {
+    background-color: bisque;
+  }
 
-    #header {
-        width: 100%;
+  #top-bar {
+    background-color: darkslategray
+  }
 
-    footer {
-        background-color: darkslategray;
-    }
+  #top-text {
+    color: rgb(197, 197, 197);
+  }
+
+  #header {
+    width: 100%;
+  }
+
+  footer {
+    background-color: darkslategray;
+  }
 }
