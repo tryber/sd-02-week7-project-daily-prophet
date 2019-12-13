@@ -1,0 +1,47 @@
+body {
+    background-color: beige;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    color: blue;
+}
+
+h1 {
+    text-align: center;
+    border: 1px black dashed;
+    border-radius: 10px;
+}
+
+ul, article {
+    border: 1px black dashed;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+
+#car {
+    animation: carro 5s ease-in 3s 3 alternate forwards;
+    transform: rotateY(180deg);
+}
+
+section #car:hover {
+    animation-play-state: paused;
+}
+
+@keyframes carro {
+    from {
+        margin-left: 0%
+    }
+    to {
+        margin-left: 93%;
+    }
+}
