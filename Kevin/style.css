@@ -1,0 +1,24 @@
+
+body {
+     background: linear-gradient(black, #000099, #66c2ff, #ffcccc, #ffeee6);
+}
+
+#journal {
+    background: #fff8ee;
+    height: 1400px;
+    width: 98%;
+    margin-left: 1%;
+}
+
+header {
+    font-size: 100px;
+    display: flex;
+    justify-content: flex-end;
+    border-top: 5px double black;
+    border-bottom: 5px double black;
+}
+
+header > img {
+    border: 5px solid black;
+    margin-right: 5.8px;
+}
