@@ -1,8 +1,52 @@
-* {cursor: url(http://cur.cursors-4u.net/user/use-1/use160.cur), auto !important;
-  background-color: rgb (254,252,248) ;
+* {cursor: url(/lucas-werner/images/the-daily-prophet-cursor-wand.png), auto;
+  background-color: rgb(254,252,248);
+
+}
+.pageWrap {
+  max-width: 1046px;
+  margin: auto;
+}
+.navbar {
+  margin: auto;
+  max-width: 730px;
 }
 
 .container {
-  display: flex;
-  justify-content: center;
+  text-align: center;
 }
+
+.outdoor {
+  margin: auto; animation-play-state: paused;
+  max-width: 730px;
+}
+
+.corujaContainer {
+background-color: rgb(87, 74, 82);
+display: flex;
+justify-content: flex-start;
+}
+
+.coruja1{
+  position:relative;
+}
+
+#coruja {
+  margin-left:0;
+  animation: fly 5s;
+  animation-fill-mode: forwards;
+  animation-play-state: paused;
+}
+
+#coruja:hover{
+  animation-play-state: running;
+}
+
+@keyframes fly {
+  0% {margin-left: 0;
+  }
+  100% {
+    margin-left: 730px;
+  }
+}
+
+

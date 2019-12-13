@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,53 +12,50 @@
   <title>O Profeta Diário</title>
 </head>
 <body>
-  <div class="container">
+  <div class="pageWrap">
   <header>
-    <nav class="navbar navbar-expand-lg navbar-light ">
-            <a class="navbar-brand" href="#">Navbar</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <nav class="navbar navbar-light ">
-                <a class="navbar-brand" href="#">
-                  <img src="/docs/4.0/assets/brand/bootstrap-solid.svg" width="30" height="30" class="d-inline-block align-top" alt="">
-                  Trybe
-                </a>
-              </nav>
+      <nav class="navbar navbar-expand-lg navbar-light center">
+       <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Notícias</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                Casas
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+      <div class="container">
 
+              <div class="corujaContainer">
+                <iframe id="coruja" class="coruja1" src="https://giphy.com/embed/l3q2JgyO91vm6RWEM" width="240" height="160" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+              </div>
+        <img class="headerImg" src="images/dailyprophetheader.png">
+        <div class="outdoor">
+        <marquee>
+          Tem muito conteúdo atrasado...
+          </marquee>
+      </div>
+    </div>
 
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                  <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Link</a>
-                </li>
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Dropdown
-                  </a>
-                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="#">Action</a>
-                    <a class="dropdown-item" href="#">Another action</a>
-                    <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="#">Something else here</a>
-                  </div>
-                </li>                              </ul>
-
-            </div>
-          </nav>
-
-
-    <div class="container">
-    <img class="headerImg" src="images/dailyprophetheader.png">
-    <br>
-    <p>Texto passando</p>
   </div>
-  </header>
-  </div>
-<script src="libs/bootstrap.min.js"></script>
-<script src="libs/jquery-3.4.1.min.js"></script>
+  <script src="libs/bootstrap.min.js"></script>
+  <script src="libs/jquery-3.4.1.min.js"></script>
+
 </body>
+
 </html>

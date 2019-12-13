@@ -1,8 +1,3 @@
-* {cursor: url(http://cur.cursors-4u.net/user/use-1/use160.cur), auto !important;
-  background-color: rgb (254,252,248) ;
-}
-
-.container {
-  display: flex;
-  justify-content: center;
+* {
+  background-color: blue;
 }
