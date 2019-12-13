@@ -5,7 +5,7 @@
 }
 
 body {
-  background-color: rgb( 142 , 107 , 35 );
+  background-image: linear-gradient(rgb( 248 , 54 , 0 ) , rgb( 249 , 213 , 35 ) );
   height: 100%;
   font-family: Lilita One , cursive;
 }
@@ -74,5 +74,15 @@ head {
     max-height: 247px;
     border: 1px solid black;
     align-self: flex-start;
+  }
+  #asideTitle{
+    font-size: 1.4em;
+  }
+  #asideText{
+    max-width: 280px;
+  }
+  #container1{
+    display: flex;
+    justify-content: space-between;
   }
 }
