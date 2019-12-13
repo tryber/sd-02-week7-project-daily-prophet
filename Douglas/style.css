@@ -1,0 +1,65 @@
+*{
+    /* border: 1px solid red; */
+    margin: 0;
+}
+body {
+    background-color: rgb( 142 , 107 , 35);
+    height: 100%;
+    font-family: 'Lilita One', cursive;
+}
+h1{
+    color: white;
+    font-family: 'Anton', sans-serif;
+    letter-spacing: 5px;
+    line-height: 1.15;
+    text-align: center;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+#containerAll{
+    display: flex;
+    width: 80%;
+    margin: auto;   
+    height: 100%;
+    background-color: rgb( 181 , 165 , 66 );
+    flex-direction: column;
+    border: 1px solid black;
+}
+head{
+    align-self: flex-start;
+}
+
+@media (max-width: 760px){
+    h1{ 
+        font-size: 2em;
+        margin-block-start: 0;
+    }
+    #divArticle{
+        display: flex;
+        flex-direction: row;
+    }
+    #lados{
+        display: flex;
+        justify-content: space-between;
+    }
+    #ladoEsquerdo{
+        max-width: 290px;
+    }
+    #ladoDireito{
+        max-width: 290px;
+    }
+    article{
+        width: 100%;
+        text-align: center;
+    }
+    #titleArticle{
+        display: block;
+        width:100%;
+    }
+    #voldemortImagem{
+        max-width: 285px;
+        max-height: 247px;
+        border: 1px solid black;
+        align-self: flex-start;
+    }
+}
