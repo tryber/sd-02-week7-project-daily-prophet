@@ -27,9 +27,12 @@ ul, article {
     border-radius: 10px;
 }
 
+.voando {
+    animation: voar 3s linear forwards, voar2 3s ease-in 3s 1 forwards;
+}
 
 #car {
-    animation: carro 5s ease-in 3s 3 alternate forwards;
+    animation: carro 5s ease-in 2s 3 alternate forwards;
     transform: rotateY(180deg);
 }
 
@@ -43,5 +46,25 @@ section #car:hover {
     }
     to {
         margin-left: 93%;
+    }
+}
+
+@keyframes voar {
+    from {
+        transform: scale(1.0, 1.0) translate(0px) rotateY(0deg) translateX(0);
+    }
+    to {
+        transform: scale(2.0, 2.0) translate(50px, -25px) rotateY(360deg);
+    }
+}
+
+@keyframes voar2 {
+    from {
+        transform: skew(0deg) scale(2.0, 2.0) translate(50px, -25px) rotateY(360deg);
+
+    }
+    to {
+        transform: skew(-90deg) scale(2.0, 2.0) translate(50px, -25px) rotateY(360deg);
+
     }
 }
