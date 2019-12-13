@@ -38,7 +38,7 @@ head {
   display: flex;
 }
 
-footer{
+footer {
   background-color: black;
   color: white;
   text-align: center;
@@ -51,11 +51,11 @@ footer{
 
 @media ( max-width : 760px ) {
 
-  #video{
+  #video {
     display: none;
   }
 
-  #severoGif{
+  #severoGif {
     display: none;
   }
 
@@ -112,7 +112,8 @@ footer{
   }
 }
 
-@media ( min-width : 761px ){
+@media ( min-width : 761px ) {
+
   h1 {
     font-size: 3em;
   }
@@ -137,15 +138,17 @@ footer{
     justify-content: space-around;
   }
 
-  #asideTitle{
+  #asideTitle {
     text-align: center;
     margin-top: 3px;
     margin-bottom: 5px;
   }
-  #asideText{
+
+  #asideText {
     text-align: center;
   }
-  #container1{
+
+  #container1 {
     justify-content: space-around;
   }
 }
