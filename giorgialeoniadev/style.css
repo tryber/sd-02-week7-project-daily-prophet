@@ -1,0 +1,42 @@
+@media (max-width: 760px){
+    body {
+        background-color: bisque;
+    }
+
+    #top-bar {
+        background-color: darkslategray
+    }
+
+    #top-text {
+        color: rgb( 197 , 197 , 197 );
+    }
+
+    #header {
+        width: 100%;
+    }
+
+    footer {
+        background-color: darkslategray;
+    }
+}
+
+@media (min-width: 760px) {
+    body {
+        background-color: bisque;
+    }
+    
+    #top-bar {
+        background-color: darkslategray
+    }
+
+    #top-text {
+        color: rgb( 197 , 197 , 197 );
+    }
+
+    #header {
+        width: 100%;
+
+    footer {
+        background-color: darkslategray;
+    }
+}
