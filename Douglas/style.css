@@ -115,7 +115,7 @@ footer {
 @media ( min-width : 761px ) {
 
   * {
-    cursor: url(the-daily-prophet-cursor-wand.png), auto;
+    cursor: url( "the-daily-prophet-cursor-wand.png" ), auto;
   }
 
   h1 {
@@ -140,7 +140,7 @@ footer {
   #midia {
     display: flex;
     justify-content: space-around;
-    margin: 5px 0;
+    margin: 5px 0 ;
   }
 
   #asideTitle {
