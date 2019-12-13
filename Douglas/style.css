@@ -9,9 +9,7 @@ body {
   height: 100%;
   font-family: Lilita One , cursive;
 }
-h1:hover {
-  background-color: black;
-}
+
 h1 {
   color: white;
   font-family: Anton , sans-serif;
@@ -20,6 +18,10 @@ h1 {
   text-align: center;
   border-top: 1px solid black;
   border-bottom: 1px solid black;
+}
+
+h1:hover {
+  background-color: black;
 }
 
 #containerAll {
