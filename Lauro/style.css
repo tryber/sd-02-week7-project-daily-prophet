@@ -1,3 +1,21 @@
-header{
+* {
+	border: 1px solid red;
+}
+header {
   text-align: center;
+}
+
+#box-noticias {
+	display: flex;
+  flex-wrap: wrap;
+}
+
+.artigo {
+	display: flex;
+}
+
+@media (max-width: 760px) {
+	* {
+		border: 1px solid blue;
+	}
 }
