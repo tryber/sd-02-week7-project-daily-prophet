@@ -114,6 +114,10 @@ footer {
 
 @media ( min-width : 761px ) {
 
+  * {
+    cursor: url(the-daily-prophet-cursor-wand.png), auto;
+  }
+
   h1 {
     font-size: 3em;
   }
@@ -136,6 +140,7 @@ footer {
   #midia {
     display: flex;
     justify-content: space-around;
+    margin: 5px 0;
   }
 
   #asideTitle {
