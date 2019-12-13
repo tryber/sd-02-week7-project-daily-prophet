@@ -34,7 +34,7 @@ head {
   align-self: flex-start;
 }
 
-@media (max-width: 760px) {
+@media ( max-width : 760px ) {
 
   h1 {
     font-size: 2em;
