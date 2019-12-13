@@ -5,11 +5,13 @@
 }
 
 body {
-  background-image: linear-gradient(rgb( 248 , 54 , 0 ) , rgb( 249 , 213 , 35 ) );
+  background-image: linear-gradient( rgb( 248 , 54 , 0 ) , rgb( 249 , 213 , 35 ) );
   height: 100%;
   font-family: Lilita One , cursive;
 }
-
+h1:hover {
+  background-color: black;
+}
 h1 {
   color: white;
   font-family: Anton , sans-serif;
@@ -75,13 +77,17 @@ head {
     border: 1px solid black;
     align-self: flex-start;
   }
-  #asideTitle{
+
+  #asideTitle {
     font-size: 1.4em;
   }
-  #asideText{
+
+  #asideText {
     max-width: 280px;
+    padding-top: 5px;
   }
-  #container1{
+
+  #container1 {
     display: flex;
     justify-content: space-between;
   }
