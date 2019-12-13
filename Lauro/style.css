@@ -11,8 +11,21 @@ header {
 }
 
 .artigo {
-	display: flex;
+	display:flex;
 }
+
+.cresce {
+	animation: scaling 4s linear;
+}
+
+@keyframes scaling {
+    0% {
+      transform: scale(1.0, 1.0);
+    }
+    100% {
+      transform: scale(1.5, 1.5);
+    }
+  }
 
 @media (max-width: 760px) {
 	* {
