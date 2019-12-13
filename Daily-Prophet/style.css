@@ -1,0 +1,22 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+
+.jornal {
+  background-color: #fff8ee;
+  margin: 1em auto;
+  box-sizing: border-box;
+  padding: 1em;
+  width: 1024px;
+  height: 1778px;
+  border-radius: 1em;
+}
