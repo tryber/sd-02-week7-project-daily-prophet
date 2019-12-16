@@ -45,6 +45,10 @@ section #car:hover {
     animation-play-state: paused;
 }
 
+#estrela {
+    animation: rodar 3s linear infinite;
+}
+
 @keyframes carro {
     from {
         margin-left: 0%
@@ -72,12 +76,21 @@ section #car:hover {
     }
 }
 
+@keyframes rodar {
+    from {
+        transform: rotateX(0deg)
+    }
+    to {
+        transform: rotateX(360deg)
+    }
+}
+
 @media only screen and (min-width: 760px) {
     article {
         font-weight: normal;
         transition-property: transform font-weight;
         transition-duration: 4s;
-        transition-timing-function: linear;
+        transition-timing-function: steps(10, end);
     }
     article:active {
         transform: scale(1.5, 1.5);
