@@ -31,6 +31,7 @@ footer {
     background-color: burlywood;
     text-align: center;
 }
+
 .voando {
     animation: voar 3s linear forwards, voar2 3s ease-in 3s 1 forwards;
 }
@@ -65,10 +66,21 @@ section #car:hover {
 @keyframes voar2 {
     from {
         transform: skew(0deg) scale(2.0, 2.0) translate(0px, -25px);
-
     }
     to {
         transform: skew(-90deg) scale(2.0, 2.0) translate(50px, 0px);
+    }
+}
 
+@media only screen and (min-width: 760px) {
+    article {
+        font-weight: normal;
+        transition-property: transform font-weight;
+        transition-duration: 4s;
+        transition-timing-function: linear;
+    }
+    article:active {
+        transform: scale(1.5, 1.5);
+        font-weight: bold;
     }
 }
