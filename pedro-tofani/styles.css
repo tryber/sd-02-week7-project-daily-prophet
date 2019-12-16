@@ -32,6 +32,14 @@ footer {
     text-align: center;
 }
 
+aside {
+    display: none;
+}
+
+article {
+    text-align: center;
+}
+
 .voando {
     animation: voar 3s linear forwards, voar2 3s ease-in 3s 1 forwards;
 }
