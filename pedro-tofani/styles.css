@@ -32,8 +32,10 @@ footer {
     text-align: center;
 }
 
-aside {
+.direito {
     display: none;
+    border: 1px black dashed;
+    border-radius: 10px;
 }
 
 article {
@@ -49,7 +51,7 @@ article {
     transform: rotateY(180deg);
 }
 
-section #car:hover {
+#car:hover {
     animation-play-state: paused;
 }
 
@@ -105,6 +107,9 @@ section #car:hover {
         transform: scale(1.5, 1.5);
         font-weight: bold;
     }
+    aside {
+        display: ;
+    }
     ul {
         display: flex;
         flex-direction: row;
@@ -117,7 +122,11 @@ section #car:hover {
     }
     .esquerdo {
         display: flex;
-        max-width: 80%;
+        width: 80%;
         flex: 1;
+    }
+    .direito {
+        width: 20%;
+        display: inline
     }
 }
