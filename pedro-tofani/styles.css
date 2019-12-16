@@ -27,6 +27,10 @@ ul, article {
     border-radius: 10px;
 }
 
+footer {
+    background-color: burlywood;
+    text-align: center;
+}
 .voando {
     animation: voar 3s linear forwards, voar2 3s ease-in 3s 1 forwards;
 }
@@ -54,17 +58,17 @@ section #car:hover {
         transform: scale(1.0, 1.0) translate(0px) rotateY(0deg) translateX(0);
     }
     to {
-        transform: scale(2.0, 2.0) translate(50px, -25px) rotateY(360deg);
+        transform: scale(2.0, 2.0) translate(0px, -25px) rotateY(360deg);
     }
 }
 
 @keyframes voar2 {
     from {
-        transform: skew(0deg) scale(2.0, 2.0) translate(50px, -25px) rotateY(360deg);
+        transform: skew(0deg) scale(2.0, 2.0) translate(0px, -25px);
 
     }
     to {
-        transform: skew(-90deg) scale(2.0, 2.0) translate(50px, -25px) rotateY(360deg);
+        transform: skew(-90deg) scale(2.0, 2.0) translate(50px, 0px);
 
     }
 }
