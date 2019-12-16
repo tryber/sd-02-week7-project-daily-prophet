@@ -95,6 +95,7 @@ section #car:hover {
 
 @media only screen and (min-width: 760px) {
     article {
+        width: 40%;
         font-weight: normal;
         transition-property: transform font-weight;
         transition-duration: 4s;
@@ -108,5 +109,15 @@ section #car:hover {
         display: flex;
         flex-direction: row;
         justify-content: space-around;
+    }
+    section {
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: row;
+    }
+    .esquerdo {
+        display: flex;
+        max-width: 80%;
+        flex: 1;
     }
 }
