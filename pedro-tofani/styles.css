@@ -104,4 +104,9 @@ section #car:hover {
         transform: scale(1.5, 1.5);
         font-weight: bold;
     }
+    ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
 }
