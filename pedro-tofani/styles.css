@@ -107,9 +107,6 @@ article {
         transform: scale(1.5, 1.5);
         font-weight: bold;
     }
-    aside {
-        display: ;
-    }
     ul {
         display: flex;
         flex-direction: row;
@@ -127,6 +124,7 @@ article {
     }
     .direito {
         width: 20%;
-        display: inline
+        display: block;
+        text-align: center;
     }
 }
