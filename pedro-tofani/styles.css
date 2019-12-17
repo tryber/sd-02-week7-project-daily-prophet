@@ -61,7 +61,7 @@ article {
 
 @keyframes carro {
     from {
-        margin-left: 0%
+        margin-left: 0%;
     }
     to {
         margin-left: 93%;
@@ -88,24 +88,24 @@ article {
 
 @keyframes rodar {
     from {
-        transform: rotateX(0deg)
+        transform: rotateX(0deg);
     }
     to {
-        transform: rotateX(360deg)
+        transform: rotateX(360deg);
     }
 }
 
 @media only screen and (min-width: 760px) {
     article {
         width: 40%;
-        font-weight: normal;
+        font-weight: 400;
         transition-property: transform font-weight;
         transition-duration: 4s;
         transition-timing-function: steps(10, end);
     }
     article:active {
         transform: scale(1.5, 1.5);
-        font-weight: bold;
+        font-weight: 700;
     }
     ul {
         display: flex;
@@ -114,8 +114,7 @@ article {
     }
     section {
         display: flex;
-        flex-wrap: nowrap;
-        flex-direction: row;
+        flex-flow: row wrap
     }
     .esquerdo {
         display: flex;

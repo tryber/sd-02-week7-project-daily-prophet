@@ -1,7 +1,6 @@
-let selecionarVassoura = document.getElementById('vassoura');
+const selecionarVassoura = document.getElementById('vassoura');
 
-selecionarVassoura.addEventListener('click', voar);
-function voar(){
-    selecionarVassoura.className = 'voando';
+function voar() {
+  selecionarVassoura.className = 'voando';
 }
-
+selecionarVassoura.addEventListener('click', voar);
