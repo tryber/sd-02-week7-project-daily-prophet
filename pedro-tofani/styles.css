@@ -1,135 +1,144 @@
 body {
-    background-color: beige;
+  background-color: beige;
 }
 
 ul {
-    list-style-type: none;
+  list-style-type: none;
 }
 
 a {
-    text-decoration: none;
-    color: black;
+  text-decoration: none;
+  color: black;
 }
 
 a:hover {
-    color: blue;
+  color: blue;
 }
 
 h1 {
-    text-align: center;
-    border: 1px black dashed;
-    border-radius: 10px;
+  text-align: center;
+  border: 1px black dashed;
+  border-radius: 10px;
 }
 
-ul, article {
-    border: 1px black dashed;
-    padding: 5px;
-    border-radius: 10px;
+ul ,article {
+  border: 1px black dashed;
+  padding: 5px;
+  border-radius: 10px;
 }
 
 footer {
-    background-color: burlywood;
-    text-align: center;
+  background-color: burlywood;
+  text-align: center;
 }
 
 .direito {
-    display: none;
-    border: 1px black dashed;
-    border-radius: 10px;
+  display: none;
+  border: 1px black dashed;
+  border-radius: 10px;
 }
 
 article {
-    text-align: center;
+  text-align: center;
 }
 
 .voando {
-    animation: voar 3s linear forwards, voar2 3s ease-in 3s 1 forwards;
+  animation: voar 3s linear forwards, voar2 3s ease-in 3s 1 forwards;
 }
 
 #car {
-    animation: carro 5s ease-in 2s 3 alternate forwards;
-    transform: rotateY(180deg);
+  animation: carro 5s ease-in 2s 3 alternate forwards;
+  transform: rotateY( 180deg );
 }
 
 #car:hover {
-    animation-play-state: paused;
+  animation-play-state: paused;
 }
 
 #estrela {
-    animation: rodar 3s linear infinite;
+  animation: rodar 3s linear infinite;
 }
 
 @keyframes carro {
-    from {
-        margin-left: 0%;
+  from {
+      margin-left: 0%;
     }
-    to {
-        margin-left: 93%;
+
+  to {
+      margin-left: 93%;
     }
 }
 
 @keyframes voar {
-    from {
-        transform: scale(1.0, 1.0) translate(0px) rotateY(0deg) translateX(0);
-    }
-    to {
-        transform: scale(2.0, 2.0) translate(0px, -25px) rotateY(360deg);
+  from {
+      transform: scale( 1 ,1 ) translate( 0px ) rotateY( 0deg ) translateX( 0 );
+  }
+
+  to {
+      transform: scale( 2 ,2 ) translate( 0 ,-25px ) rotateY( 360deg );
     }
 }
 
 @keyframes voar2 {
-    from {
-        transform: skew(0deg) scale(2.0, 2.0) translate(0px, -25px);
-    }
-    to {
-        transform: skew(-90deg) scale(2.0, 2.0) translate(50px, 0px);
-    }
+  from {
+      transform: skew( 0deg ) scale( 2 ,2 ) translate( 0 ,-25px );
+   }
+
+  to {
+     transform: skew( -90deg ) scale( 2 ,2 ) translate( 50px ,0px );
+   }
 }
 
 @keyframes rodar {
     from {
-        transform: rotateX(0deg);
+      transform: rotateX( 0deg );
     }
-    to {
-        transform: rotateX(360deg);
+
+  to {
+      transform: rotateX( 360deg );
     }
 }
 
-@media only screen and (min-width: 760px) {
-    article {
-        width: 40%;
-        font-weight: 400;
-        transition-property: transform font-weight;
-        transition-duration: 4s;
-        transition-timing-function: steps(10, end);
-    }
-    article:active {
-        transform: scale(1.5, 1.5);
-        font-weight: 700;
-    }
-    ul {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-    }
-    section {
-        display: flex;
-        flex-flow: row wrap
-    }
-    .esquerdo {
-        display: flex;
-        width: 80%;
-        flex: 1;
-    }
-    .direito {
-        width: 20%;
-        display: block;
-        text-align: center;
-    }
-}
+@media only screen and ( min-width :760px ) {
 
+  article {
+      width: 40%;
+      font-weight: 400;
+      transition-property: transform font-weight;
+      transition-duration: 4s;
+      transition-timing-function: steps( 10 ,end );
+    }
+
+  article:active {
+      transform: scale( 1.5 ,1.5 );
+      font-weight: 700;
+  }
+
+  ul {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+  }
+
+  section {
+      display: flex;
+      flex-flow: row wrap
+  }
+
+  .esquerdo {
+      display: flex;
+      width: 80%;
+      flex: 1;
+  }
+
+  .direito {
+      width: 20%;
+      display: block;
+      text-align: center;
+  }
+}
 @media (orientation: landscape) {
-    #estrela {
-        animation: rodar 1s linear infinite;
+  #estrela {
+      animation: rodar 1s linear infinite;
     }
 }
