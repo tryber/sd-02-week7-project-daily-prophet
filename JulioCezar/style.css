@@ -1,0 +1,87 @@
+@font-face {
+  font-family: HarryPotterFont1;
+  src: url(Fonts/dum3/dum3.ttf);  
+}
+
+@font-face {
+  font-family: HarryPotterFont2;
+  src: url(Fonts/LUMOS.TTF);
+}
+
+* {
+  font-family: HarryPotterFont1;
+  margin: 0;
+  padding: 0;  
+}
+
+body {  
+  background-color: black;
+  font-size: 16px;
+}
+
+#body-container {
+  background-color: rgb(233, 193, 163);
+  margin: 10px 0 0;
+  padding: 0 20px 0;
+  border-radius: 15px;
+  height: 500px;
+}
+
+header {
+  padding-top: 30px;
+  text-align: center;  
+}
+
+#header-h1 {
+  padding: 0;
+  margin: 0;
+  font-weight: 100;
+  font-size: 114px;
+}
+
+header > p {
+  font-size: 38px;
+  font-family: HarryPotterFonts2;
+  color: rgb(47, 47, 47);
+}
+
+header > p > span {
+  color: rgb(190, 95, 17);
+}
+
+header > hr:nth-child(1) {
+  border-width: 0.1875em 0 1px 0;
+  border-color: black;
+  height: 0.125em;
+}
+
+header > hr:nth-child(4) {
+  border-width: 1px 0 0.1875em 0;
+  border-color: black;
+  height: 0.125em;
+}
+
+section {
+  background-color: yellow;
+  height: 50px;
+}
+
+article {  
+  background: red;
+  height: 50px;
+}
+
+footer {
+  background: green;
+  height: 50px;
+}
+
+@media screen and (max-width:760px) {
+  #header-h1 {
+    font-size: 15vw;
+  }
+
+  header > p {
+    font-size: 5vw;
+  }     
+}
