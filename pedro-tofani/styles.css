@@ -128,3 +128,9 @@ article {
         text-align: center;
     }
 }
+
+@media (orientation: landscape) {
+    #estrela {
+        animation: rodar 1s linear infinite;
+    }
+}
