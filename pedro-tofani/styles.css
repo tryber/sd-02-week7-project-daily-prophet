@@ -21,7 +21,7 @@ h1 {
   border-radius: 10px;
 }
 
-ul ,article {
+ul, article {
   border: 1px black dashed;
   padding: 5px;
   border-radius: 10px;
@@ -60,85 +60,91 @@ article {
 }
 
 @keyframes carro {
+
   from {
-      margin-left: 0%;
-    }
+    margin-left: 0%;
+  }
 
   to {
-      margin-left: 93%;
-    }
+    margin-left: 93%;
+  }
 }
 
 @keyframes voar {
   from {
-      transform: scale( 1 ,1 ) translate( 0px ) rotateY( 0deg ) translateX( 0 );
+    transform: scale( 1, 1 ) translate( 0 ) rotateY( 0deg ) translateX( 0 );
   }
 
   to {
-      transform: scale( 2 ,2 ) translate( 0 ,-25px ) rotateY( 360deg );
-    }
+    transform: scale( 2, 2 ) translate( 0, -25px ) rotateY( 360deg );
+  }
 }
 
 @keyframes voar2 {
+
   from {
-      transform: skew( 0deg ) scale( 2 ,2 ) translate( 0 ,-25px );
-   }
+    transform: skew( 0deg ) scale( 2, 2 ) translate( 0, -25px );
+  }
 
   to {
-     transform: skew( -90deg ) scale( 2 ,2 ) translate( 50px ,0px );
-   }
+    transform: skew( -90deg ) scale( 2, 2 ) translate( 50px, 0 );
+  }
 }
 
 @keyframes rodar {
-    from {
-      transform: rotateX( 0deg );
-    }
+
+  from {
+    transform: rotateX( 0deg );
+  }
 
   to {
-      transform: rotateX( 360deg );
-    }
+    transform: rotateX( 360deg );
+  }
 }
 
-@media only screen and ( min-width :760px ) {
+@media only screen and ( min-width: 760px ) {
 
   article {
-      width: 40%;
-      font-weight: 400;
-      transition-property: transform font-weight;
-      transition-duration: 4s;
-      transition-timing-function: steps( 10 ,end );
-    }
+    width: 40%;
+    font-weight: 400;
+    transition-property: transform font-weight;
+    transition-duration: 4s;
+    transition-timing-function: steps( 10, end );
+  }
 
   article:active {
-      transform: scale( 1.5 ,1.5 );
-      font-weight: 700;
+    transform: scale( 1.5, 1.5 );
+    font-weight: 700;
   }
 
   ul {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-around;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
   }
 
   section {
-      display: flex;
-      flex-flow: row wrap
+    display: flex;
+    flex-flow: row wrap;
   }
 
   .esquerdo {
-      display: flex;
-      width: 80%;
-      flex: 1;
+    display: flex;
+    width: 80%;
+    flex: 1;
   }
 
   .direito {
-      width: 20%;
-      display: block;
-      text-align: center;
+    width: 20%;
+    display: block;
+    text-align: center;
   }
 }
-@media (orientation: landscape) {
+
+@media ( orientation: landscape ) {
+
   #estrela {
-      animation: rodar 1s linear infinite;
-    }
+    animation: rodar 1s linear infinite;
+  }
+
 }
