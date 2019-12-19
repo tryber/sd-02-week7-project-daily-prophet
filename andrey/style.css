@@ -7,7 +7,7 @@
 html , body {
   width: 100%;
   height: 100%;
-  background-color: #0b0704;
+  background-color: rgb( 11, 7, 4 );
 }
 
 body {
@@ -29,9 +29,9 @@ div.estrela {
   width: 90px;
   height: 90px;
   position: absolute;
-  top:50px;
-  left:270px;
-  background: #fff8ee url(img/estrelas.gif) no-repeat;
+  top: 50px;
+  left: 270px;
+  background: rgb( 255, 248, 238 ) url( img/estrelas.gif ) no-repeat;
   background-position: 3px -168px;
 }
 
@@ -58,7 +58,7 @@ div.estrela {
   width: 70vw;
   height: 90%;
   margin: 2%;
-  background-color: #fff8ee;
+  background-color: rgb( 255, 248, 238 );
   border-radius: 20px;
 }
 
@@ -68,8 +68,8 @@ div.estrela {
 }
 
 .container .nota {
-width: 20%;
-margin: 3%;
+  width: 20%;
+  margin: 3%;
 }
 
 .container .nota > h2 {
@@ -80,8 +80,8 @@ margin: 3%;
 }
 
 img.bruxa {
-  background-repeat:no-repeat;
-  background-image: url(img/bruxa.svg);
+  background-repeat: no-repeat;
+  background-image: url( img/bruxa.svg );
   background-size: contain;
   height: 100px;
   width: 100px;
@@ -99,7 +99,7 @@ img.bruxa {
   padding: 2%;
 }
 
-.container .right > h2 , .container .left > h2  {
+.container .right > h2 , .container .left > h2 {
   font-size: 2em;
   text-align: center;
 }
@@ -127,7 +127,7 @@ img.bruxa {
 }
 
 img.bruxa {
-  margin-left:10%;
+  margin-left: 10%;
   animation-name: move1, move2, move1;
   animation-duration: 2000ms, 2000ms, 2000ms;
   animation-delay: 3000ms, 2000ms, 4000ms;
@@ -145,119 +145,119 @@ img.nimbus {
 
 @keyframes move1 {
 from {
-  transform: translateX(80px) translateY(-100px);
+  transform: translateX( 80px ) translateY( -100px );
 }
 to {
-  transform: translateX(0) translateY(0);
+  transform: translateX( 0 ) translateY( 0 );
 }
 }
 
 @keyframes move2 {
 from {
-  transform: translateX(0) translateY(0);
+  transform: translateX( 0 ) translateY( 0 );
 }
 to {
-  transform: translateX(80px) translateY(-100px);
+  transform: translateX( 80px ) translateY( -100px );
 }
 }
 
 @keyframes todos {
-0%{
-  transform:scale(1);
+0% {
+  transform: scale( 1);
 }
 16.6% {
-  transform:scale(2) rotate(0deg);
+  transform: scale( 2 ) rotate( 0deg );
 }
 33.3% {
-  transform:scale(2) rotatez(360deg);
+  transform: scale( 2 ) rotate( 360deg );
 }
 50% {
-  transform:scale(2) rotate(360deg) translateY(-100px);
+  transform: scale( 2 ) rotate( 360deg ) translateY( -100px );
 }
 66.6% {
-  transform:scale(2) rotate(0deg) translateY(-100px) skew(15deg, 15deg);
+  transform: scale( 2 ) rotate( 0deg ) translateY( -100px ) skew( 15deg , 15deg );
 }
 83.2% {
-  transform:scale(2) rotate(0deg) translateY(-400px) skew(15deg, 15deg) translateX(1000px);
+  transform: scale( 2 ) rotate( 0deg ) translateY( -400px ) skew( 15deg , 15deg ) translateX( 1000px );
 }
 100% {
-  transform:scale(2) rotate(0deg) translateY(-400px) skew(15deg, 15deg) translateX(1000px);
+  transform: scale( 2 ) rotate( 0deg ) translateY( -400px ) skew( 15deg , 15deg ) translateX( 1000px );
 }
 }
 
-@media (max-width: 760px)
-{
-h1 {
-  margin-bottom: 4%;
-}
+@media ( max-width: 760px ) {
+  h1 {
+    margin-bottom: 4%;
+  }
 
-div.estrela {
-  display: none;
-}
+  div.estrela {
+    display: none;
+  }
 
-.container {
-  overflow:scroll;
-}
+  .container {
+    overflow: scroll;
+  }
 
-.container > .titulo > img {
-  display: none;
-}
+  .container > .titulo > img {
+    display: none;
+  }
 
-.container > div:nth-of-type(2) {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  flex-wrap: wrap;
-}
-.container .left {
-  order: 3;
-}
+  .container > div:nth-of-type( 2 ) {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+  }
 
-.container .right {
-  order: 2;
-}
+  .container .left {
+    order: 3;
+  }
 
-.container .nota {
-  order: 1;
-}
+  .container .right {
+    order: 2;
+  }
 
-.container .right , .container .left {
-  width: 100%;
-}
+  .container .nota {
+    order: 1;
+  }
 
-.container .right > p {
-  margin: 8% 8%;
-}
+  .container .right , .container .left {
+    width: 100%;
+  }
 
-.container .right > h2 {
-  margin-top: 5%;
-}
+  .container .right > p {
+    margin: 8% 8%;
+  }
 
-.container .right > img.snape {
-  margin: 4% auto;
-  width: 80%;
-}
+  .container .right > h2 {
+    margin-top: 5%;
+  }
 
-.container .left > p {
-  margin: 8% 11%;
-}
+  .container .right > img.snape {
+    margin: 4% auto;
+    width: 80%;
+  }
 
-.container .left > img {
-  width: 80%;
-}
+  .container .left > p {
+    margin: 8% 11%;
+  }
 
-.container .nota {
-  width: 100%;
-  grid-column: 2;
-  grid-row: 1;
-}
+  .container .left > img {
+    width: 80%;
+  }
 
-.container .nota > h2 {
-  text-align: center;
-}
+  .container .nota {
+    width: 100%;
+    grid-column: 2;
+    grid-row: 1;
+  }
 
-.container .nota > p {
-  margin: 6% 6%;
-  margin-right: 10%;
-}
+  .container .nota > h2 {
+    text-align: center;
+  }
+
+  .container .nota > p {
+    margin: 6% 6%;
+    margin-right: 10%;
+  }
 }

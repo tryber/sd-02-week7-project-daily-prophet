@@ -1,7 +1,7 @@
 const bruxa = document.querySelector('img.bruxa');
 
 bruxa.addEventListener('mouseover', (e) => {
-    e.target.style.animationPlayState = 'paused';
+  e.target.style.animationPlayState = 'paused';
 });
 
 bruxa.addEventListener('mouseleave', (e) => {
