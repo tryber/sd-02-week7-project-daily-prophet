@@ -25,7 +25,7 @@ p {
   white-space: normal;
 }
 
-div.estrela {
+.estrela {
   width: 90px;
   height: 90px;
   position: absolute;
@@ -62,11 +62,6 @@ div.estrela {
   border-radius: 20px;
 }
 
-.container > div {
-  display: flex;
-  justify-content: center;
-}
-
 .container .nota {
   width: 20%;
   margin: 3%;
@@ -78,14 +73,6 @@ div.estrela {
 
 .container .nota > p {
   margin: 3% auto;
-}
-
-img.bruxa {
-  background-repeat: no-repeat;
-  background-image: url( 'img/bruxa.svg' );
-  background-size: contain;
-  height: 100px;
-  width: 100px;
 }
 
 .container > div {
@@ -105,15 +92,10 @@ img.bruxa {
   text-align: center;
 }
 
-.container .right > img.snape {
+.container .right > .snape {
   width: 95%;
   margin: 3% auto;
   border-radius: 5px;
-}
-
-.container .right > img.nimbus {
-  margin: 3% auto;
-  width: 48%;
 }
 
 .container .left > p {
@@ -127,7 +109,12 @@ img.bruxa {
   border-radius: 5px;
 }
 
-img.bruxa {
+.bruxa {
+  background-repeat: no-repeat;
+  background-image: url( 'img/bruxa.svg' );
+  background-size: contain;
+  height: 100px;
+  width: 100px;
   margin-left: 10%;
   animation-name: move1, move2, move1;
   animation-duration: 2000ms, 2000ms, 2000ms;
@@ -136,7 +123,8 @@ img.bruxa {
   animation-fill-mode: forwards;
 }
 
-img.nimbus {
+.nimbus {
+  margin: 3% auto;
   width: 40%;
   animation-name: todos;
   animation-duration: 5000ms;
@@ -185,24 +173,28 @@ img.nimbus {
   }
 
   66.6% {
-    transform: scale( 2 ) rotate( 0deg ) translateY( -100px ) skew( 15deg , 15deg );
+    transform: scale( 2 ) rotate( 0deg ) translateY( -100px )
+    skew( 15deg , 15deg );
   }
 
   83.2% {
-    transform: scale( 2 ) rotate( 0deg ) translateY( -400px ) skew( 15deg , 15deg ) translateX( 1000px );
+    transform: scale( 2 ) rotate( 0deg ) translateY( -400px )
+    skew( 15deg , 15deg ) translateX( 1000px );
   }
 
   100% {
-    transform: scale( 2 ) rotate( 0deg ) translateY( -400px ) skew( 15deg , 15deg ) translateX( 1000px );
+    transform: scale( 2 ) rotate( 0deg ) translateY( -400px )
+    skew( 15deg , 15deg ) translateX( 1000px );
   }
 }
 
-@media ( max-width: 760px ) {
+@media ( max-width : 760px ) {
+
   h1 {
     margin-bottom: 4%;
   }
 
-  div.estrela {
+  .estrela {
     display: none;
   }
 
@@ -228,10 +220,6 @@ img.nimbus {
     order: 2;
   }
 
-  .container .nota {
-    order: 1;
-  }
-
   .container .right , .container .left {
     width: 100%;
   }
@@ -244,7 +232,7 @@ img.nimbus {
     margin-top: 5%;
   }
 
-  .container .right > img.snape {
+  .container .right > .snape {
     margin: 4% auto;
     width: 80%;
   }
@@ -258,6 +246,7 @@ img.nimbus {
   }
 
   .container .nota {
+    order: 1;
     width: 100%;
     grid-column: 2;
     grid-row: 1;
