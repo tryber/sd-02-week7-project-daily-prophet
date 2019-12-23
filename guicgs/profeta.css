@@ -1,0 +1,47 @@
+* {
+  outline: red solid 1px;
+}
+
+body {
+  width: 50rem;
+  margin: auto;
+  border: 2px solid black;
+}
+
+header > img {
+  width: 100%;
+  margin: 0;
+}
+
+p {
+  margin: 0;
+  padding: 2rem;
+}
+
+#corpo {
+  display: flex;
+}
+
+#noticias {
+  display: flex;
+  flex-direction: column;
+}
+
+#noticias-superior {
+
+  display: flex;
+}
+
+#noticias-inferior {
+
+  display: flex;
+}
+
+#barra-lateral {
+  background-color: yellow;
+  padding: 2rem;
+}
+
+footer {
+  text-align: center;
+}
