@@ -27,6 +27,11 @@ body {
   background-image: url(imagens/old-paper-background.jpg);
 }
 
+
+header {
+  padding: 0.2rem 0.2rem 0 0.5rem;
+}
+
 header > img {
   width: 100%;
   margin: 0 0 1rem;
@@ -39,11 +44,12 @@ p {
   line-height: 1rem;
   font-size: 1rem;
   text-align: justify;
+  color: #1e1b1b;
 }
 
 #corpo {
   display: flex;
-  border: 4px solid black;
+  border: 4px solid #1e1b1b;
   width: 90%;
   margin: auto;
 }
@@ -68,6 +74,7 @@ p {
   padding: 0.5rem 0 0;
   font-size: 6rem;
   width: 100%;
+  color: #1e1b1b;
 }
 
 #gif_dumb {
