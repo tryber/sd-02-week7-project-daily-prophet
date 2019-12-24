@@ -3,10 +3,20 @@
 
 }
 
+@media (max-width: 760px) and (orientation: landscape){
+
+
+}
+
 * {
   cursor: url(images/the-daily-prophet-cursor-wand.png), auto;
-  /* outline: 1px red solid; */
+  outline: 1px red solid;
 
+}
+
+.navWrap {
+  display: flex;
+  justify-content: center;
 }
 
 /* .pomo {
@@ -16,19 +26,22 @@
 } */
 
 .outdoor {
-  margin: auto; animation-play-state: paused;
   max-width: 730px;
 }
 
 .header {
 display: flex;
 justify-content: center;
-
 }
 
 .coruja{
-  width: 1100px;
-  animation: drawArc1 6s linear;
+  height: 120px;
+  margin: 0 60px;
+  width: 1000px;
+  animation: drawArc1 5s ease;
+  animation-delay: 3s;
+  animation-iteration-count: 2;
+  animation-direction: alternate;
 }
 
 .corujaImg {
@@ -37,7 +50,19 @@ justify-content: center;
 }
 
 @keyframes drawArc1 {
-  0% { transform: rotate(180deg);}
-  100%{ transform: rotate(0deg);  }
+  0% {transform: rotate(0deg);  }
+  100%{ transform: rotate(180deg); }
+}
+
+.newsContainer {
+  display: flex;
+}
+
+.news{
+  background-color: lightskyblue;
+}
+
+.sidebar{
+  background-color: lightcoral;
 }
 

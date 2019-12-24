@@ -21,6 +21,4 @@ $( ".pomo" ).click(function() {
 });
 // coruja
 
-$(".coruja").click(function() {
-  $('.transform').toggleClass('transform-active');
-});
+
