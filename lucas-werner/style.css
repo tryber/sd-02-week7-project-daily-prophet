@@ -1,20 +1,29 @@
-* {cursor: url(/lucas-werner/images/the-daily-prophet-cursor-wand.png), auto;
+
+@media screen and (max-width:760px){
+
+}
+
+* {
+  cursor: url(images/the-daily-prophet-cursor-wand.png), auto;
   background-color: rgb(254,252,248);
 
 }
-.pageWrap {
-  max-width: 1046px;
-  margin: auto;
-}
-.navbar {
-  margin: auto;
-  max-width: 730px;
+
+.pomo {
+  position:fixed;
 }
 
-.container {
-  text-align: center;
-}
 
+header{
+  font-family: 'Playfair Display', serif;
+  font-weight: 900;
+  font-size: 80px;
+  text-transform: uppercase;
+  display: inline-block;
+  line-height: 72px;
+  margin-bottom: 20px;
+
+}
 .outdoor {
   margin: auto; animation-play-state: paused;
   max-width: 730px;
@@ -32,21 +41,20 @@ justify-content: flex-start;
 
 #coruja {
   margin-left:0;
-  animation: fly 5s;
+  animation: fly 6s;
   animation-fill-mode: forwards;
   animation-play-state: paused;
 }
 
 #coruja:hover{
   animation-play-state: running;
+
 }
 
 @keyframes fly {
   0% {margin-left: 0;
   }
   100% {
-    margin-left: 730px;
+    margin-left: 90%;
   }
 }
-
-
