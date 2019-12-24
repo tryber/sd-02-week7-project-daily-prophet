@@ -4,8 +4,8 @@ $(document).ready(function(){
 });
 
 function makeNewPosition(){
-  var h = $(window).height() - 50;
-  var w = $(window).width() - 50;
+  var h = $(window).height() - 60;
+  var w = $(window).width() - 60;
   var nh = Math.floor(Math.random() * h);
   var nw = Math.floor(Math.random() * w);
   return [nh,nw];
