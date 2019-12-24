@@ -5,45 +5,27 @@
 
 * {
   cursor: url(images/the-daily-prophet-cursor-wand.png), auto;
-  background-color: rgb(254,252,248);
 
 }
 
-.pomo {
+/* .pomo {
+  height: 40px;
+  width: 60px;
   position:fixed;
-}
+} */
 
-
-header{
-  font-family: 'Playfair Display', serif;
-  font-weight: 900;
-  font-size: 80px;
-  text-transform: uppercase;
-  display: inline-block;
-  line-height: 72px;
-  margin-bottom: 20px;
-
-}
 .outdoor {
   margin: auto; animation-play-state: paused;
   max-width: 730px;
 }
 
-.corujaContainer {
-background-color: rgb(87, 74, 82);
+.header {
 display: flex;
 justify-content: flex-start;
 }
 
-.coruja1{
+.coruja{
   position:relative;
-}
-
-#coruja {
-  margin-left:0;
-  animation: fly 6s;
-  animation-fill-mode: forwards;
-  animation-play-state: paused;
 }
 
 #coruja:hover{
