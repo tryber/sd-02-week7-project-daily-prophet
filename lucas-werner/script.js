@@ -19,3 +19,8 @@ function animateDiv(){
 $( ".pomo" ).click(function() {
   window.open('https://www.youtube.com/watch?v=inSjePhFe2o');
 });
+// coruja
+
+$(".coruja").click(function() {
+  $('.transform').toggleClass('transform-active');
+});

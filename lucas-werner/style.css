@@ -5,6 +5,7 @@
 
 * {
   cursor: url(images/the-daily-prophet-cursor-wand.png), auto;
+  /* outline: 1px red solid; */
 
 }
 
@@ -21,22 +22,22 @@
 
 .header {
 display: flex;
-justify-content: flex-start;
+justify-content: center;
+
 }
 
 .coruja{
-  position:relative;
+  width: 1100px;
+  animation: drawArc1 6s linear;
 }
 
-#coruja:hover{
-  animation-play-state: running;
-
+.corujaImg {
+  width: 120px;
+  height: 120px;
 }
 
-@keyframes fly {
-  0% {margin-left: 0;
-  }
-  100% {
-    margin-left: 90%;
-  }
+@keyframes drawArc1 {
+  0% { transform: rotate(180deg);}
+  100%{ transform: rotate(0deg);  }
 }
+
