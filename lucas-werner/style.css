@@ -50,10 +50,37 @@ justify-content: center;
   background-color: lightcoral;
   width: 30%;
 }
-.nimbusImg {
+#nimbus2000 {
   width: 200px;
   height: 100px;
 }
+
+.voando {
+  animation: voar 3s linear forwards, voar2 3s ease-in 3s 1 forwards;
+}
+
+@keyframes voar {
+
+  from {
+    transform: scale( 0 , 0) translate( 0 ) rotateY( 0deg ) translateX( 0 );
+  }
+
+  to {
+    transform: scale( 3 , 3 ) translate( 0 , -50px ) rotateY( 360deg );
+  }
+}
+
+@keyframes voar2 {
+
+  from {
+    transform: skew( 0deg ) scale( 3 , 3 ) translate( 0 , -50px );
+  }
+
+  to {
+    transform: skew( -90deg ) scale( 3 , 3 ) translate( 50px , 0 );
+  }
+}
+
 
 @media screen and (max-width:760px){
   .sidebar, .corujaImg, .coruja, .letreiro, .navbar {
@@ -107,4 +134,16 @@ justify-content: center;
     text-align: justify;
     font-size: 1.25em;
   }
+}
+
+article {
+  font-weight: 300;
+  transition-property: transform font-weight;
+  transition-duration: 4s;
+  transition-timing-function: steps( 15 , end );
+}
+
+article:active {
+  transform: scale( 1.5 , 1.5 );
+  font-weight: 800;
 }

@@ -20,5 +20,14 @@ $( ".pomo" ).click(function() {
   window.open('https://www.youtube.com/watch?v=inSjePhFe2o');
 });
 
+//vassoura voadora
+
+const nimbus = document.getElementById('nimbus2000');
+
+function voar() {
+  nimbus.className = 'voando';
+}
+nimbus.addEventListener('click', voar);
+
 
 
