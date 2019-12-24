@@ -25,7 +25,7 @@ $( ".pomo" ).click(function() {
 const nimbus = document.getElementById('nimbus2000');
 
 function voar() {
-  nimbus.className = 'voando';
+  nimbus.className = 'voa';
 }
 nimbus.addEventListener('click', voar);
 
