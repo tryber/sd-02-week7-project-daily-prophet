@@ -1,68 +1,86 @@
 
-@media screen and (max-width:760px){
-
-}
-
-@media (max-width: 760px) and (orientation: landscape){
-
-
-}
-
 * {
   cursor: url(images/the-daily-prophet-cursor-wand.png), auto;
   outline: 1px red solid;
-
 }
-
 .navWrap {
   display: flex;
   justify-content: center;
 }
-
 /* .pomo {
   height: 40px;
   width: 60px;
   position:fixed;
 } */
-
 .outdoor {
   max-width: 730px;
 }
-
 .header {
 display: flex;
 justify-content: center;
 }
-
 .coruja{
   height: 120px;
   margin: 0 60px;
   width: 1000px;
   animation: drawArc1 5s ease;
   animation-delay: 3s;
-  animation-iteration-count: 2;
+  animation-iteration-count: 3;
   animation-direction: alternate;
 }
-
+.coruja:hover{
+  animation-play-state: paused;
+}
 .corujaImg {
-  width: 122px;
+  width: 120px;
   height: 120px;
 }
-
 @keyframes drawArc1 {
   0% {transform: rotate(0deg);  }
   100%{ transform: rotate(180deg); }
 }
-
 .newsContainer {
   display: flex;
 }
-
 .news{
   background-color: lightskyblue;
+  width: 70%;
 }
-
 .sidebar{
   background-color: lightcoral;
+  width: 30%;
+}
+.nimbusImg {
+  width: 200px;
+  height: 100px;
 }
 
+@media screen and (max-width:760px){
+  .sidebar, .corujaImg, .coruja, .letreiro, .navbar {
+    display: none;
+  }
+  .container {
+    margin: 0;
+    padding: 10px;
+  }
+  .newsContainer, .news {
+    width: 100%;
+  }
+  .headerImg{
+  max-width:100%;
+   max-height:100%;
+  }
+  h2 {
+    text-align: center;
+    font-size: 1.5;
+  }
+  p {
+    text-align: justify;
+    font-size: 1.25em;
+  }
+}
+
+@media (max-width: 760px) and (orientation: landscape){
+
+
+}
