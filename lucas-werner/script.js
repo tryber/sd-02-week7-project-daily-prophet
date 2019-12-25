@@ -18,7 +18,7 @@ $('.pomo').click(function () {
 });
 $(document).ready(function () {
   animateDiv();
-})
+});
 // vassoura voadora
 const nimbus = document.getElementById('nimbus2000');
 function voar() {

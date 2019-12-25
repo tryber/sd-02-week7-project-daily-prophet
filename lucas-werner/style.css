@@ -52,95 +52,92 @@
   }
 }
 
-@media screen and (min-width:760px){
-* {
-  cursor: url( images/the-daily-prophet-cursor-wand.png ), auto;
-}
-.navWrap {
-  display: flex;
-  justify-content: center;
-}
-.pomo {
-  height: 60px;
-  width: 110px;
-  position: fixed;
-}
-.header {
-  display: flex;
-  justify-content: center;
-}
-.coruja {
-  height: 120px;
-  margin: 0 60px;
-  width: 1000px;
-  animation: drawArc1 5s ease;
-  animation-delay: 3s;
-  animation-iteration-count: 3;
-  animation-direction: alternate;
-}
-.coruja:hover {
-  animation-play-state: paused;
-}
-.corujaImg {
-  width: 120px;
-  height: 120px;
-}
-.newsContainer {
-  display: flex;
-  padding: 5px;
-}
-.news {
-  border-right: 1px solid black;
-  width: 70%;
-  text-align: justify;
-}
-.sidebar {
-  padding: 5px;
-  width: 30%;
-  text-align: justify;
-}
-#nimbus2000 {
-  width: 200px;
-  height: 100px;
-}
-.voa {
-  animation: voa 3s linear forwards, voa2 3s ease-in 3s 1 forwards;
-}
-article {
-  font-weight: 300;
-  transition-property: transform font-weight;
-  transition-duration: 4s;
-  transition-timing-function: steps( 15 , end );
-}
-article:active {
-  transform: scale( 1.5 , 1.5 );
-  font-weight: 800;
-}
-
-@keyframes drawArc1 {
-  0% {
-    transform: rotate( 0deg );
+@media screen and (min-width:760px) {
+  * {
+    cursor: url("images/the-daily-prophet-cursor-wand.png"), auto;
   }
-  100% {
-    transform: rotate( 180deg );
+  .navWrap {
+    display: flex;
+    justify-content: center;
   }
-}
-
-@keyframes voa {
-  from {
-    transform: scale( 0 , 0 ) translate( 0 ) rotateY( 0deg ) translateX( 0 );
+  .pomo {
+    height: 60px;
+    width: 110px;
+    position: fixed;
   }
-  to {
-    transform: scale( 3 , 3 ) translate( 0 , -50px ) rotateY( 360deg );
+  .header {
+    display: flex;
+    justify-content: center;
   }
-}
-
-@keyframes voa2 {
-  from {
-    transform: skew( 0deg ) scale( 3 , 3 ) translate( 0 , -50px );
+  .coruja {
+    height: 120px;
+    margin: 0 60px;
+    width: 1000px;
+    animation: drawArc1 5s ease;
+    animation-delay: 3s;
+    animation-iteration-count: 3;
+    animation-direction: alternate;
   }
-  to {
-    transform: skew( -90deg ) scale( 3 , 3 ) translate( 50px , 0 );
+  .coruja:hover {
+    animation-play-state: paused;
   }
-}
+  .corujaImg {
+    width: 120px;
+    height: 120px;
+  }
+  .newsContainer {
+    display: flex;
+    padding: 5px;
+  }
+  .news {
+    border-right: 1px solid black;
+    width: 70%;
+    text-align: justify;
+  }
+  .sidebar {
+    padding: 5px;
+    width: 30%;
+    text-align: justify;
+  }
+  #nimbus2000 {
+    width: 200px;
+    height: 100px;
+  }
+  .voa {
+    animation: voa 3s linear forwards, voa2 3s ease-in 3s 1 forwards;
+  }
+  article {
+    font-weight: 300;
+    transition-property: transform font-weight;
+    transition-duration: 4s;
+    transition-timing-function: steps( 15, end);
+  }
+  article:active {
+    transform: scale( 1.5, 1.5);
+    font-weight: 800;
+  }
+  @keyframes drawArc1 {
+    0% {
+      transform: rotate( 0deg);
+    }
+    100% {
+      transform: rotate( 180deg);
+    }
+  }
+  @keyframes voa {
+    from {
+      transform: scale( 0, 0) translate( 0) rotateY( 0deg) translateX( 0);
+    }
+    to {
+      transform: scale( 3, 3) translate( 0, -50px) rotateY( 360deg);
+    }
+  }
+  @keyframes voa2 {
+    from {
+      transform: skew( 0deg) scale( 3, 3) translate( 0, -50px);
+    }
+    to {
+      transform: skew( -90deg) scale( 3, 3) translate( 50px, 0);
+    }
+  }
 }
