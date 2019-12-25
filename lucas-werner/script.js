@@ -1,4 +1,5 @@
-//pomo de ouro
+// pomo de ouro
+let $ = ''
 $(document).ready(function(){
   animateDiv();
 });
