@@ -110,7 +110,7 @@ article {
   font-weight: 300;
   transition-property: transform font-weight;
   transition-duration: 4s;
-  transition-timing-function: steps( 15 , end ;
+  transition-timing-function: steps( 15 , end );
 }
 article:active {
   transform: scale( 1.5 , 1.5 );
