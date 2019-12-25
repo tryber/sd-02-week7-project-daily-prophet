@@ -1,4 +1,4 @@
-// pomo de ouro
+// pomo de ouro ao invés da estrela, como havia comentado na apresentação
 const $ = ''; // "$" declarada pro Code Climate
 function makeNewPosition() {
   const h = $(window).height() - 60;
