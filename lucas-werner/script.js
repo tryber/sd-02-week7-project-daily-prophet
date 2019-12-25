@@ -25,4 +25,3 @@ function voar() {
   nimbus.className = 'voa';
 }
 nimbus.addEventListener('click', voar);
-
