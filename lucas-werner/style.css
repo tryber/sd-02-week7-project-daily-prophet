@@ -1,6 +1,6 @@
 @media screen and ( max-width : 760px ) {
 
-  .sidebar, .corujaImg, .coruja, .letreiro, .navbar {
+  .sidebar , .corujaImg , .coruja , .letreiro , .navbar {
     display: none;
   }
 
@@ -45,6 +45,7 @@
 }
 
 @media screen and ( max-width : 760px ) and ( orientation : landscape ) {
+
   .container {
     margin: 0 auto;
     max-width: 100%;
@@ -65,7 +66,7 @@
 @media screen and ( min-width : 760px ) {
 
   * {
-    cursor: url( "images/the-daily-prophet-cursor-wand.png" ), auto;
+    cursor: url( 'images/the-daily-prophet-cursor-wand.png' ), auto;
   }
 
   .navWrap {
@@ -133,7 +134,7 @@
     font-weight: 300;
     transition-property: transform font-weight;
     transition-duration: 4s;
-    transition-timing-function: steps( 15, end );
+    transition-timing-function: steps( 15 , end );
   }
 
   article:active {
@@ -142,29 +143,35 @@
   }
 
   @keyframes drawArc1 {
+
     0% {
       transform: rotate( 0deg );
     }
+
     100% {
       transform: rotate( 180deg );
     }
   }
 
   @keyframes voa {
+
     from {
       transform: scale( 0 , 0 ) translate( 0 ) rotateY( 0deg ) translateX( 0 );
     }
+
     to {
       transform: scale( 3 , 3 ) translate( 0 , -50px ) rotateY( 360deg );
     }
   }
 
   @keyframes voa2 {
+
     from {
-      transform: skew( 0deg ) scale( 3, 3 ) translate( 0, -50px );
+      transform: skew( 0deg ) scale( 3 , 3 ) translate( 0 , -50px );
     }
+
     to {
-      transform: skew( -90deg ) scale( 3, 3 ) translate( 50px, 0 );
+      transform: skew( -90deg ) scale( 3 , 3 ) translate( 50px , 0 );
     }
   }
 }
