@@ -17,12 +17,13 @@
 }
 
 body {
-  width: 50rem;
-  margin: auto;
+  max-width: 50rem;
+  margin: 1rem auto;
 }
 
 #fundo {
   background-image: url( 'imagens/old-paper-background.jpg' );
+  border-radius: 1rem;
 }
 
 header {
@@ -31,7 +32,14 @@ header {
 
 header > img {
   width: 100%;
-  margin: 0 0 1rem;
+  margin: 0;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  width: 91%;
 }
 
 p {
@@ -41,12 +49,16 @@ p {
   line-height: 1rem;
   font-size: 1rem;
   text-align: justify;
-  color: rgb( 30 , 27 , 27 );
 }
 
-#corpo {
+.texto-nav {
+  font-size: 1.5rem;
+  padding: 1rem 0;
+}
+
+.corpo {
   display: flex;
-  border: 4px solid rgb( 30 , 27 , 27 );
+  border: 4px solid black;
   width: 90%;
   margin: auto;
 }
@@ -67,40 +79,77 @@ p {
 .titulo-noticia {
   font-family: headline_onehplhs, sans-serif;
   text-align: center;
-  line-height: 7rem;
+  line-height: 9rem;
   padding: 0.5rem 0 0 0.5rem;
-  font-size: 7.4rem;
-  color: rgb( 30 , 27 , 27 );
+  font-size: 10rem;
 }
 
 .titulo-noticia-menor {
   font-family: headline_onehplhs, sans-serif;
   padding: 1rem 0 0 1rem;
-  font-size: 2rem;
-  color: rgb( 30 , 27 , 27 );
+  font-size: 2.1rem;
 }
 
 #gif_dumb {
-  width: 9rem;
-  height: 9rem;
+  width: 11rem;
+  height: 11rem;
   object-fit: cover;
   border-radius: 100%;
   float: left;
   shape-outside: ellipse();
-  margin: 1rem;
+  margin: 1rem 1rem 0;
 }
 
 #noticias-centro {
   display: flex;
   flex-direction: row;
+  padding-top: 0.5rem;
+}
+
+#noticias-inferior {
+  display: flex;
+}
+
+#titulo-lateral {
+  writing-mode: vertical-rl; 
+  transform: rotate(180deg);
+  padding: 0 1.5rem 0.5rem 1rem;
+  font-size: 2.5rem;
+}
+
+#gif-pomo {
+  width: 9rem;
+  height: 9rem;
+  object-fit: cover;
+  border-radius: 100%;
+  float: right;
+  margin: 1rem 1rem 1rem 0.5rem;
+  shape-outside: ellipse();
 }
 
 #barra-lateral {
   font-family: headline_twohplhs, sans-serif;
-  padding: 2rem;
+  padding: 1rem 1rem 1rem 1rem;
+  text-align: justify;
+  border-left: 1px solid black;
+  background-color: black;
+}
+
+aside {
+  color: white;
 }
 
 footer {
+  font-family: monospace, sans-serif;
   text-align: center;
   padding: 1rem;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  text-decoration: underline;
 }
