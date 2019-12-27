@@ -67,10 +67,16 @@ p {
 .titulo-noticia {
   font-family: headline_onehplhs, sans-serif;
   text-align: center;
-  line-height: 6rem;
-  padding: 0.5rem 0 0;
-  font-size: 6rem;
-  width: 100%;
+  line-height: 7rem;
+  padding: 0.5rem 0 0 0.5rem;
+  font-size: 7.4rem;
+  color: rgb( 30 , 27 , 27 );
+}
+
+.titulo-noticia-menor {
+  font-family: headline_onehplhs, sans-serif;
+  padding: 1rem 0 0 1rem;
+  font-size: 2rem;
   color: rgb( 30 , 27 , 27 );
 }
 
