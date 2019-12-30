@@ -47,8 +47,22 @@ footer {
   height: 25px;
 }
 
+h4 {
+  display: inline;
+}
+
 #container1 {
   display: flex;
+}
+
+#icone {
+  height: 20px;
+  width: 20px;
+  padding-left: 3px;
+}
+
+nav {
+  display: inline;
 }
 
 @media ( max-width : 760px ) and ( orientation : landscape ) {
@@ -129,7 +143,7 @@ footer {
     padding: 0 5px;
   }
 
-  #titleArticle{
+  #titleArticle {
     text-align: center;
   }
 
@@ -178,5 +192,9 @@ footer {
 
   #severoGif {
     height: 56%;
+  }
+
+  #icone:hover {
+    cursor: pointer;
   }
 }
