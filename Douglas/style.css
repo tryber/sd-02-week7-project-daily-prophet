@@ -159,15 +159,15 @@ nav {
   @keyframes translating {
 
     0% {
-      transform: translate( 0 , 2em);
+      transform: translate( 0 , 2em );
     }
 
     50% {
-      transform: translate( 15em , 30em ) rotate(360deg);
+      transform: translate( 15em , 30em ) rotate( 360deg );
     }
 
     100% {
-      transform: translate( 31em , 0em);
+      transform: translate( 31em , 0 );
     }
   }
 }
