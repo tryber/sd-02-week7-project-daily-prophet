@@ -25,7 +25,7 @@ h1 {
   width: 80%;
   margin: auto;
   height: 100%;
-  background-color: rgb( 181 , 165 , 66 );
+  background-color: rgb( 237 , 232 , 220 );
   flex-direction: column;
   border: 1px solid white;
 }
@@ -75,7 +75,7 @@ nav {
   top: 0;
   animation-delay: 3s;
   animation-name: translating;
-  animation-duration: 8s;
+  animation-duration: 5s;
   animation-timing-function: ease-in;
   animation-iteration-count: 3;
   animation-direction: alternate;
@@ -103,6 +103,7 @@ nav {
   h1 {
     font-size: 2em;
     margin-block-start: 0;
+    color: black;
   }
 
   #divArticle {
@@ -159,7 +160,7 @@ nav {
   @keyframes translating {
 
     0% {
-      transform: translate( 0 , 2em );
+      transform: translate( 0 , 0 );
     }
 
     50% {
@@ -190,8 +191,22 @@ nav {
     font-size: 3em;
   }
 
-  h1:hover {
-    background-color: black;
+  @keyframes corTitulo {
+    from {
+      background-color: rgb ( 237 , 232 , 220 );
+    }
+
+    to {
+      background-color: black;
+    }
+  }
+
+  #head {
+    animation-delay: 1s;
+    animation-duration: 2s;
+    animation-name: corTitulo;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
   }
 
   #divArticle {
@@ -240,7 +255,7 @@ nav {
   @keyframes translating {
 
     0% {
-      transform: translate( 0 , 2em );
+      transform: translate( 0 , 0 );
     }
 
     50% {
@@ -250,5 +265,18 @@ nav {
     100% {
       transform: translate( 55em , 0 );
     }
+  }
+
+  .animaTexto {
+    font-weight: none;
+    transition-property: transform font-weight background-color;
+    transition-duration: 4s;
+    transition-timing-function: linear;
+  }
+
+  .animaTexto:active {
+    transform: scale(1.5, 1.5);
+    font-weight: bold;
+    background-color: chartreuse;
   }
 }
