@@ -65,12 +65,33 @@ nav {
   display: inline;
 }
 
+#animaLua {
+  overflow: hidden;
+}
+
+#lua {
+  height: 90px;
+  position: absolute;
+  top: 0;
+  animation-delay: 3s;
+  animation: translating 10s ease-in 3 alternate;
+  animation-fill-mode: forwards;
+}
+
+#lua:hover {
+  animation-play-state: paused;
+}
+
 @media ( max-width : 760px ) and ( orientation : landscape ) {
 
   #video {
     display: none;
   }
 
+  #lua
+  {
+    height: 50px;
+  }
   #severoGif {
     display: none;
   }
@@ -131,6 +152,19 @@ nav {
     justify-content: space-between;
   }
 
+  @keyframes translating {
+    0% {
+      transform: translate( 0, 2em);
+    }
+
+    50% {
+      transform: translate( 15em, 30em) rotate(360deg);
+    }
+
+    100% {
+      transform: translate( 31em, 0em);
+    }
+  }
 }
 
 @media ( min-width : 761px ) {
@@ -196,5 +230,19 @@ nav {
 
   #icone:hover {
     cursor: pointer;
+  }
+
+  @keyframes translating {
+    0% {
+      transform: translate( 0, 2em);
+    }
+
+    50% {
+      transform: translate( 30em, 30em) rotate(360deg);
+    }
+
+    100% {
+      transform: translate( 55em, 0em);
+    }
   }
 }
