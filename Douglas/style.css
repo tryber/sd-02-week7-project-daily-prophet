@@ -74,7 +74,11 @@ nav {
   position: absolute;
   top: 0;
   animation-delay: 3s;
-  animation: translating 10s ease-in 3 alternate;
+  animation-name: translating;
+  animation-duration: 8s;
+  animation-timing-function: ease-in;
+  animation-iteration-count: 3;
+  animation-direction: alternate;
   animation-fill-mode: forwards;
 }
 
@@ -88,10 +92,10 @@ nav {
     display: none;
   }
 
-  #lua
-  {
+  #lua {
     height: 50px;
   }
+
   #severoGif {
     display: none;
   }
@@ -153,16 +157,17 @@ nav {
   }
 
   @keyframes translating {
+
     0% {
-      transform: translate( 0, 2em);
+      transform: translate( 0 , 2em);
     }
 
     50% {
-      transform: translate( 15em, 30em) rotate(360deg);
+      transform: translate( 15em , 30em ) rotate(360deg);
     }
 
     100% {
-      transform: translate( 31em, 0em);
+      transform: translate( 31em , 0em);
     }
   }
 }
@@ -233,16 +238,17 @@ nav {
   }
 
   @keyframes translating {
+
     0% {
-      transform: translate( 0, 2em);
+      transform: translate( 0 , 2em );
     }
 
     50% {
-      transform: translate( 30em, 30em) rotate(360deg);
+      transform: translate( 30em , 30em ) rotate( 360deg );
     }
 
     100% {
-      transform: translate( 55em, 0em);
+      transform: translate( 55em , 0 );
     }
   }
 }
