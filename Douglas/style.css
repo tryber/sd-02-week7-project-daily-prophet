@@ -192,6 +192,7 @@ nav {
   }
 
   @keyframes corTitulo {
+
     from {
       background-color: rgb ( 237 , 232 , 220 );
     }
@@ -268,14 +269,14 @@ nav {
   }
 
   .animaTexto {
-    font-weight: none;
+    font-weight: normal;
     transition-property: transform font-weight background-color;
     transition-duration: 4s;
     transition-timing-function: linear;
   }
 
   .animaTexto:active {
-    transform: scale(1.5, 1.5);
+    transform: scale( 1.5 , 1.5 );
     font-weight: bold;
     background-color: chartreuse;
   }
