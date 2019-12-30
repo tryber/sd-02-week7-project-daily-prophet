@@ -269,7 +269,6 @@ nav {
   }
 
   .animaTexto {
-    font-weight: normal;
     transition-property: transform font-weight background-color;
     transition-duration: 4s;
     transition-timing-function: linear;
@@ -277,7 +276,32 @@ nav {
 
   .animaTexto:active {
     transform: scale( 1.5 , 1.5 );
-    font-weight: bold;
     background-color: chartreuse;
+    animation-name: negrito;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+  }
+
+  @keyframes negrito {
+
+    0% {
+      font-weight: 450;
+    }
+    25% {
+      font-weight: 550;
+    }
+
+    50% {
+      font-weight: 650;
+    }
+
+    75% {
+      font-weight: 700;
+    }
+
+    100% {
+      font-weight: 800;
+    }
   }
 }
