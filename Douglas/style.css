@@ -183,7 +183,7 @@ nav {
     cursor: url( 'the-daily-prophet-cursor-wand.png' ), auto;
   }
 
-  #arrumaPropaganda{
+  #arrumaPropaganda {
     display: flex;
   }
 
@@ -191,7 +191,7 @@ nav {
     color: white;
     max-width: 100px;
     border: solid white 1px;
-    padding: 3px 3px;
+    padding: 3px;
     animation-delay: 1s;
     animation-duration: 0.3s;
     animation-name: corAnuncio;
@@ -214,7 +214,7 @@ nav {
     cursor: pointer;
   }
 
-  #fuga{
+  #fuga {
     display: none;
   }
 
