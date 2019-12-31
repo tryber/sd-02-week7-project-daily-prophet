@@ -88,6 +88,10 @@ nav {
 
 @media ( max-width : 760px ) and ( orientation : landscape ) {
 
+  #anuncio {
+    display: none;
+  }
+
   #video {
     display: none;
   }
@@ -177,6 +181,46 @@ nav {
 
   * {
     cursor: url( 'the-daily-prophet-cursor-wand.png' ), auto;
+  }
+
+  #arrumaPropaganda{
+    display: flex;
+  }
+
+  #anuncio {
+    color: white;
+    max-width: 100px;
+    border: solid white 1px;
+    padding: 3px 3px;
+    animation-delay: 1s;
+    animation-duration: 0.3s;
+    animation-name: corAnuncio;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+  }
+
+  @keyframes corAnuncio {
+
+    from {
+      background-color: black;
+    }
+
+    to {
+      background-color: blue;
+    }
+  }
+
+  #compra:hover {
+    cursor: pointer;
+  }
+
+  #fuga{
+    display: none;
+  }
+
+  #vassoura {
+    height: 50px;
+    width: 100px;
   }
 
   p {
