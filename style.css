@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css?family=Anton|Audiowide|Teko&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+@media (max-width: 760px){
+    body{
+        width: 760px;
+        font-family: 'Teko', sans-serif;
+    }
+    
+    #titulo-jornal{
+        font-size: 70px;
+        margin: 0 auto;
+        width: fit-content;
+        font-family: 'Anton', sans-serif;
+    }
+    #borda-grossa{
+        border-top: 3px solid;
+        border-bottom: 3px solid;
+        width: 700px;
+        margin: 10px auto;
+    }
+    #borda-fina{
+        border-top: 2px solid;
+        border-bottom: 2px solid;
+        margin: 3px 0;
+    }
+    #exclusivo{
+        width: 700px;
+        margin: 10px auto;
+        border: 1pz solid green;
+    }
+    .titulo-section{
+        color: #fff;
+        background: black;
+        font-family: 'Teko', sans-serif;
+        font-size: 40px;
+        padding: 4px 0 0px 15px;
+    }
+    article{
+        border: 1px solid;
+        margin-top: 10px;
+        width: 700px;
+    }
+    #exclusivo h1{
+        font-size: 150px;
+        line-height: 150px;
+        text-transform: uppercase;
+        text-align: center;
+    }
+    #exclusivo p{
+        text-align: center;
+        font-size: 40px;
+    }
+    #exclusivo img{
+        width: 650px;
+        margin: 15px 25px;
+    }
+    #secoes-lado-a-lado{
+        display: flex;
+        justify-content: space-between;
+        width: 700px;
+        margin: 0 auto;
+    }
+    #economia, #educacao{
+        width: 345px;
+    }
+}
+
