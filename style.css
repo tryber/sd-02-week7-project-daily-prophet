@@ -12,7 +12,9 @@
         width: 760px;
         font-family: 'Teko', sans-serif;
     }
-    
+    h1{
+        text-transform: uppercase;
+    }
     #titulo-jornal{
         font-size: 70px;
         margin: 0 auto;
@@ -30,10 +32,13 @@
         border-bottom: 2px solid;
         margin: 3px 0;
     }
+    article{
+        border: 1px solid;
+        margin-top: 10px;
+    }
     #exclusivo{
         width: 700px;
         margin: 10px auto;
-        border: 1pz solid green;
     }
     .titulo-section{
         color: #fff;
@@ -42,8 +47,7 @@
         font-size: 40px;
         padding: 4px 0 0px 15px;
     }
-    article{
-        border: 1px solid;
+    #exclusivo article{
         margin-top: 10px;
         width: 700px;
     }
@@ -56,6 +60,7 @@
     #exclusivo p{
         text-align: center;
         font-size: 40px;
+        font-style: italic;
     }
     #exclusivo img{
         width: 650px;
@@ -67,8 +72,25 @@
         width: 700px;
         margin: 0 auto;
     }
-    #economia, #educacao{
+    #secoes-lado-a-lado section{
         width: 345px;
     }
+    #secoes-lado-a-lado article{
+        width: 345px;
+        padding: 10px;
+    }
+    #secoes-lado-a-lado h1{
+        font-size: 40px;
+        line-height: 40px;
+    }
+    #secoes-lado-a-lado p{
+        font-size: 28px;
+        margin: 10px 0;
+        font-style: italic;
+    }
+    #secoes-lado-a-lado img{
+        width: 323px;
+    }
 }
+
 
