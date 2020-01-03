@@ -1,75 +1,165 @@
 @import url('https://fonts.googleapis.com/css?family=Anton|Audiowide|Teko&display=swap');
-
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
-
+body{
+    font-family: 'Teko', sans-serif;
+}
+h1{
+    text-transform: uppercase;
+}
+#titulo-jornal{
+    margin: 0 auto;
+    width: fit-content;
+    font-family: 'Anton', sans-serif;
+}
+#borda-grossa{
+    border-top: 3px solid;
+    border-bottom: 3px solid;
+    margin: 10px auto;
+}
+#borda-fina{
+    border-top: 2px solid;
+    border-bottom: 2px solid;
+    margin: 3px 0;
+}
+article{
+    border: 2px solid;
+    margin-top: 10px;
+}
+.titulo-section{
+    color: #fff;
+    background: black;
+    font-family: 'Teko', sans-serif;
+    padding: 4px 0 0px 15px;
+}
+#exclusivo h1{
+    font-size: 150px;
+    line-height: 150px;
+    text-transform: uppercase;
+    text-align: center;
+}
+#exclusivo p{
+    text-align: center;
+    font-size: 40px;
+    font-style: italic;
+    padding: 0 10px;
+}
+@media (min-width: 761px){
+    body{
+        background-image: url(/imagens/hogwartsfundo.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+    }
+    #versao-desktop{
+        width: 960px;
+        margin: 0 auto;
+        background-color: rgb(207, 196, 174);
+        padding-top: 10px;  
+    }
+    #titulo-jornal{
+        font-size: 77px;
+    }
+    #borda-grossa{
+        width: 900px;
+    }
+    #exclusivo{
+        width: 900px;
+        margin: 10px auto;
+    }
+    .titulo-section{
+        font-size: 45px;
+    }
+    #exclusivo article{
+        margin-top: 10px;
+        width: 900px;
+    }
+    #exclusivo img{
+        width: 850px;
+        margin: 10px 25px;
+    }
+    #secoes-lado-a-lado{
+        display: flex;
+        justify-content: space-between;
+        width: 650px;
+    }
+    #secoes-lado-a-lado section{
+        width: 300px;
+    }
+    #secoes-lado-a-lado article{
+        width: 300px;
+        padding: 9px;
+    }
+    #secoes-lado-a-lado h1, #anuncios h1{
+        font-size: 30px;
+        line-height: 30px;
+    }
+    #secoes-lado-a-lado p{
+        font-size: 18px;
+        margin: 10px 0;
+        font-style: italic;
+    }
+    #secoes-lado-a-lado img{
+        width: 280px;
+    }
+    #secoes-lado-a-lado #loremIpsum-article{
+        margin-top: 13px;
+    }
+    #secoes-lado-a-lado-desktop{
+        width: 900px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+    }
+    #anuncios{
+        width: 200px;
+    }
+    #anuncios h1, #anuncios h3{
+        text-align: center;
+    }
+    #anuncios img{
+        width: 120px;
+        margin: 10px;
+    }
+    #vassouras-imagens{
+        display: flex;
+        flex-direction: column;
+        margin-top: 24px;
+    }
+}
 @media (max-width: 760px){
     body{
         width: 760px;
-        font-family: 'Teko', sans-serif;
-    }
-    h1{
-        text-transform: uppercase;
+        background-color: rgb(207, 196, 174);
     }
     #titulo-jornal{
         font-size: 70px;
-        margin: 0 auto;
-        width: fit-content;
-        font-family: 'Anton', sans-serif;
     }
     #borda-grossa{
-        border-top: 3px solid;
-        border-bottom: 3px solid;
         width: 700px;
-        margin: 10px auto;
     }
-    #borda-fina{
-        border-top: 2px solid;
-        border-bottom: 2px solid;
-        margin: 3px 0;
-    }
-    article{
-        border: 1px solid;
-        margin-top: 10px;
-    }
-    #exclusivo{
+   #exclusivo, #anuncios{
         width: 700px;
         margin: 10px auto;
     }
     .titulo-section{
-        color: #fff;
-        background: black;
-        font-family: 'Teko', sans-serif;
         font-size: 40px;
-        padding: 4px 0 0px 15px;
     }
     #exclusivo article{
         margin-top: 10px;
         width: 700px;
-    }
-    #exclusivo h1{
-        font-size: 150px;
-        line-height: 150px;
-        text-transform: uppercase;
-        text-align: center;
-    }
-    #exclusivo p{
-        text-align: center;
-        font-size: 40px;
-        font-style: italic;
     }
     #exclusivo img{
         width: 650px;
         margin: 15px 25px;
     }
     #secoes-lado-a-lado{
+        width: 700px;
         display: flex;
         justify-content: space-between;
-        width: 700px;
         margin: 0 auto;
     }
     #secoes-lado-a-lado section{
@@ -90,6 +180,22 @@
     }
     #secoes-lado-a-lado img{
         width: 323px;
+    }
+    #secoes-lado-a-lado #loremIpsum-article{
+        margin-top: 25px;
+    }
+    #anuncios h1{
+        font-size: 60px;
+    }
+    #anuncios h1, #anuncios h3{
+        text-align: center;
+    }
+    #anuncios img{
+        width: 200px;
+        margin: 10px;
+    }
+    #vassouras-imagens{
+        display: flex;
     }
 }
 
