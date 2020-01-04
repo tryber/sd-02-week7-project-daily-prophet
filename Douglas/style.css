@@ -21,7 +21,7 @@ h1 {
   border-bottom: 1px solid black;
 }
 
-#containerAll {
+#informacoes {
   display: flex;
   width: 80%;
   margin: auto;
@@ -52,7 +52,7 @@ h4 {
   display: flex;
 }
 
-#icone {
+.icone {
   height: 20px;
   width: 20px;
   padding-left: 3px;
@@ -72,7 +72,7 @@ nav {
     display: none;
   }
 
-  #containerAll {
+  #informacoes {
     align-items: center;
   }
 
@@ -165,7 +165,7 @@ nav {
     overflow: hidden;
   }
 
-  #lua , #estrela{
+  #lua , #estrela {
     height: 90px;
     position: absolute;
   }
@@ -312,13 +312,13 @@ nav {
     }
   }
 
-  header{
+  header {
     width: 100%;
     display: flex;
     justify-content: space-between;
   }
 
-  #head {
+  #cabecalho {
     animation-delay: 1s;
     animation-duration: 2s;
     animation-name: corTitulo;
@@ -365,7 +365,7 @@ nav {
     height: 56%;
   }
 
-  #icone:hover {
+  .icone:hover {
     cursor: pointer;
   }
 
