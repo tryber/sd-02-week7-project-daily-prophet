@@ -20,10 +20,13 @@ footer {
 }
 #box-artigos {
 	display: flex;
-	align-items: stretch;
+	min-width: 0;
 }
 #vassoura {
-	display:none;
+	flex: auto;
+}
+#vassoura2 {
+	display: none;
 }
 
 @media (max-width: 760px) {
@@ -45,14 +48,17 @@ footer {
 	#box-artigos {
 		display: flex;
 		flex-direction: column;
+		min-width: 0;
 	}
 	.figura {
 		margin: 0px;
 		padding: 0px;
 	}
 	#vassoura {
+		display: none;
+	}
+	#vassoura2 {
 		display: flex;
-		transform: rotate(0deg);
 		width: 100%;
 		height: auto;
 	}
