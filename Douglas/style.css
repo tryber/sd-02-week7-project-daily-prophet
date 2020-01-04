@@ -8,6 +8,7 @@ body {
   background-color: black;
   height: 100%;
   font-family: Lilita One , cursive;
+  justify-content: space-around;
 }
 
 h1 {
@@ -65,43 +66,14 @@ nav {
   display: inline;
 }
 
-#animaLua {
-  overflow: hidden;
-}
+@media ( max-width : 760px ) {
 
-#lua {
-  height: 90px;
-  position: absolute;
-  top: 0;
-  animation-delay: 3s;
-  animation-name: translating;
-  animation-duration: 5s;
-  animation-timing-function: ease-in;
-  animation-iteration-count: 3;
-  animation-direction: alternate;
-  animation-fill-mode: forwards;
-}
-
-#lua:hover {
-  animation-play-state: paused;
-}
-
-@media ( max-width : 760px ) and ( orientation : landscape ) {
-
-  #anuncio {
+  #anuncio, #video , #lua, #severoGif, #texto1 {
     display: none;
   }
 
-  #video {
-    display: none;
-  }
-
-  #lua {
-    height: 50px;
-  }
-
-  #severoGif {
-    display: none;
+  #containerAll {
+    align-items: center;
   }
 
   h1 {
@@ -116,7 +88,8 @@ nav {
 
   #lados {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    flex-direction: column;
   }
 
   #ladoEsquerdo {
@@ -138,7 +111,7 @@ nav {
   }
 
   #voldemortImagem {
-    max-width: 285px;
+    max-width: 95%;
     max-height: 247px;
     border: 1px solid black;
     align-self: flex-start;
@@ -146,6 +119,7 @@ nav {
 
   #asideTitle {
     font-size: 1.4em;
+    text-align: center;
   }
 
   #asideText {
@@ -159,21 +133,17 @@ nav {
 
   #container1 {
     justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
+}
 
-  @keyframes translating {
+@media ( max-width : 760px ) and ( orientation : landscape ) {
 
-    0% {
-      transform: translate( 0 , 0 );
-    }
-
-    50% {
-      transform: translate( 15em , 30em ) rotate( 360deg );
-    }
-
-    100% {
-      transform: translate( 31em , 0 );
-    }
+  #lados{
+    justify-content: space-between;
+    flex-direction: row;
   }
 }
 
@@ -183,13 +153,52 @@ nav {
     cursor: url( 'the-daily-prophet-cursor-wand.png' ), auto;
   }
 
+  #animaLua {
+    overflow: hidden;
+  }
+
+  #lua {
+    height: 90px;
+    position: absolute;
+    top: 0;
+    animation-delay: 3s;
+    animation-name: translating;
+    animation-duration: 5s;
+    animation-timing-function: ease-in;
+    animation-iteration-count: 3;
+    animation-direction: alternate;
+    animation-fill-mode: forwards;
+  }
+
+  #lua:hover {
+    animation-play-state: paused;
+  }
+
+  @keyframes translating {
+
+    0% {
+      transform: translate( 0 , 0 );
+    }
+
+    50% {
+      transform: translate( 30em , 30em ) rotate( 360deg );
+    }
+
+    100% {
+      transform: translate( 55em , 0 );
+    }
+  }
+
   #arrumaPropaganda {
     display: flex;
   }
 
   #anuncio {
+    position: absolute;
+    top: 250px;
+    left: 10px;
     color: white;
-    max-width: 100px;
+    max-width: 7%;
     border: solid white 1px;
     padding: 3px;
     animation-delay: 1s;
@@ -214,13 +223,16 @@ nav {
     cursor: pointer;
   }
 
+  .vassoura:hover {
+    cursor: pointer;
+  }
+
   #fuga {
     display: none;
   }
 
-  #vassoura {
-    height: 50px;
-    width: 100px;
+  .vassoura {
+    height: 100px;
   }
 
   p {
@@ -297,19 +309,8 @@ nav {
     cursor: pointer;
   }
 
-  @keyframes translating {
-
-    0% {
-      transform: translate( 0 , 0 );
-    }
-
-    50% {
-      transform: translate( 30em , 30em ) rotate( 360deg );
-    }
-
-    100% {
-      transform: translate( 55em , 0 );
-    }
+  #texto1 {
+    display: none;
   }
 
   .animaTexto {
@@ -323,7 +324,6 @@ nav {
     background-color: chartreuse;
     animation-name: negrito;
     animation-duration: 4s;
-    animation-fill-mode: forwards;
     animation-timing-function: linear;
   }
 
@@ -348,5 +348,46 @@ nav {
     100% {
       font-weight: 800;
     }
+  }
+  .voar {
+    transition-property: transform;
+    transition-duration: 2s;
+    transition-delay: 0, 0, ;
+    transition-timing-function: linear;
+    animation-name: voa;
+    animation-duration: 6s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+
+  }
+  @keyframes voa {
+    0% {
+      transform: scale( 1.0 , 1.0 ) translate( 0 , 0 ) rotate( 0 );
+    }
+
+    50% {
+      transform: scale( 2.0 , 2.0 ) translate( 30px , -50px ) rotate( 0);
+    }
+    75% {
+      transform: scale( 2.0 , 2.0 ) translate( 30px , -50px ) rotate( 360deg );
+    }
+
+    90% {
+      transform: scale( 2.0 , 2.0 ) translate( 30px , -50px ) rotate( 360deg ) skew(-20deg, -20deg);
+    }
+
+    100% {
+      transform: scale( 2.0 , 2.0 ) translate( 5000px , -5000px ) rotate( 360deg ) skew(-20deg, -20deg);
+    }
+  }
+
+@media ( min-width : 761px ) and ( max-width : 1000px ) {
+
+  #texto {
+    display: none;
+  }
+
+  #texto1 {
+    display: block;
   }
 }
