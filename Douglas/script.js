@@ -8,7 +8,7 @@ function vaiVassoura() {
     compra.style.display = 'none';
     novaMensagem.style.display = 'inline';
     anuncio.style.animationPlayState = 'paused';
-  },6000);
+  }, 6000);
 }
 compra.addEventListener('click', vaiVassoura);
 vassoura.addEventListener('click', vaiVassoura);

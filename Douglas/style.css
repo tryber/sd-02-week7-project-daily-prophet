@@ -351,7 +351,7 @@ nav {
   }
 
   .voar {
-    transition: transform linear 2s ;
+    transition: transform linear 2s;
     animation-name: voa;
     animation-duration: 6s;
     animation-timing-function: linear;
@@ -377,11 +377,11 @@ nav {
     }
 
     75% {
-      transform: scale( 2 , 2 ) translate( 30px , -15px ) skew(-20deg , -20deg ) ;
+      transform: scale( 2 , 2 ) translate( 30px , -15px ) skew( -20deg , -20deg );
     }
 
     100% {
-      transform: translate( 5000px , -5000px ) ;
+      transform: translate( 5000px , -5000px );
     }
   }
 }
