@@ -7,6 +7,27 @@ h1, h2, h3 {
 	margin: 0;
 	padding: 0;
 }
+
+header {
+	display: flex;
+	margin: 0px
+}
+
+#titulo {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+#titulo, #pomo-img {
+	flex-grow: 1;
+}
+
+#pomo-img {
+	max-width: 20%;
+	height: auto;
+}
+
 #secoes {
 	display: none;
 }
