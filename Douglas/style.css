@@ -31,10 +31,6 @@ h1 {
   border: 1px solid white;
 }
 
-head {
-  align-self: flex-start;
-}
-
 #divArticle {
   display: flex;
 }
@@ -68,7 +64,11 @@ nav {
 
 @media ( max-width : 760px ) {
 
-  #anuncio , #video , #lua , #severoGif , #texto1 {
+  #anuncio , #video , #lua , #severoGif , #texto1 , #estrela {
+    display: none;
+  }
+
+  .shield {
     display: none;
   }
 
@@ -145,6 +145,14 @@ nav {
     justify-content: space-between;
     flex-direction: row;
   }
+
+  #texto1 {
+    display: block;
+  }
+
+  #texto {
+    display: none;
+  }
 }
 
 @media ( min-width : 761px ) {
@@ -153,13 +161,57 @@ nav {
     cursor: url( 'the-daily-prophet-cursor-wand.png' ), auto;
   }
 
-  #animaLua {
+  #animaLua , #animaEstrela {
     overflow: hidden;
   }
 
-  #lua {
+  #lua , #estrela{
     height: 90px;
     position: absolute;
+  }
+
+  .shield {
+    top: 0;
+    animation-name: aparecer;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+  }
+
+  @keyframes aparecer {
+
+    0% {
+      opacity: 0;
+    }
+
+    100% {
+      opacity: 1;
+    }
+  }
+
+  #estrela {
+    right: 2%;
+    top: 1%;
+    animation-delay: 2s;
+    animation-name: rodear;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+  }
+
+  @keyframes rodear {
+
+    0% {
+      transform: rotate( 0 );
+    }
+
+    100% {
+      transform: rotate( 360deg );
+    }
+  }
+
+  #lua {
     top: 0;
     animation-delay: 3s;
     animation-name: translating;
@@ -185,7 +237,7 @@ nav {
     }
 
     100% {
-      transform: translate( 55em , 0 );
+      transform: translate( 58em , 0 );
     }
   }
 
@@ -244,7 +296,9 @@ nav {
   }
 
   h1 {
-    font-size: 3em;
+    font-size: 5em;
+    border: none;
+    align-self: center;
   }
 
   @keyframes corTitulo {
@@ -256,6 +310,12 @@ nav {
     to {
       background-color: black;
     }
+  }
+
+  header{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
   }
 
   #head {

@@ -10,5 +10,7 @@ function vaiVassoura() {
     anuncio.style.animationPlayState = 'paused';
   }, 6000);
 }
+let random= Math.random()*500;
+let random1= Math.random()*500;
 compra.addEventListener('click', vaiVassoura);
 vassoura.addEventListener('click', vaiVassoura);
