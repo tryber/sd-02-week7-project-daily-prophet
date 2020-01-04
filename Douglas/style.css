@@ -68,7 +68,7 @@ nav {
 
 @media ( max-width : 760px ) {
 
-  #anuncio, #video , #lua, #severoGif, #texto1 {
+  #anuncio , #video , #lua , #severoGif , #texto1 {
     display: none;
   }
 
@@ -141,7 +141,7 @@ nav {
 
 @media ( max-width : 760px ) and ( orientation : landscape ) {
 
-  #lados{
+  #lados {
     justify-content: space-between;
     flex-direction: row;
   }
@@ -223,16 +223,16 @@ nav {
     cursor: pointer;
   }
 
-  .vassoura:hover {
-    cursor: pointer;
-  }
-
   #fuga {
     display: none;
   }
 
   .vassoura {
     height: 100px;
+  }
+
+  .vassoura:hover {
+    cursor: pointer;
   }
 
   p {
@@ -349,43 +349,43 @@ nav {
       font-weight: 800;
     }
   }
+
   .voar {
-    transition-property: transform;
-    transition-duration: 2s;
-    transition-delay: 0, 0, ;
-    transition-timing-function: linear;
+    transition: transform linear 2s ;
     animation-name: voa;
     animation-duration: 6s;
     animation-timing-function: linear;
     animation-fill-mode: forwards;
-
   }
+
   @keyframes voa {
+
     0% {
-      transform: scale( 1.0 , 1.0 ) translate( 0 , 0 ) rotate( 0 );
+      transform: scale( 1 , 1 ) translate( 0 , 0 ) rotate( 0 );
     }
 
     30% {
-      transform: scale( 2.0 , 2.0 ) translate( 30px , -50px ) rotate( 0 );
+      transform: scale( 2 , 2 ) translate( 30px , -50px ) rotate( 0 );
     }
 
     50% {
-      transform: scale( 2.0 , 2.0 ) translate( 30px , -15px ) rotate( 0 );
+      transform: scale( 2 , 2 ) translate( 30px , -15px ) rotate( 0 );
     }
 
-    60%{
-      transform: scale( 2.0 , 2.0 ) translate( 30px , -15px ) rotate( 360deg );
+    60% {
+      transform: scale( 2 , 2 ) translate( 30px , -15px ) rotate( 360deg );
     }
 
     75% {
-      transform: scale( 2.0 , 2.0 ) translate( 30px , -15px ) rotate( 360deg ) skew(-20deg, -20deg);
+      transform: scale( 2 , 2 ) translate( 30px , -15px ) skew(-20deg , -20deg ) ;
     }
 
     100% {
-      transform: scale( 2.0 , 2.0 ) translate( 5000px , -5000px ) rotate( 360deg ) skew(-20deg, -20deg);
+      transform: translate( 5000px , -5000px ) ;
     }
   }
 }
+
 @media ( min-width : 761px ) and ( max-width : 1000px ) {
 
   #texto {
