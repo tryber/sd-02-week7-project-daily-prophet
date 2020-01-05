@@ -1,48 +1,42 @@
 * {
-	border: 1px solid red;
-}
-
-h1, h2, h3 {
-	text-align: center;
-	margin: 0;
-	padding: 10px;
+    border: 1px solid red;
 }
 
 header {
-	display: flex;
-	margin: 0px
+    display: flex;
+}
+
+#estrela {
+    align-self: center;
+    animation-name: aumenta-estrela;
+    animation-duration: 2s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
 }
 
 #titulo {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    align-self: center;
 }
 
-#titulo, #pomo-img {
-	flex-grow: 1;
+#titulo h1, h2 {
+    margin: 0;
+    padding: 0;
+    text-align: center;
 }
 
-#caixa-imagem {
-	overflow: auto;
-}
-
-#pomo-img {
-	max-width: 20%;
-	height: auto;
-	float: right;
-}
-
-.animacao-inicial {
-	animation-name: voa;
-	animation-duration: 3s;
-	animation-iteration-count: 3;
+.anima-pomo {
+    animation-name: inicial, desfoque;
+    animation-duration: 3s, 2s;
+    animation-iteration-count: 3, 1, 1;
     animation-direction: alternate;
 	animation-fill-mode: forwards;
 	overflow: hidden;
 }
 
-img:hover {
+#pomo:hover {
 	-webkit-animation-play-state:paused;
 	-moz-animation-play-state:paused;
 	-o-animation-play-state:paused;
@@ -50,46 +44,63 @@ img:hover {
 	cursor: pointer;
 }
 
-#secoes {
-	display: none;
+nav {
+    display: none;
 }
 
-#itens-artigos {
-	display: flex;
-	justify-content: space-between;
-	min-width: 2;
-}
-
-.manchete-texto {
-	margin: 0 10px; 
-}
-
-p.manchete-texto {
-	text-align: justify; 
-}
-
-/* p.manchete-texto::first-letter {
-	font-size: 3em; 
-} */
-
-footer { 
-	display: flex;
-	margin: 2px;
-}
-
-#vassoura2 {
-	display: flex;
-	width: 100%;
-	height: auto;
+#aside-section {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
 }
 
 .anima-vassoura {
-	animation: vassoura 5s linear;
+    background-color: blue;
+}
+
+#box-artigos {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+}
+
+aside {
+    display: flex;
+}
+
+#box-artigos img {
+    display: none;
+}
+
+.artigo {
+    margin-right: 10px;
+}
+
+.artigo p {
+    text-align: justify;
+}
+
+h3 {
+    text-align: center;
 }
 
 .cresce {
-	animation: scaling 4s linear;
+    animation-name: scale;
+    animation-duration: 4s;
+    animation-direction: alternate;
+    animation-iteration-count: 2;
+    font-weight: 400;
+    transition-property: font-weight;
+    transition-duration: 0.5s;
 }
+
+footer {
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    justify-content: center;
+}
+
 
 @media (max-width: 760px) {
 	* {
@@ -100,74 +111,91 @@ footer {
 		margin: 0px;
 	}
 
-	#secoes {
-		display: flex;
+	nav { 
+        display: flex;
 		justify-content: space-around;
 		flex-wrap: wrap;
-	}
+    }
 
-	footer {
-		flex-direction: row;
-		justify-content: center;
-	}
+    #estrela {
+        display: none;
+    }
 
-	footer p {
-		margin: 2px;
-	}
+    aside {
+        display: none;
+    }
 
-	#itens-artigos {
-		display: flex;
-		flex-direction: column;
-		min-width: 0;
-	}
+    #box-artigos {
+        flex-direction: column;
+    }
+    
+    #box-artigos img {
+        display: flex;
+	    width: 100%;
+	    height: auto;
+    }
 
-	.manchete-texto {
-		margin: 10px 0;
-		padding: 0;
-	}
+    .artigo {
+        margin-right: 2px;
+        margin-left: 2px;
+    }
 
-	.figura {
-		margin: 0px;
-		padding: 0px;
-	}
+    .cresce {
+        animation-name: scale;
+        animation-duration: 4s;
+        animation-direction: alternate;
+        animation-iteration-count: 2;
+        font-weight: 400;
+        overflow: hidden;
+    }
 
-	#vassoura {
-		display: none;
-	}
+    footer {
+        margin: auto;
+    }
 
+    footer p, a {
+        margin: 0px;
+    }
 }
 
-@keyframes voa {
-	0% {
-		margin-right: 100%;
-	}
-
-	60% {
-		margin-right: 60%;
-	}
-
-	100% {
-		margin-left:0%;
-	}
-}
-
-@keyframes vassoura {
-	0% {
-		transform: rotate(0deg) scale(1.0, 1.0);
-	}
-
-	50% {
-		transform: rotate(-90deg) scale(1.0, 1.0);
-
-	}
-
-	100% {
-		transform: rotate(-90deg) scale(2.0, 2.0);
-	}
-}
-
-@keyframes scaling {
+@keyframes inicial {
     0% {
-		transform: scale(1.0, 1.0);
-	}
+        transform: translate(0, 0);
+    }
+    60% {
+        transform: translate(-10%, 0);
+    }
+    100% {
+        transform: translate(-350%, 0);
+    }
+}
 
+@keyframes desfoque {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes scale {
+    0% {
+        transform: scale(1, 1);
+    }
+
+    100% {
+        transform: scale(1.5, 1.5);
+        font-weight: 700;
+    }
+}
+
+@keyframes aumenta-estrela {
+    0% {
+        transform: scale(1, 1);
+    }
+
+    100% {
+        transform: scale(1.5, 1.5);
+    }
+}

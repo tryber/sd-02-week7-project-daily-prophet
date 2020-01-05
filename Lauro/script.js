@@ -1,9 +1,12 @@
 window.addEventListener("load", AnimaInicial);
 
-let vassoura = document.getElementById('vassoura2');
+const vassoura = document.querySelector('.vassoura');
 
 function expandeArtigo () {
-	event.target.classList.toggle('cresce');
+    event.target.classList.add('cresce');
+    event.target.addEventListener('animationend', function () {
+        event.target.classList.remove('cresce');
+    })
 }
 
 vassoura.addEventListener('click', function () {
@@ -11,8 +14,8 @@ vassoura.addEventListener('click', function () {
 })
 
 function AnimaInicial() {
-	const pomo = document.getElementById('pomo-img');
+	const pomo = document.getElementById('pomo');
 	setTimeout(function() {
-		pomo.classList.add('animacao-inicial');
+		pomo.classList.add('anima-pomo');
 	}, 3000);
 }
