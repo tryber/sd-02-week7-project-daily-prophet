@@ -14,8 +14,8 @@ vassoura.addEventListener('click', function () {
 })
 
 function AnimaInicial() {
-	const pomo = document.getElementById('pomo');
-	setTimeout(function() {
+const pomo = document.getElementById('pomo');
+setTimeout(function() {
     pomo.classList.add('anima-pomo');
 }, 3000);
 }

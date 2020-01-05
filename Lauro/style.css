@@ -37,10 +37,10 @@ header {
 }
 
 #pomo:hover {
-  -webkit-animation-play-state:paused;
-  -moz-animation-play-state:paused;
-  -o-animation-play-state:paused;
-  animation-play-state:paused;
+  -webkit-animation-play-state: paused;
+  -moz-animation-play-state: paused;
+  -o-animation-play-state: paused;
+  animation-play-state: paused;
   cursor: pointer;
 }
 
@@ -55,7 +55,7 @@ nav {
 }
 
 .anima-vassoura {
-  animation-name: vassoura; 
+  animation-name: vassoura;
 }
 
 #box-artigos {
@@ -103,18 +103,18 @@ footer {
 
 
 @media (max-width: 760px) {
-	* {
-  border: 1px solid blue;
-	}
+* {
+    border: 1px solid blue;
+}
 
 	body {
-  margin: 0px;
+    margin: 0px;
 	}
 
 	nav { 
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
   }
 
   #estrela {
@@ -160,13 +160,13 @@ footer {
 
 @keyframes inicial {
     0% {
-      transform: translate(0, 0);
+      transform: translate(0 , 0);
     }
     60% {
-      transform: translate(-10%, 0);
+      transform: translate(-10% , 0);
     }
     100% {
-      transform: translate(-350%, 0);
+      transform: translate(-350% , 0);
     }
 }
 
@@ -181,21 +181,21 @@ footer {
 
 @keyframes scale {
     0% {
-      transform: scale(1, 1);
+      transform: scale(1 , 1);
     }
 
     100% {
-      transform: scale(1.5, 1.5);
+      transform: scale(1.5 , 1.5);
       font-weight: 700;
     }
 }
 
 @keyframes aumenta-estrela {
     0% {
-      transform: scale(1, 1);
+      transform: scale(1 , 1);
     }
 
     100% {
-      transform: scale(1.5, 1.5);
+      transform: scale(1.5 , 1.5);
     }
 }
