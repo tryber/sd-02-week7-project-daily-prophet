@@ -3,7 +3,8 @@ body {
   width: 100vw;
 }
 
-html, body {
+html,
+body {
   width: 100vw;
 }
 
@@ -51,7 +52,8 @@ a:hover {
   text-align: center;
 }
 
-article, h2 {
+article,
+h2 {
   margin-left: 3px;
 }
 
@@ -103,20 +105,11 @@ footer {
   }
 
   #hermione {
-    display: none;    
+    display: none;
   }
 
   #granger {
     width: 100%;
-  }
-
-  ul {
-    padding-top: 15px;
-    display: flex;
-    flex-flow: wrap;
-    justify-content: space-around;
-    list-style: inside;
-    list-style-type: none;
   }
 
   .weather-list {
@@ -161,28 +154,6 @@ footer {
     text-indent: 2em;
   }
 
-  @keyframes slidein {
-    from {
-      margin-left: 100%;
-      width: auto;
-    }
-
-    to {
-      margin-left: 0%;
-      width: auto;
-    }
-  }
-
-  ul {
-    padding-top: 15px;
-    display: flex;
-    flex-flow: wrap;
-    flex-direction: column;
-    justify-content: space-around;
-    list-style: inside;
-    list-style-type: none;
-  }
-
   .external-links {
     color: rgb(197, 197, 197);
     font-size: 20px;
@@ -206,21 +177,47 @@ footer {
     width: 30%;
   }
 
+  .weather-list {
+    padding: 0 8px 0 8px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+    align-items: baseline;
+  }
+
   .warm-numbers {
     font-size: 30px;
     font-weight: 700;
+    text-shadow: 3px 0 0px rgb(209, 134, 20);
   }
 
   .cold-numbers {
     font-size: 30px;
     font-weight: 700;
+    text-shadow: 3px 0 0px rgb(130, 209, 255);
   }
 
-  .cold-weather {
-    text-shadow: 0.1em 0.1em 0.2em rgb(75, 75, 75);
+#pomo {
+  animation-delay: 3s;
+  animation: pomofly 10s ease-in-out 3s forwards 3 ;
+  position: absolute;
+  top: 3%;
+  left: 3%;
+  visibility: hidden;
+}
+
+@keyframes pomofly {
+  0% {
+    border: 20px solid green;
+    visibility: unset;
   }
 
-  .warm-weather {
-    text-shadow: 0.1em 0.1em 0.2em rgb(209, 134, 20);
+  100% {
+    border: 20px solid red;
+    top: 30%;
+    left: 70%;
+    visibility: unset;
   }
+}
+
 }
