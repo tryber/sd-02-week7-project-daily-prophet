@@ -37,11 +37,11 @@ header {
 }
 
 #pomo:hover {
-	-webkit-animation-play-state:paused;
-	-moz-animation-play-state:paused;
-	-o-animation-play-state:paused;
-	animation-play-state:paused;
-	cursor: pointer;
+  -webkit-animation-play-state:paused;
+  -moz-animation-play-state:paused;
+  -o-animation-play-state:paused;
+  animation-play-state:paused;
+  cursor: pointer;
 }
 
 nav {
@@ -55,8 +55,7 @@ nav {
 }
 
 .anima-vassoura {
-  animation-name: vassoura;
-    
+  animation-name: vassoura; 
 }
 
 #box-artigos {
@@ -105,58 +104,58 @@ footer {
 
 @media (max-width: 760px) {
 	* {
-		border: 1px solid blue;
+  border: 1px solid blue;
 	}
 
 	body {
-		margin: 0px;
+  margin: 0px;
 	}
 
 	nav { 
-    display: flex;
-		justify-content: space-around;
-		flex-wrap: wrap;
-    }
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  }
 
-    #estrela {
-      display: none;
-    }
+  #estrela {
+  display: none;
+  }
 
-    aside {
-      display: none;
-    }
+  aside {
+  display: none;
+  }
 
-    #box-artigos {
-      flex-direction: column;
-    }
-    
-    #box-artigos img {
-      display: flex;
-	    width: 100%;
-	    height: auto;
-    }
+  #box-artigos {
+  flex-direction: column;
+  }
+  
+  #box-artigos img {
+  display: flex;
+  width: 100%;
+  height: auto;
+  }
 
-    .artigo {
-      margin-right: 2px;
-      margin-left: 2px;
-    }
+  .artigo {
+  margin-right: 2px;
+  margin-left: 2px;
+  }
 
-    .cresce {
-      animation-name: scale;
-      animation-duration: 4s;
-      animation-direction: alternate;
-      animation-iteration-count: 2;
-      font-weight: 400;
-      overflow: hidden;
-    }
+  .cresce {
+  animation-name: scale;
+  animation-duration: 4s;
+  animation-direction: alternate;
+  animation-iteration-count: 2;
+  font-weight: 400;
+  overflow: hidden;
+  }
 
-    footer {
-      margin: auto;
-    }
+  footer {
+  margin: auto;
+  }
 
-    footer p, a {
-      margin: 0px;
-    }
+  footer p, a {
+  margin: 0px;
+  }
 }
 
 @keyframes inicial {
