@@ -1,5 +1,7 @@
 const vassoura = document.querySelector('.vassoura');
 
+const vassouraMobile = document.querySelector('#vassoura-horiz');
+
 const art1 = document.getElementById('art1');
 
 const art2 = document.getElementById('art2');
@@ -16,13 +18,17 @@ function expandeArtigo() {
   });
 }
 
-vassoura.addEventListener('click', function () {
-  vassoura.classList.toggle('anima-vassoura');
-});
+vassoura.addEventListener('click', AnimaVassoura);
+
+vassouraMobile.addEventListener('click', AnimaVassoura);
+
+function AnimaVassoura() {
+ event.target.classList.toggle('anima-vassoura');
+}
 
 function AnimaInicial() {
   const pomo = document.getElementById('pomo');
-  setTimeout( function () {
+  setTimeout(function(){
     pomo.classList.add('anima-pomo');
   }, 3000);
 }
@@ -36,3 +42,5 @@ art2.addEventListener('click', expandeArtigo);
 art3.addEventListener('click', expandeArtigo);
 
 art4.addEventListener('click', expandeArtigo);
+
+vassoura.addEventListener('click', AnimaVassoura);

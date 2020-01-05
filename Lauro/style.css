@@ -52,7 +52,10 @@ nav {
 }
 
 .anima-vassoura {
+  overflow: hidden;
   animation-name: vassoura;
+  animation-duration: 5s;
+  animation-fill-mode: forwards;
 }
 
 #box-artigos {
@@ -150,6 +153,13 @@ footer {
     margin-top: 0;
     margin-bottom: 0;
   }
+
+  .anima-vassoura {
+    overflow: hidden;
+    animation-name: vassoura-mobile;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+  }
 }
 
 @keyframes inicial {
@@ -199,4 +209,44 @@ footer {
   100% {
     transform: scale( 1.5 , 1.5 );
   }
+}
+
+@keyframes vassoura {
+
+  0% {
+		transform: rotate( 0deg );
+	}
+
+	50% {
+		transform: rotate( 360deg ) translate( 0, -30% );
+
+  }
+  
+  60% {
+    transform: skew( -45deg );
+  }
+
+	100% {
+		transform: translate( 800px , -10000px ) skew( -45deg );
+	}
+}
+
+@keyframes vassoura-mobile {
+
+  0% {
+		transform: rotate( 0deg );
+	}
+
+	50% {
+		transform: rotate( -80deg ) translate( 0, -30% );
+
+  }
+  
+  60% {
+    transform: rotate( -80deg ) skew( -60deg );
+  }
+
+	100% {
+		transform: translate( 800px , -10000px );
+	}
 }
