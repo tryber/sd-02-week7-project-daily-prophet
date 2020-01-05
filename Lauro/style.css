@@ -5,7 +5,7 @@
 h1, h2, h3 {
 	text-align: center;
 	margin: 0;
-	padding: 0;
+	padding: 10px;
 }
 
 header {
@@ -23,64 +23,151 @@ header {
 	flex-grow: 1;
 }
 
+#caixa-imagem {
+	overflow: auto;
+}
+
 #pomo-img {
 	max-width: 20%;
 	height: auto;
+	float: right;
+}
+
+.animacao-inicial {
+	animation-name: voa;
+	animation-duration: 3s;
+	animation-iteration-count: 3;
+    animation-direction: alternate;
+	animation-fill-mode: forwards;
+	overflow: hidden;
+}
+
+img:hover {
+	-webkit-animation-play-state:paused;
+	-moz-animation-play-state:paused;
+	-o-animation-play-state:paused;
+	animation-play-state:paused;
+	cursor: pointer;
 }
 
 #secoes {
 	display: none;
 }
-.manchete-texto {
-	padding: 0;
-	margin: 0; 
+
+#itens-artigos {
+	display: flex;
+	justify-content: space-between;
+	min-width: 2;
 }
+
+.manchete-texto {
+	margin: 0 10px; 
+}
+
+p.manchete-texto {
+	text-align: justify; 
+}
+
+/* p.manchete-texto::first-letter {
+	font-size: 3em; 
+} */
+
 footer { 
 	display: flex;
 	margin: 2px;
 }
-#box-artigos {
-	display: flex;
-	min-width: 0;
-}
-#vassoura {
-	flex: auto;
-}
+
 #vassoura2 {
-	display: none;
+	display: flex;
+	width: 100%;
+	height: auto;
+}
+
+.anima-vassoura {
+	animation: vassoura 5s linear;
+}
+
+.cresce {
+	animation: scaling 4s linear;
 }
 
 @media (max-width: 760px) {
 	* {
 		border: 1px solid blue;
 	}
+
+	body {
+		margin: 0px;
+	}
+
 	#secoes {
 		display: flex;
 		justify-content: space-around;
 		flex-wrap: wrap;
 	}
+
 	footer {
 		flex-direction: row;
 		justify-content: center;
 	}
+
 	footer p {
 		margin: 2px;
 	}
-	#box-artigos {
+
+	#itens-artigos {
 		display: flex;
 		flex-direction: column;
 		min-width: 0;
 	}
+
+	.manchete-texto {
+		margin: 10px 0;
+		padding: 0;
+	}
+
 	.figura {
 		margin: 0px;
 		padding: 0px;
 	}
+
 	#vassoura {
 		display: none;
 	}
-	#vassoura2 {
-		display: flex;
-		width: 100%;
-		height: auto;
+
+}
+
+@keyframes voa {
+	0% {
+		margin-right: 100%;
+	}
+
+	60% {
+		margin-right: 60%;
+	}
+
+	100% {
+		margin-left:0%;
 	}
 }
+
+@keyframes vassoura {
+	0% {
+		transform: rotate(0deg) scale(1.0, 1.0);
+	}
+
+	50% {
+		transform: rotate(-90deg) scale(1.0, 1.0);
+
+	}
+
+	100% {
+		transform: rotate(-90deg) scale(2.0, 2.0);
+	}
+}
+
+@keyframes scaling {
+    0% {
+		transform: scale(1.0, 1.0);
+	}
+
