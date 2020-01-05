@@ -12,13 +12,16 @@
     <title>Daily Prophet</title>
 </head>
 
-<body>
+<body class="rel-anim">
+    <div class="pomo-animation w-25">
+        <img class="w-100" src="imagens/pomo.webp">
+    </div>
     <main class="bg-color">
         <header>
             <nav class="navbar">
                 <hr class="top-line">
                 <div class="logo-img">
-                    <h1 class="para-cego-ver" id="topo">The Daily Prophet</h1>
+                    <h1 class="para-cego-ver" id="topo">Daily Prophet</h1>
                     <div class="logo-shield">
                         <img class="w-100" src="imagens/logo-shield.png" alt="Shield">
                     </div>
@@ -28,21 +31,30 @@
                     </div>
                 </div>
                 <hr class="bottom-line">
-                <ul class="navbar-ulist">
+                <div class="alinha-menu">
+                    <p class="menu-helper">Clique para abrir o menu</p>
+                    <div class="animated-menu">
+                        <div class="bar1"></div>
+                        <div class="bar2"></div>
+                        <div class="bar3"></div>
+                    </div>
+                </div>
+                <ul class="navbar-ulist hide">
                     <li><a href="#">Home</a></li>
                     <li><a href="#">Quidditch</a></li>
                     <li><a href="#">Star Letter</a></li>
-                    <li><a href="#">Classified Advertisements</a></li>
-                    <li><a href="#">Fiendishly Difficult Crossword</a></li>
+                    <li><a href="#">Advertisements</a></li>
+                    <li><a href="#">Crosswords</a></li>
                 </ul>
             </nav>
         </header>
         <section class="container-leads">
             <article class="daily-comp">
+                
                 <span class="daily-comp-l1">THE DAILY PROPHET COMPETITION</span>
                 <span class="daily-comp-l2">********* WIN A NIGHT IN</span>
-                <span class="daily-comp-l3">TRANSYLVANIA</span>
-                <button class="daily-comp-button">Page 5 for more details</span>
+                TRANSYLVANIA
+                <button class="daily-comp-button">Page 5 for more details</button>
             </article>
             <article class="national-weather">
                 <span class="national-weather-title">National Weather</span><br>
@@ -55,19 +67,17 @@
             <article class="zodiac-lorem">
                 <span class="national-weather-title">Zodiac Lorem</span><br>
                 Zodiac signs are associated with the twelve signs of the zodiac, which, according to astrology, can
-                represent twelve basic personality types. So finding your zodiac signs and figure it out its meaning can
-                help understand your business, friendships, dating etc. Astrology of different traditions may use
-                different ways of calculating.
+                represent twelve basic personality types.
             </article>
         </section>
         <section class="container-main">
             <span class="text-over-border text-over-border-l1">Boy who lived boy who lies?</span>
             <span class="text-over-border text-over-border-r1">Boy who lived boy who lies?</span>
             <article class="w-70">
-                <span class="main-lead">THE BOY WHO LIVED</span>
+                <p class="main-lead">THE BOY WHO LIVED</p>
                 <article class="boy-who-lived">
-                    <div class="flex-col-30">
-                        <div class="main-lead-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque eget
+                    <div class="flex-col-1">
+                        <div class="main-lead-1 first-letter">A Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque eget
                             volutpat metus.
                             Nunc egestas mauris sed nisi ultricies semper. Etiam facilisis nulla ut nisi sollicitudin,
                             nec
@@ -89,7 +99,7 @@
                             tempor sagittis. Suspendisse venenatis tristique odio, in luctus erat lobortis bibendum.
                         </div>
                     </div>
-                    <div class="flex-col-70">
+                    <div class="flex-col-2">
                         <div class="main-lead-2">Nulla a auctor dolor, ac accumsan enim. Nam eget justo lectus. Sed
                             mattis
                             metus in cursus dapibus. Nulla mattis risus in turpis dignissim fringilla. Donec quis
@@ -105,7 +115,7 @@
                             sagittis
                             libero, congue consectetur diam. Maecenas suscipit viverra mollis.</div>
                         <div class="main-img">
-                            <img class="w-100" src="imagens/potter.gif">
+                            <img class="w-100" src="imagens/potter.gif" alt="Harry Potter">
                         </div>
                         <div class="main-lead-3">
                             <p>
@@ -132,9 +142,20 @@
                         </div>
                     </div>
                 </article>
-                <article class="bc">Buy a Nimbus</article>
+                <article class="mr-1e">
+                    <h2 class="broom-lead">
+                        NEW YEAR, BROOM4U
+                    </h2>
+                    <p class="broom-lead-1">Have you known the pinnacle of brooms? The newest and improved Firebolt
+                        Supreme? These beauties
+                        (os beasts) can go from 0 to 240km/h in less than ten seconds and now they're the best and
+                        fastest broom in the world, forget Nimbus' series and go get your own!</p>
+                    <div class="broom-animation broom-img">
+                        <img class="w-100" src="imagens/firebolt.png" alt="firebolt broom">
+                    </div>
+                </article>
             </article>
-            <aside class="aside-rita-article">
+            <aside class="aside-article">
                 <div class="mb-2e">
                     <h2 class="aside-title">Rita Skeeter reports</h2>
                     <hr>
@@ -143,21 +164,12 @@
                         occaecati cupiditate non provident.</p>
                     <p>Similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et
                         harum
-                        quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est
-                        eligendi
-                        optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas
-                        assumenda est, omnis dolor repellendus.</p>
+                        quidem rerum facilis est et expedita distinctio.</p>
                     <p>Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et
                         voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a
                         sapiente
                         delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus
                         asperiores repellat.</p>
-                    <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur
-                        magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem
-                        ipsum
-                        quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora
-                        incidunt ut
-                        labore et dolore magnam aliquam quaerat voluptatem.</p>
                     <p>Corrupti quos dolores.</p>
                 </div>
                 <div class="mb-2e">
@@ -168,13 +180,7 @@
                         metus. Nunc egestas mauris sed nisi ultricies semper. Etiam facilisis nulla ut nisi
                         sollicitudin,
                         nec consectetur velit convallis. Quisque sit amet urna consectetur, consectetur nibh in, porta
-                        justo. Mauris laoreet semper posuere. Duis eget orci quis ex pretium pretium. Morbi dictum
-                        tellus
-                        dapibus lorem accumsan condimentum. Fusce dapibus lectus et orci placerat, sit amet condimentum
-                        ligula elementum. Donec ligula ligula, eleifend in turpis id, suscipit dapibus lectus. Aliquam
-                        vehicula nisi ac massa ornare, vitae euismod lacus sodales. Sed eu eros et leo congue bibendum
-                        et
-                        vitae libero. In euismod quis tortor vel semper.</p>
+                        justo. Mauris laoreet semper posuere.</p>
 
                     <p>Nulla a auctor dolor, ac accumsan enim. Nam eget justo lectus. Sed mattis metus in cursus
                         dapibus.
@@ -183,27 +189,23 @@
                         molestie. Integer ultricies faucibus massa, ut vehicula tellus mollis consectetur. Aliquam eget
                         ullamcorper justo. Pellentesque laoreet arcu vestibulum, imperdiet erat vitae, condimentum
                         mauris.
-                        Integer in ante venenatis eros pellentesque efficitur ac a ligula. Maecenas placerat orci sed
-                        elit
-                        vestibulum, vitae eleifend mauris tristique. Sed sit amet sagittis libero, congue consectetur
-                        diam.
                         Maecenas suscipit viverra mollis.</p>
                 </div>
             </aside>
         </section>
+        <footer class="rodape">
+            <hr>
+            <h3 class="texto-rodape">
+                Projeto da 7a. Semana - Profeta Diário - Johnatas Henrique
+            </h3>
+            <p class="texto-rodape">
+                <strong>#vqv #goTrybe</strong> -
+                <a class="voltar-topo" href="#topo">
+                    Voltar ao Topo
+                </a>
+            </p>
+        </footer>
     </main>
-    <footer class="rodape">
-        <hr>
-        <h3 class="texto-rodape">
-            Projeto da 7a. Semana - Profeta Diário - Johnatas Henrique
-        </h3>
-        <p class="texto-rodape">
-            <strong>#vqv #goTrybe</strong> -
-            <a class="voltar-topo" href="#topo">
-                Voltar ao Topo
-            </a>
-        </p>
-    </footer>
     </div>
 
     <script src="js/script.js"></script>

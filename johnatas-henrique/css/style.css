@@ -9,19 +9,27 @@
   src: url(../fonts/mariage.ttf);
 }
 
+@font-face {
+  font-family: Impacts;
+  src: url(../fonts/impact.ttf);
+}
+
 body {
   background-color: black;
   font-family: 'Vollkorn', serif;
   font-size: 16px;
 }
 
+li {
+  list-style-type: none;
+}
+
 a {
-  font-size: 0.8em;
   text-decoration: none;
 }
 
 p {
-    margin-bottom: 0.5em;
+  margin-bottom: 0.5em;
 }
 
 a,
@@ -35,6 +43,55 @@ a:hover {
   color: white;
   padding: 0.25em;
   border-radius: 0.5em;
+}
+
+.rel-anim {
+  position: relative;
+}
+
+.alinha-menu {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.menu-helper {
+  font-size: 4vw;
+  font-family: 'Impacts', sans-serif;
+  margin-right: 0.5em;
+}
+
+.animated-menu {
+  display: inline-block;
+  cursor: pointer;
+}
+
+.bar1,
+.bar2,
+.bar3 {
+  width: 2.5em;
+  height: 0.3em;
+  background-color: black;
+  margin: 0.4em 0;
+  transition: 0.4s;
+}
+
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+  transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.change .bar2 {
+  opacity: 0;
+}
+
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-8px, -8px);
+}
+
+.hide {
+  display: none;
 }
 
 .para-cego-ver {
@@ -55,11 +112,21 @@ a:hover {
 }
 
 .mb-2e {
-    margin-bottom: 2em;
+  margin-bottom: 2em;
 }
+
+.mr-1e {
+  margin-right: 1em;
+}
+
+.w-25 {
+  width: 25%;
+}
+
 .w-70 {
-    width: 70%;
-  }
+  width: 70%;
+}
+
 .w-100 {
   width: 100%;
 }
@@ -70,25 +137,27 @@ a:hover {
   border-radius: 1em;
   padding: 0.5em;
   width: 98%;
-  max-width: 64em;
 }
 
 .navbar {
   width: 100%;
-  padding-top: 1.25em;
+  padding-top: 5vw;
 }
 
 .navbar-ulist {
-  display: flex;
-  justify-content: center;
-  font-family: 'Impact', 'Kreon', serif;
+  font-family: 'Impacts', serif;
   text-transform: uppercase;
   margin-bottom: 0.5em;
 }
 
 .navbar-ulist li {
-  margin: 0 0.25em;
-  display: inline-block;
+  margin: 0.25em 0;
+  text-align: center;
+  border-bottom: 1px solid black;
+}
+
+.navbar-ulist a {
+  font-size: 6vw;
 }
 
 .logo-img {
@@ -139,25 +208,25 @@ a:hover {
 .daily-comp {
   background-color: black;
   color: white;
-  width: 31%;
+  width: 32%;
   font-family: 'Kreon', serif;
-  text-align: justify;
-  padding-bottom: 0.4em;
+  text-align: center;
+  padding: 0.4em;
   position: relative;
+  font-size: 3vw;
+  font-family: 'Rokkitt', serif;
 }
 
 .daily-comp-l1 {
-  font-size: 1.8vw;
+  font-size: 2.5vw;
+  text-align: center;
+  display: block;
 }
 
 .daily-comp-l2 {
-  font-size: 2.6vw;
+  display: block;
+  font-size: 2.1vw;
   font-weight: 700;
-}
-
-.daily-comp-l3 {
-  font-size: 3vw;
-  font-family: 'Rokkitt', serif;
 }
 
 .daily-comp-button {
@@ -169,19 +238,15 @@ a:hover {
   border: none;
   position: absolute;
   right: 1vw;
-}
-
-.rodape {
-  font-size: 0.8em;
-  margin-bottom: 2.5em;
+  bottom: 2vw;
 }
 
 .national-weather {
-  width: 19%;
+  width: 34%;
   margin-left: 0.625em;
   text-align: justify;
   padding-bottom: 0.4em;
-  font-size: 2vw;
+  font-size: 3vw;
   font-family: 'Mariage', cursive;
 }
 
@@ -189,17 +254,16 @@ a:hover {
   display: inline-block;
   width: 100%;
   text-align: center;
-  font-weight: 700;
-  font-size: 1.7vw;
-  font-family: 'Impact', 'Kreon', sans-serif;
+  font-size: 4vw;
+  font-family: 'Impacts', sans-serif;
 }
 
 .zodiac-lorem {
-  width: 45%;
+  width: 34%;
   margin-left: 0.625em;
   text-align: justify;
   padding-bottom: 0.4em;
-  font-size: 2vw;
+  font-size: 3vw;
   font-family: 'Mariage', cursive;
 }
 
@@ -222,45 +286,56 @@ a:hover {
 
 .text-over-border-l1 {
   left: -7.8em;
-  top: 15em;
+  top: 70vw;
 }
 
 .text-over-border-r1 {
-  right: -7.8em;
-  top: 15em;
+  right: -7.9em;
+  top: 40vw;
+}
+
+.flex-col-1 {
+  flex: 40%;
+  max-width: 40%;
+}
+
+.flex-col-2 {
+  flex: 60%;
+  max-width: 60%;
+  padding: 0 0.75em 0 0.5em;
 }
 
 .boy-who-lived {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
-  margin-right: 1em;
 }
 
-.aside-rita-article {
+.aside-article {
   width: 30%;
-  margin: 0.625em 1em 1.25em 0;
+  padding: 0.625em 0.75em 1.25em 0;
   text-align: justify;
   padding-bottom: 0.4em;
-  font-size: 2vw;
+  font-size: 3vw;
   font-family: 'Mariage', cursive;
 }
 
 .aside-title {
   background-color: black;
   color: white;
-  padding: 1em;
+  padding: 1em 0.1em;
+  font-size: 6vw;
   text-align: center;
 }
 
 .first-letter {
-    margin-top: 0.75em;
+  padding-top: 0.75em;
 }
 
 .first-letter:first-letter {
   text-transform: capitalize;
   font-size: 4em;
-  margin: 0.15em 0.3em 0.25em 0.1em;
+  margin: 0 0.3em 0 0;
   padding: 0.2em 0.1em 0.1em 0.2em;
   float: left;
   font-weight: 700;
@@ -269,32 +344,59 @@ a:hover {
 
 .main-lead {
   font-size: 8vw;
-  font-family: 'Impact', 'Kreon', sans-serif;
+  font-family: 'Impacts', sans-serif;
   text-align: center;
-  font-weight: 700;
-  margin: 0.625em 0 1.25em 0.25em;
+  margin: 0;
   width: 100%;
 }
 
 .main-lead-1 {
-  margin: 0.625em 0 1.25em 1.5em;
+  padding: 0.625em 0 1.25em 1.5em;
   text-align: justify;
   padding-bottom: 0.4em;
-  font-size: 2vw;
+  font-size: 3vw;
   font-family: 'Mariage', cursive;
 }
 
-.main-lead-2 , .main-lead-3 {
-  margin: 0.625em 0 0 0.25em;
+.main-lead-2,
+.main-lead-3 {
+  padding: 0.625em 0 0 0.25em;
   text-align: justify;
   padding-bottom: 0.4em;
-  font-size: 2vw;
+  font-size: 3vw;
   font-family: 'Mariage', cursive;
-  column-count: 2;
+
 }
 
 .main-img {
-    margin: 0.625em 0 0 0.25em;
+  padding: 0.625em 0 0 0.25em;
+}
+
+.broom-lead {
+  font-size: 6vw;
+  font-family: 'Impacts', sans-serif;
+  text-align: center;
+  font-weight: 400;
+  padding: 0;
+  width: 100%;
+}
+
+.broom-lead-1 {
+  padding: 0.625em 0 1.25em 1.5em;
+  text-align: justify;
+  padding-bottom: 0.4em;
+  font-size: 3vw;
+  font-family: 'Mariage', cursive;
+}
+
+.broom-img {
+  width: 60%;
+  padding: 0 auto;
+}
+
+.rodape {
+  font-size: 0.8em;
+  margin-bottom: 2.5em;
 }
 
 .texto-rodape {
@@ -302,22 +404,119 @@ a:hover {
   margin-top: 0.25em;
 }
 
-.break-column {
-  flex-basis: 100%;
-  width: 0;
+.pomo-animation {
+  position: absolute;
+  transform: translate(-12%, 47%);
+  z-index: 3;
+  cursor: pointer;
+  animation: pomo 10s linear 3s 3 alternate forwards;
+  }
+  .pomo-animation:hover{
+    animation-play-state:paused;
+    cursor: pointer;
+  }
+  
+  @keyframes pomo {
+    0% {
+      transform: translate(-12%, 47%);
+    }
+    45% {
+      transform: translate(255%, 93%);
+    }
+    50% {
+      transform: translate(284%, 88%);
+    }
+    60% {
+      transform: translate(322%, 51%);
+    }
+    75% {
+      transform: translate(331%, -21%);
+    }
+    87.5% {
+      transform: translate(155%, -3%);
+    }
+    93% {
+      transform: translate(224%, 7%);
+    }
+    100% {
+      transform: translate(241%, -17%);
+    }
 }
 
-.flex-col-30{
-    flex: 30%;
-    max-width: 36%;
+.broom-animation {
+  cursor: pointer;
+  animation: broom 10s linear 3s 3 alternate forwards;
 }
 
-.flex-col-70{
-    flex: 60%;
-    margin: 0 0.75em;
-    max-width: 64%;
+@keyframes broom {
+  0% {
+    transform: translate(-12%, 47%);
+  }
+  45% {
+    transform: translate(255%, 93%);
+  }
+  50% {
+    transform: translate(284%, 88%);
+  }
+  60% {
+    transform: translate(322%, 51%);
+  }
+  75% {
+    transform: translate(331%, -21%);
+  }
+  87.5% {
+    transform: translate(155%, -3%);
+  }
+  93% {
+    transform: translate(224%, 7%);
+  }
+  100% {
+    transform: translate(241%, -17%);
+  }
 }
 
-.bc {
-  outline: 5px solid red;
+@media screen and (min-width: 761px) {
+
+  .alinha-menu {
+    display: none;
+  }
+
+  .navbar-ulist {
+    display: flex;
+    justify-content: center;
+    margin-top: 0.5em;
+  }
+
+  .navbar-ulist li {
+    margin: 0 0.25em;
+    display: inline-block;
+    border-bottom: none;
+  }
+
+  .navbar-ulist a {
+    font-size: 3vw;
+  }
+
+  .flex-col-1 {
+    flex: 35%;
+    max-width: 35%;
+  }
+
+  .flex-col-2 {
+    flex: 65%;
+    max-width: 65%;
+  }
+
+  .main-lead-1 {
+    padding-left: 0.75em;
+  }
+  
+  .main-lead-2,
+  .main-lead-3 {
+    column-count: 2;
+  }
+
+  .broom-lead-1 {
+    padding-left: 0.75em;
+  }
 }
