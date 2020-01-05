@@ -1,5 +1,14 @@
 const vassoura = document.querySelector('.vassoura');
 
+const art1 = document.getElementById('art1');
+
+const art2 = document.getElementById('art2');
+
+const art3 = document.getElementById('art3');
+
+const art4 = document.getElementById('art4');
+
+
 function expandeArtigo() {
   event.target.classList.add('cresce');
   event.target.addEventListener('animationend', function () {
@@ -19,3 +28,11 @@ function AnimaInicial() {
 }
 
 window.addEventListener('load', AnimaInicial);
+
+art1.addEventListener('click', expandeArtigo);
+
+art2.addEventListener('click', expandeArtigo);
+
+art3.addEventListener('click', expandeArtigo);
+
+art4.addEventListener('click', expandeArtigo);
