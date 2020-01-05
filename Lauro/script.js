@@ -18,17 +18,13 @@ function expandeArtigo() {
   });
 }
 
-vassoura.addEventListener('click', AnimaVassoura);
-
-vassouraMobile.addEventListener('click', AnimaVassoura);
-
 function AnimaVassoura() {
- event.target.classList.toggle('anima-vassoura');
+  event.target.classList.toggle('anima-vassoura');
 }
 
 function AnimaInicial() {
   const pomo = document.getElementById('pomo');
-  setTimeout(function(){
+  setTimeout (function() {
     pomo.classList.add('anima-pomo');
   }, 3000);
 }
@@ -44,3 +40,5 @@ art3.addEventListener('click', expandeArtigo);
 art4.addEventListener('click', expandeArtigo);
 
 vassoura.addEventListener('click', AnimaVassoura);
+
+vassouraMobile.addEventListener('click', AnimaVassoura);
