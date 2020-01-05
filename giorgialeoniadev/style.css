@@ -18,7 +18,7 @@ body {
   width: 100vw;
 }
 
-a {
+.external-links {
   text-decoration: none;
   color: white;
   margin: 0 8px 0 8px;
@@ -127,6 +127,23 @@ footer {
   .external-links {
     color: rgb(197, 197, 197);
   }
+
+  #pomo {
+    display: none;
+  }
+
+  #broom {
+    width: 200px;
+    position: relative;
+  }
+
+  .ads {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+    background-color: rgb( 206, 168, 33 );
+  }
+
 }
 
 @media (min-width: 761px) {
@@ -178,7 +195,7 @@ footer {
   }
 
   .weather-list {
-    padding: 0 8px 0 8px;
+    padding: 0 8px 8px 8px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 10px;
@@ -199,8 +216,10 @@ footer {
 
 #pomo {
   animation-delay: 3s;
-  animation: pomofly 10s ease-in-out 3s forwards 3 ;
+  animation: pomofly 10s ease-in-out 3s 3 alternate forwards;
   position: absolute;
+  width: 250px;
+  height: 250px;
   top: 3%;
   left: 3%;
   visibility: hidden;
@@ -208,16 +227,23 @@ footer {
 
 @keyframes pomofly {
   0% {
-    border: 20px solid green;
     visibility: unset;
   }
 
   100% {
-    border: 20px solid red;
     top: 30%;
     left: 70%;
     visibility: unset;
   }
+}
+
+#pomo:hover {
+  animation-play-state: paused;
+}
+
+#broom {
+  width: 150px;
+  height: 150px;
 }
 
 }
