@@ -1,0 +1,221 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+  font-family: 'Vollkorn', serif;
+  font-size: 16px;
+}
+
+a {
+  font-size: 0.8em;
+  text-decoration: none;
+}
+
+a,
+a:visited {
+  color: black;
+  font-weight: 700;
+}
+
+a:hover {
+  background-color: black;
+  color: white;
+  padding: 0.25em;
+  border-radius: 0.5em;
+}
+
+.para-cego-ver {
+  border: 0;
+  clip: rect(0 0 0 0);
+  clip-path: polygon(0 0, 0 0, 0 0);
+  height: 0.1em;
+  margin: -0.1em;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 0.1em;
+}
+
+.fw-b{
+    font-weight: 700;
+}
+
+.w-100{
+    width: 100%;
+}
+
+.bg-color {
+  background-color: rgb(255, 248, 238);
+  margin: 1em auto;
+  border-radius: 1em;
+  padding: 0.5em;
+  width: 98%;
+  max-width: 64em;
+}
+
+.navbar {
+  width: 100%;
+  padding-top: 1.25em;
+}
+
+.navbar-ulist {
+  display: flex;
+  justify-content: center;
+  font-family: 'Kreon', serif;
+  text-transform: uppercase;
+  margin-bottom: 0.5em;
+}
+
+.navbar-ulist li {
+  margin: 0 0.25em;
+  display: inline-block;
+}
+
+.logo-img {
+  display: flex;
+  justify-content: center;
+  margin-top: -3%;
+  padding-bottom: 0.25em;
+}
+
+.logo-shield {
+  width: 15.625%;
+}
+
+.logo-escrito {
+  width: 83.875%;
+  z-index: 2;
+}
+
+.top-line {
+  border: none;
+  border-top: 0.1875em solid rgb(28, 25, 21);
+  border-bottom: 0.0625em solid rgb(28, 25, 21);
+  box-sizing: unset;
+  height: 0.125em;
+}
+
+.bottom-line {
+  border: none;
+  border-top: 0.0625em solid rgb(29, 26, 22);
+  border-bottom: 0.1875em solid rgb(28, 25, 21);
+  box-sizing: unset;
+  height: 0.125em;
+}
+
+.under-img{
+    text-align: center;
+    font-family: 'Kreon', serif;
+    font-size: 1.6vw;
+    font-weight: bold;
+    letter-spacing: 0.3125em;
+}
+
+.container-leads {
+  display: flex;
+  margin-bottom: 0.5em;
+}
+
+.daily-comp {
+    background-color: black;
+    color: white;
+    width: 31%;
+    font-family: 'Kreon', serif;
+    text-align: justify;
+    padding-bottom: 0.4em;
+    position: relative;
+}
+
+.daily-comp-l1 {
+    font-size: 1.8vw;
+}
+
+.daily-comp-l2 {
+    font-size: 2.6vw;
+    font-weight: 700;
+}
+
+.daily-comp-l3 {
+    font-size: 3vw;
+    font-family: 'Rokkitt', serif;
+}
+
+.daily-comp-button {
+    width: 5vw;
+    font-size: 1vw;
+    font-weight: 700;
+    background-color: black;
+    color: white;
+    border: none;
+    position: absolute;
+    right: 1vw;
+}
+
+.rodape {
+  font-size: 0.8em;
+  margin-bottom: 2.5em;
+}
+
+.national-weather {
+    width: 14%;
+    margin-left: 0.625em;
+    text-align: justify;
+    padding-bottom: 0.4em;
+    font-size: 0.55em;
+    font-family: 'MathJax_Fraktur', cursive;
+}
+
+.national-weather-title {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    font-weight: 700;
+    font-size: 1.7vw;
+    font-family: 'Impact', 'Arial Narrow', Arial, sans-serif;
+}
+
+.zodiac-lorem {
+    width: 55%;
+    margin-left: 0.625em;
+    text-align: justify;
+    padding-bottom: 0.4em;
+    font-size: 0.55em;
+    font-family: 'MathJax_Fraktur', cursive;
+}
+
+.container-main {
+    display: flex;
+    border: 2px solid black;
+    position: relative;
+  }
+
+  .text-over-border{
+    background: rgb(255, 248, 238);
+    font-family: 'Kreon', serif;
+    font-weight: 700;
+    line-height: 1.5vw;
+    padding: 0 0.5em;
+    position: absolute;
+    text-transform: uppercase;
+    transform: rotateZ(90deg);
+}
+
+.text-over-border-l1{
+    left: -7.8em;
+    top: 15em;
+    }
+
+.text-over-border-r1{
+    right: -7.8em;
+    top: 15em;
+}
+
+.texto-rodape {
+  text-align: center;
+  margin-top: 0.25em;
+}
