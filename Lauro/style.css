@@ -98,17 +98,13 @@ footer {
   justify-content: center;
 }
 
-@media (max-width: 760px) {
+@media ( max-width : 760px ) {
 
   * {
     border: 1px solid blue;
   }
 
-  body {
-    margin: 0px;
-  }
-
-  nav { 
+  nav {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
@@ -151,7 +147,8 @@ footer {
   }
 
   footer p , a {
-    margin: 0px;
+    margin-top: 0px;
+    margin-bottom: 0;
   }
 }
 
