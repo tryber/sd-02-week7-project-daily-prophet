@@ -12,6 +12,9 @@ body {
   align-items: center;
 }
 
+.clear {
+  clear: both;
+}
 
 .jornal {
   background-color: rgb(225, 225, 221);
@@ -35,19 +38,32 @@ header #dailyprophet {
 
 .blocoItensNavBar {
   margin: 10px 0 30px;
+  background-color: gray;
 }
 
 .itensNavBar {
   display: inline-block;
+  background-color: rgb(92, 91, 91);
+ 
 }
 
-ol li {
+li {
   font-size: 40px;
+  display: none;
 }
 
 ol {
   display: flex;
   justify-content: space-around;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+a:hover {
+  color: greenyellow;
 }
 
 .para-cego-ver {
@@ -63,28 +79,33 @@ ol {
   width: 1px;
 }
 
-article {
-  width: 65%;
-  margin: 0;
+.container-pai {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
 }
 
-article.container {
+article {
+  margin: 0;
+  box-sizing: border-box;
   display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
   width: 70%;
 }
 
-.container-pai {
-  display: flex;
-  flex-direction: row;
+.container1 {
+  width: 40%;
+}
+
+.container2-pai {
+  box-sizing: border-box;
+  width: 60%;
 }
 
 .container2 {
   border-left: 1px solid grey;
-  padding: 5px;
-  height: 1000px;
-  text-align: center;
+  height: 100%;
+  margin-left: 5%;
 }
 
 img#malfoy {
@@ -103,47 +124,60 @@ img#albus {
 }
 
 img#bellatrix {
-  width: 500px;
-  margin-right: 150px;
+  width: 100%;
   border-radius: 10%;
   filter: grayscale(100%);
 }
 
 p.texto-section {
   font-size: 1.2em;
-  width: 400px;
-  text-align: left;
+  width: 100%;
+  text-align: justify;
 }
 
 p.texto-section3 {
-  font-size: 2em;
-  width: 500px;
-  
-
+  font-size: 2.3em;
+  width: 100%;
+  text-align: center;
 }
 
 h3 {
   font-size: 2em;
+  text-align: center;
 }
 
 hr {
-  width: 90%;
+  width: 98%;
   margin: 20px 0;
 }
 
-section {
-  width: 500px;
-}
 
 .publicidade {
   width: 30%;
-  background-color: blue;
-  border: 10px solid yellow;
+  border: 1px solid gray;
+  display: flex;
+  flex-direction: column;
+}
+
+div.container-nimbus {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+#nimbus {
+  width: 100%;
+  margin-top: 50px;
+}
+
+p.texto-pub {
+  font-size: 2.2em;
+  padding: 10px;
 }
 
 .blocoFooter {
   display: flex;
   justify-content: center;
   align-content: center;
-
+  margin-top: 2%;
 }
