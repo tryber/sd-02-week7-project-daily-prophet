@@ -10,6 +10,19 @@ body {
   justify-content: center;
   align-content: center;
   align-items: center;
+  box-sizing: border-box;
+}
+
+.pegadas-pai {
+  width: 5%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+
+}
+
+#pegadas {
+  width: 100%;
 }
 
 .clear {
