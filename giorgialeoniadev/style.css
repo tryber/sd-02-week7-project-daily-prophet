@@ -1,5 +1,6 @@
 body {
-  background-image: url(/imgs/texture.jpg);
+  background-color: white;
+  width: 100vw;
 }
 
 html, body {
@@ -50,10 +51,21 @@ a:hover {
   text-align: center;
 }
 
+article, h2 {
+  margin-left: 3px;
+}
+
 .text {
   text-align: justify;
   padding: 4px 8px;
   text-indent: 1em;
+}
+
+
+.weather-text {
+  text-indent: 1em;
+  margin-right: 10px;
+  text-align: justify;
 }
 
 footer {
@@ -107,16 +119,16 @@ footer {
     list-style-type: none;
   }
 
-  #weather {
-    text-align: justify;
+  .weather-list {
+    padding: 0 8px 0 8px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
   }
 
-  .cold-weather {
-    text-shadow: 0.1em 0.1em 0.2em rgb(75, 75, 75);
-  }
-
-  .warm-wheater {
-    text-shadow: 0.1em 0.1em 0.2em rgb(218, 141, 27);
+  .weather-text {
+    margin-left: 7px;
+    margin-bottom: 10px;
   }
 
   .external-links {
@@ -182,7 +194,7 @@ footer {
     align-items: flex-start;
     justify-content: space-between;
     position: relative;
-    width: 70%;
+    width: 65%;
   }
 
   #wheather-container {
@@ -192,12 +204,6 @@ footer {
     position: absolute;
     justify-content: space-between;
     width: 30%;
-  }
-
-  .weather-text {
-    text-indent: 1em;
-    padding: 0 5pc 0 5px;
-    text-align: justify;
   }
 
   .warm-numbers {
@@ -214,7 +220,7 @@ footer {
     text-shadow: 0.1em 0.1em 0.2em rgb(75, 75, 75);
   }
 
-  .warm-wheater {
-    text-shadow: 0.1em 0.1em 0.2em rgb(218, 141, 27);
+  .warm-weather {
+    text-shadow: 0.1em 0.1em 0.2em rgb(209, 134, 20);
   }
 }
