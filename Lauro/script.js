@@ -24,7 +24,7 @@ function AnimaVassoura() {
 
 function AnimaInicial() {
   const pomo = document.getElementById('pomo');
-  setTimeout (function() {
+  setTimeout(function () {
     pomo.classList.add('anima-pomo');
   }, 3000);
 }
