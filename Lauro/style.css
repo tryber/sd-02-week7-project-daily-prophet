@@ -1,39 +1,39 @@
 * {
-    border: 1px solid red;
+  border: 1px solid red;
 }
 
 header {
-    display: flex;
+  display: flex;
 }
 
 #estrela {
-    align-self: center;
-    animation-name: aumenta-estrela;
-    animation-duration: 2s;
-    animation-direction: alternate;
-    animation-iteration-count: infinite;
+  align-self: center;
+  animation-name: aumenta-estrela;
+  animation-duration: 2s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
 }
 
 #titulo {
-    display: flex;
-    flex-direction: column;
-    flex-grow: 1;
-    align-self: center;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  align-self: center;
 }
 
 #titulo h1, h2 {
-    margin: 0;
-    padding: 0;
-    text-align: center;
+  margin: 0;
+  padding: 0;
+  text-align: center;
 }
 
 .anima-pomo {
-    animation-name: inicial, desfoque;
-    animation-duration: 3s, 2s;
-    animation-iteration-count: 3, 1, 1;
-    animation-direction: alternate;
-	animation-fill-mode: forwards;
-	overflow: hidden;
+  animation-name: inicial, desfoque;
+  animation-duration: 3s, 2s;
+  animation-iteration-count: 3, 1, 1;
+  animation-direction: alternate;
+  animation-fill-mode: forwards;
+  overflow: hidden;
 }
 
 #pomo:hover {
@@ -45,60 +45,61 @@ header {
 }
 
 nav {
-    display: none;
+  display: none;
 }
 
 #aside-section {
-    display: flex;
-    justify-content: space-around;
-    flex-direction: row;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
 }
 
 .anima-vassoura {
-    background-color: blue;
+  animation-name: vassoura;
+    
 }
 
 #box-artigos {
-    display: flex;
-    flex-direction: row;
-    align-items: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
 }
 
 aside {
-    display: flex;
+  display: flex;
 }
 
 #box-artigos img {
-    display: none;
+  display: none;
 }
 
 .artigo {
-    margin-right: 10px;
+  margin-right: 10px;
 }
 
 .artigo p {
-    text-align: justify;
+  text-align: justify;
 }
 
 h3 {
-    text-align: center;
+  text-align: center;
 }
 
 .cresce {
-    animation-name: scale;
-    animation-duration: 4s;
-    animation-direction: alternate;
-    animation-iteration-count: 2;
-    font-weight: 400;
-    transition-property: font-weight;
-    transition-duration: 0.5s;
+  animation-name: scale;
+  animation-duration: 4s;
+  animation-direction: alternate;
+  animation-iteration-count: 2;
+  font-weight: 400;
+  transition-property: font-weight;
+  transition-duration: 0.5s;
 }
 
 footer {
-    display: flex;
-    flex-direction: row;
-    align-self: center;
-    justify-content: center;
+  display: flex;
+  flex-direction: row;
+  align-self: center;
+  justify-content: center;
 }
 
 
@@ -112,90 +113,90 @@ footer {
 	}
 
 	nav { 
-        display: flex;
+    display: flex;
 		justify-content: space-around;
 		flex-wrap: wrap;
     }
 
     #estrela {
-        display: none;
+      display: none;
     }
 
     aside {
-        display: none;
+      display: none;
     }
 
     #box-artigos {
-        flex-direction: column;
+      flex-direction: column;
     }
     
     #box-artigos img {
-        display: flex;
+      display: flex;
 	    width: 100%;
 	    height: auto;
     }
 
     .artigo {
-        margin-right: 2px;
-        margin-left: 2px;
+      margin-right: 2px;
+      margin-left: 2px;
     }
 
     .cresce {
-        animation-name: scale;
-        animation-duration: 4s;
-        animation-direction: alternate;
-        animation-iteration-count: 2;
-        font-weight: 400;
-        overflow: hidden;
+      animation-name: scale;
+      animation-duration: 4s;
+      animation-direction: alternate;
+      animation-iteration-count: 2;
+      font-weight: 400;
+      overflow: hidden;
     }
 
     footer {
-        margin: auto;
+      margin: auto;
     }
 
     footer p, a {
-        margin: 0px;
+      margin: 0px;
     }
 }
 
 @keyframes inicial {
     0% {
-        transform: translate(0, 0);
+      transform: translate(0, 0);
     }
     60% {
-        transform: translate(-10%, 0);
+      transform: translate(-10%, 0);
     }
     100% {
-        transform: translate(-350%, 0);
+      transform: translate(-350%, 0);
     }
 }
 
 @keyframes desfoque {
     0% {
-        opacity: 0;
+      opacity: 0;
     }
     100% {
-        opacity: 1;
+      opacity: 1;
     }
 }
 
 @keyframes scale {
     0% {
-        transform: scale(1, 1);
+      transform: scale(1, 1);
     }
 
     100% {
-        transform: scale(1.5, 1.5);
-        font-weight: 700;
+      transform: scale(1.5, 1.5);
+      font-weight: 700;
     }
 }
 
 @keyframes aumenta-estrela {
     0% {
-        transform: scale(1, 1);
+      transform: scale(1, 1);
     }
 
     100% {
-        transform: scale(1.5, 1.5);
+      transform: scale(1.5, 1.5);
     }
 }
