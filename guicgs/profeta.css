@@ -153,3 +153,67 @@ a {
 a:hover {
   text-decoration: underline;
 }
+
+/* animação pássaro */
+.bird {
+  background-image: url(http://www.iamramraj.com/demo/Flying_birds_CSS_animation_examples/bird-cells.svg);
+  background-size: auto 100%;
+  width: 88px;
+  height: 125px;
+  animation-name: fly-cycle;
+  animation-timing-function: steps(10);
+  animation-iteration-count: 13;
+}
+
+.bird-one {
+  animation-duration: 1s;
+  animation-delay: -0.5s;
+}
+
+.bird-container {
+  position: absolute;
+  top: 10%;
+  left: 50rem;
+  transform: scale(0);
+  animation-name: fly-right-one;
+  animation-timing-function: linear;
+  animation-iteration-count: 3;
+  animation-fill-mode: forwards;
+  animation-direction: alternate;
+}
+
+.bird-container-one {
+  animation-duration: 3s;
+  animation-delay: 3s;
+}
+
+/* .bird-rotate {
+  animation-name: fly-cycle-invert;
+  animation-delay: 6s;
+  animation-timing-function: linear;
+  animation-iteration-count: 1;
+}
+
+@keyframes fly-cycle-invert {
+  100% {
+    transform: rotate(180deg);
+  }
+} */
+
+@keyframes fly-cycle {
+  100% {
+      background-position: -900px 0;
+  }
+}
+
+@keyframes fly-right-one {
+  from {
+    margin-left: -10rem;
+    transform: scale(0.6);
+  }
+
+  to {
+    margin-left: 25rem;
+    transform: translateY(0vh) scale(0.6);
+  }
+}
