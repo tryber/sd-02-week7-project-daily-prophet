@@ -1,5 +1,6 @@
-* {
-  border: 1px solid red;
+body {
+  font-family: 'Raleway', sans-serif;
+  background-image: url(http://api.thumbr.it/whitenoise-361x370.png?background=ffffffff&noise=5c5c5c&density=13&opacity=62);
 }
 
 header {
@@ -102,10 +103,6 @@ footer {
 }
 
 @media ( max-width : 760px ) {
-
-  * {
-    border: 1px solid blue;
-  }
 
   nav {
     display: flex;
