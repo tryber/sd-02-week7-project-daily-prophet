@@ -21,7 +21,7 @@ header {
   align-self: center;
 }
 
-#titulo h1, h2 {
+#titulo h1 , h2 {
   margin: 0;
   padding: 0;
   text-align: center;
@@ -37,9 +37,6 @@ header {
 }
 
 #pomo:hover {
-  -webkit-animation-play-state: paused;
-  -moz-animation-play-state: paused;
-  -o-animation-play-state: paused;
   animation-play-state: paused;
   cursor: pointer;
 }
@@ -101,101 +98,108 @@ footer {
   justify-content: center;
 }
 
-
 @media (max-width: 760px) {
-* {
+
+  * {
     border: 1px solid blue;
-}
+  }
 
-	body {
+  body {
     margin: 0px;
-	}
+  }
 
-	nav { 
+  nav { 
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
   }
 
   #estrela {
-  display: none;
+    display: none;
   }
 
   aside {
-  display: none;
+    display: none;
   }
 
   #box-artigos {
-  flex-direction: column;
+    flex-direction: column;
   }
-  
+
   #box-artigos img {
-  display: flex;
-  width: 100%;
-  height: auto;
+    display: flex;
+    width: 100%;
+    height: auto;
   }
 
   .artigo {
-  margin-right: 2px;
-  margin-left: 2px;
+    margin-right: 2px;
+    margin-left: 2px;
   }
 
   .cresce {
-  animation-name: scale;
-  animation-duration: 4s;
-  animation-direction: alternate;
-  animation-iteration-count: 2;
-  font-weight: 400;
-  overflow: hidden;
+    animation-name: scale;
+    animation-duration: 4s;
+    animation-direction: alternate;
+    animation-iteration-count: 2;
+    font-weight: 400;
+    overflow: hidden;
   }
 
   footer {
-  margin: auto;
+    margin: auto;
   }
 
-  footer p, a {
-  margin: 0px;
+  footer p , a {
+    margin: 0px;
   }
 }
 
 @keyframes inicial {
-    0% {
-      transform: translate(0 , 0);
-    }
-    60% {
-      transform: translate(-10% , 0);
-    }
-    100% {
-      transform: translate(-350% , 0);
-    }
+
+  0% {
+    transform: translate( 0 , 0 );
+  }
+
+  60% {
+    transform: translate( -10% , 0 );
+  }
+
+  100% {
+    transform: translate( -350% , 0 );
+  }
 }
 
 @keyframes desfoque {
-    0% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 1;
-    }
+
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
 }
 
 @keyframes scale {
-    0% {
-      transform: scale(1 , 1);
-    }
 
-    100% {
-      transform: scale(1.5 , 1.5);
-      font-weight: 700;
-    }
+  0% {
+    transform: scale( 1 , 1 );
+  }
+
+  100% {
+    transform: scale( 1.5 , 1.5 );
+    font-weight: 700;
+  }
 }
 
 @keyframes aumenta-estrela {
-    0% {
-      transform: scale(1 , 1);
-    }
 
-    100% {
-      transform: scale(1.5 , 1.5);
-    }
+  0% {
+    transform: scale( 1 , 1 );
+  }
+
+  100% {
+    transform: scale( 1.5 , 1.5 );
+  }
 }
