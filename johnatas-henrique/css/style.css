@@ -4,6 +4,11 @@
   box-sizing: border-box;
 }
 
+@font-face {
+  font-family: Mariage;
+  src: url(../fonts/mariage.ttf);
+}
+
 body {
   background-color: black;
   font-family: 'Vollkorn', serif;
@@ -13,6 +18,10 @@ body {
 a {
   font-size: 0.8em;
   text-decoration: none;
+}
+
+p {
+    margin-bottom: 0.5em;
 }
 
 a,
@@ -41,12 +50,18 @@ a:hover {
   width: 0.1em;
 }
 
-.fw-b{
-    font-weight: 700;
+.fw-b {
+  font-weight: 700;
 }
 
-.w-100{
-    width: 100%;
+.mb-2e {
+    margin-bottom: 2em;
+}
+.w-70 {
+    width: 70%;
+  }
+.w-100 {
+  width: 100%;
 }
 
 .bg-color {
@@ -66,7 +81,7 @@ a:hover {
 .navbar-ulist {
   display: flex;
   justify-content: center;
-  font-family: 'Kreon', serif;
+  font-family: 'Impact', 'Kreon', serif;
   text-transform: uppercase;
   margin-bottom: 0.5em;
 }
@@ -108,12 +123,12 @@ a:hover {
   height: 0.125em;
 }
 
-.under-img{
-    text-align: center;
-    font-family: 'Kreon', serif;
-    font-size: 1.6vw;
-    font-weight: bold;
-    letter-spacing: 0.3125em;
+.under-img {
+  text-align: center;
+  font-family: 'Kreon', serif;
+  font-size: 1.6vw;
+  font-weight: bold;
+  letter-spacing: 0.3125em;
 }
 
 .container-leads {
@@ -122,38 +137,38 @@ a:hover {
 }
 
 .daily-comp {
-    background-color: black;
-    color: white;
-    width: 31%;
-    font-family: 'Kreon', serif;
-    text-align: justify;
-    padding-bottom: 0.4em;
-    position: relative;
+  background-color: black;
+  color: white;
+  width: 31%;
+  font-family: 'Kreon', serif;
+  text-align: justify;
+  padding-bottom: 0.4em;
+  position: relative;
 }
 
 .daily-comp-l1 {
-    font-size: 1.8vw;
+  font-size: 1.8vw;
 }
 
 .daily-comp-l2 {
-    font-size: 2.6vw;
-    font-weight: 700;
+  font-size: 2.6vw;
+  font-weight: 700;
 }
 
 .daily-comp-l3 {
-    font-size: 3vw;
-    font-family: 'Rokkitt', serif;
+  font-size: 3vw;
+  font-family: 'Rokkitt', serif;
 }
 
 .daily-comp-button {
-    width: 5vw;
-    font-size: 1vw;
-    font-weight: 700;
-    background-color: black;
-    color: white;
-    border: none;
-    position: absolute;
-    right: 1vw;
+  width: 5vw;
+  font-size: 1vw;
+  font-weight: 700;
+  background-color: black;
+  color: white;
+  border: none;
+  position: absolute;
+  right: 1vw;
 }
 
 .rodape {
@@ -162,60 +177,147 @@ a:hover {
 }
 
 .national-weather {
-    width: 14%;
-    margin-left: 0.625em;
-    text-align: justify;
-    padding-bottom: 0.4em;
-    font-size: 0.55em;
-    font-family: 'MathJax_Fraktur', cursive;
+  width: 19%;
+  margin-left: 0.625em;
+  text-align: justify;
+  padding-bottom: 0.4em;
+  font-size: 2vw;
+  font-family: 'Mariage', cursive;
 }
 
 .national-weather-title {
-    display: inline-block;
-    width: 100%;
-    text-align: center;
-    font-weight: 700;
-    font-size: 1.7vw;
-    font-family: 'Impact', 'Arial Narrow', Arial, sans-serif;
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  font-weight: 700;
+  font-size: 1.7vw;
+  font-family: 'Impact', 'Kreon', sans-serif;
 }
 
 .zodiac-lorem {
-    width: 55%;
-    margin-left: 0.625em;
-    text-align: justify;
-    padding-bottom: 0.4em;
-    font-size: 0.55em;
-    font-family: 'MathJax_Fraktur', cursive;
+  width: 45%;
+  margin-left: 0.625em;
+  text-align: justify;
+  padding-bottom: 0.4em;
+  font-size: 2vw;
+  font-family: 'Mariage', cursive;
 }
 
 .container-main {
-    display: flex;
-    border: 2px solid black;
-    position: relative;
-  }
-
-  .text-over-border{
-    background: rgb(255, 248, 238);
-    font-family: 'Kreon', serif;
-    font-weight: 700;
-    line-height: 1.5vw;
-    padding: 0 0.5em;
-    position: absolute;
-    text-transform: uppercase;
-    transform: rotateZ(90deg);
+  display: flex;
+  border: 2px solid black;
+  position: relative;
 }
 
-.text-over-border-l1{
-    left: -7.8em;
-    top: 15em;
-    }
+.text-over-border {
+  background: rgb(255, 248, 238);
+  font-family: 'Kreon', serif;
+  font-weight: 700;
+  line-height: 1.5vw;
+  padding: 0 0.5em;
+  position: absolute;
+  text-transform: uppercase;
+  transform: rotateZ(90deg);
+}
 
-.text-over-border-r1{
-    right: -7.8em;
-    top: 15em;
+.text-over-border-l1 {
+  left: -7.8em;
+  top: 15em;
+}
+
+.text-over-border-r1 {
+  right: -7.8em;
+  top: 15em;
+}
+
+.boy-who-lived {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: 1em;
+}
+
+.aside-rita-article {
+  width: 30%;
+  margin: 0.625em 1em 1.25em 0;
+  text-align: justify;
+  padding-bottom: 0.4em;
+  font-size: 2vw;
+  font-family: 'Mariage', cursive;
+}
+
+.aside-title {
+  background-color: black;
+  color: white;
+  padding: 1em;
+  text-align: center;
+}
+
+.first-letter {
+    margin-top: 0.75em;
+}
+
+.first-letter:first-letter {
+  text-transform: capitalize;
+  font-size: 4em;
+  margin: 0.15em 0.3em 0.25em 0.1em;
+  padding: 0.2em 0.1em 0.1em 0.2em;
+  float: left;
+  font-weight: 700;
+  text-shadow: 3px 0 0px rgb(175, 124, 13);
+}
+
+.main-lead {
+  font-size: 8vw;
+  font-family: 'Impact', 'Kreon', sans-serif;
+  text-align: center;
+  font-weight: 700;
+  margin: 0.625em 0 1.25em 0.25em;
+  width: 100%;
+}
+
+.main-lead-1 {
+  margin: 0.625em 0 1.25em 1.5em;
+  text-align: justify;
+  padding-bottom: 0.4em;
+  font-size: 2vw;
+  font-family: 'Mariage', cursive;
+}
+
+.main-lead-2 , .main-lead-3 {
+  margin: 0.625em 0 0 0.25em;
+  text-align: justify;
+  padding-bottom: 0.4em;
+  font-size: 2vw;
+  font-family: 'Mariage', cursive;
+  column-count: 2;
+}
+
+.main-img {
+    margin: 0.625em 0 0 0.25em;
 }
 
 .texto-rodape {
   text-align: center;
   margin-top: 0.25em;
+}
+
+.break-column {
+  flex-basis: 100%;
+  width: 0;
+}
+
+.flex-col-30{
+    flex: 30%;
+    max-width: 36%;
+}
+
+.flex-col-70{
+    flex: 60%;
+    margin: 0 0.75em;
+    max-width: 64%;
+}
+
+.bc {
+  outline: 5px solid red;
 }
