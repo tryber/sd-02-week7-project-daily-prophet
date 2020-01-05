@@ -114,20 +114,19 @@ footer {
     background-size: auto 100%;
     width: 350px;
     height: 500px;
-    will-change: background-position;
 
     animation-name: fly-cycle;
     animation-duration: 2s;
-    animation-delay: -0.5s;
+    animation-delay: 3s;
     animation-timing-function: steps(10);
     animation-iteration-count: infinite;
   }
 
-  .bird-container {    
+  .bird-container {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%,-80%);
   }
 
   @keyframes fly-cycle {
