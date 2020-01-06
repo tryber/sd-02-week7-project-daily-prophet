@@ -6,17 +6,17 @@
 
 @font-face {
   font-family: Mariage;
-  src: url(../fonts/mariage.ttf);
+  src: url( '../fonts/mariage.ttf' );
 }
 
 @font-face {
   font-family: Impacts;
-  src: url(../fonts/impact.ttf);
+  src: url( '../fonts/impact.ttf' );
 }
 
 body {
   background-color: black;
-  font-family: 'Vollkorn', serif;
+  font-family: Vollkorn , serif;
   font-size: 16px;
   overflow-x: hidden;
 }
@@ -33,7 +33,7 @@ p {
   margin-bottom: 0.5em;
 }
 
-a,
+a ,
 a:visited {
   color: black;
   font-weight: 700;
@@ -58,7 +58,7 @@ a:hover {
 
 .menu-helper {
   font-size: 4vw;
-  font-family: 'Impacts', sans-serif;
+  font-family: Impacts , sans-serif;
   margin-right: 0.5em;
 }
 
@@ -67,8 +67,8 @@ a:hover {
   cursor: pointer;
 }
 
-.bar1,
-.bar2,
+.bar1 ,
+.bar2 ,
 .bar3 {
   width: 2.5em;
   height: 0.3em;
@@ -78,8 +78,7 @@ a:hover {
 }
 
 .change .bar1 {
-  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
-  transform: rotate(-45deg) translate(-9px, 6px);
+  transform: rotate( -45deg ) translate( -9px , 6px );
 }
 
 .change .bar2 {
@@ -87,8 +86,7 @@ a:hover {
 }
 
 .change .bar3 {
-  -webkit-transform: rotate(45deg) translate(-8px, -8px);
-  transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate( 45deg ) translate( -8px , -8px );
 }
 
 .hide {
@@ -97,8 +95,8 @@ a:hover {
 
 .para-cego-ver {
   border: 0;
-  clip: rect(0 0 0 0);
-  clip-path: polygon(0 0, 0 0, 0 0);
+  clip: rect( 0 0 0 0 );
+  clip-path: polygon( 0 0 , 0 0 , 0 0 );
   height: 0.1em;
   margin: -0.1em;
   overflow: hidden;
@@ -137,7 +135,7 @@ a:hover {
 }
 
 .bg-color {
-  background-color: rgb(255, 248, 238);
+  background-color: rgb( 255 , 248 , 238 );
   margin: 1em auto;
   border-radius: 1em;
   padding: 0.5em;
@@ -150,7 +148,7 @@ a:hover {
 }
 
 .navbar-ulist {
-  font-family: 'Impacts', serif;
+  font-family: Impacts , serif;
   text-transform: uppercase;
   margin-bottom: 0.5em;
 }
@@ -183,26 +181,26 @@ a:hover {
 
 .top-line {
   border: none;
-  border-top: 0.1875em solid rgb(28, 25, 21);
-  border-bottom: 0.0625em solid rgb(28, 25, 21);
+  border-top: 0.188em solid rgb( 28 , 25 , 21 );
+  border-bottom: 0.063em solid rgb( 28 , 25 , 21 );
   box-sizing: unset;
   height: 0.125em;
 }
 
 .bottom-line {
   border: none;
-  border-top: 0.0625em solid rgb(29, 26, 22);
-  border-bottom: 0.1875em solid rgb(28, 25, 21);
+  border-top: 0.063em solid rgb( 29 , 26 , 22 );
+  border-bottom: 0.188em solid rgb( 28 , 25 , 21 );
   box-sizing: unset;
   height: 0.125em;
 }
 
 .under-img {
   text-align: center;
-  font-family: 'Kreon', serif;
+  font-family: 'Kreon' , serif;
   font-size: 1.6vw;
-  font-weight: bold;
-  letter-spacing: 0.3125em;
+  font-weight: 700;
+  letter-spacing: 0.313em;
 }
 
 .container-leads {
@@ -218,7 +216,7 @@ a:hover {
   padding: 0.4em;
   position: relative;
   font-size: 3vw;
-  font-family: 'Rokkitt', serif;
+  font-family: Rokkitt , serif;
 }
 
 .daily-comp-l1 {
@@ -251,7 +249,7 @@ a:hover {
   text-align: justify;
   padding-bottom: 0.4em;
   font-size: 3vw;
-  font-family: 'Mariage', cursive;
+  font-family: Mariage , cursive;
 }
 
 .national-weather-title {
@@ -259,7 +257,7 @@ a:hover {
   width: 100%;
   text-align: center;
   font-size: 4vw;
-  font-family: 'Impacts', sans-serif;
+  font-family: Impacts , sans-serif;
 }
 
 .zodiac-lorem {
@@ -268,7 +266,7 @@ a:hover {
   text-align: justify;
   padding-bottom: 0.4em;
   font-size: 3vw;
-  font-family: 'Mariage', cursive;
+  font-family: Mariage , cursive;
 }
 
 .container-main {
@@ -278,14 +276,14 @@ a:hover {
 }
 
 .text-over-border {
-  background: rgb(255, 248, 238);
-  font-family: 'Kreon', serif;
+  background: rgb( 255 , 248 , 238 );
+  font-family: Kreon , serif;
   font-weight: 700;
   line-height: 1.5vw;
   padding: 0 0.5em;
   position: absolute;
   text-transform: uppercase;
-  transform: rotateZ(90deg);
+  transform: rotateZ( 90deg );
 }
 
 .text-over-border-l1 {
@@ -321,7 +319,7 @@ a:hover {
   text-align: justify;
   padding-bottom: 0.4em;
   font-size: 3vw;
-  font-family: 'Mariage', cursive;
+  font-family: Mariage , cursive;
 }
 
 .aside-title {
@@ -343,12 +341,12 @@ a:hover {
   padding: 0.2em 0.1em 0.1em 0.2em;
   float: left;
   font-weight: 700;
-  text-shadow: 3px 0 0px rgb(175, 124, 13);
+  text-shadow: 3px 0 0px rgb( 175 , 124 , 13 );
 }
 
 .main-lead {
   font-size: 8vw;
-  font-family: 'Impacts', sans-serif;
+  font-family: Impacts , sans-serif;
   text-align: center;
   margin: 0;
   width: 100%;
@@ -359,16 +357,16 @@ a:hover {
   text-align: justify;
   padding-bottom: 0.4em;
   font-size: 3vw;
-  font-family: 'Mariage', cursive;
+  font-family: Mariage , cursive;
 }
 
-.main-lead-2,
+.main-lead-2 ,
 .main-lead-3 {
-  padding: 0.625em 0.25em 0 0.25em;
+  padding: 0.625em 0.25em 0;
   text-align: justify;
   padding-bottom: 0.4em;
   font-size: 3vw;
-  font-family: 'Mariage', cursive;
+  font-family: Mariage , cursive;
 
 }
 
@@ -378,7 +376,7 @@ a:hover {
 
 .broom-lead {
   font-size: 6vw;
-  font-family: 'Impacts', sans-serif;
+  font-family: Impacts , sans-serif;
   text-align: center;
   font-weight: 400;
   padding: 0;
@@ -390,13 +388,13 @@ a:hover {
   text-align: justify;
   padding-bottom: 0.4em;
   font-size: 3vw;
-  font-family: 'Mariage', cursive;
+  font-family: Mariage , cursive;
 }
 
 .broom-img {
   width: 60%;
   cursor: pointer;
-  transform: rotate(45deg);
+  transform: rotate( 45deg );
   margin: 0 auto;
 }
 
@@ -412,7 +410,7 @@ a:hover {
 
 .pomo-animation {
   position: absolute;
-  transform: translate(241%, -17%);
+  transform: translate( 241% , -17% );
   z-index: 3;
   cursor: pointer;
 }
@@ -421,199 +419,203 @@ a:hover {
   position: absolute;
   left: 46%;
   top: 2.6%;
-  transform: rotateZ(45deg);
+  transform: rotateZ( 45deg );
   z-index: 3;
   cursor: pointer;
 }
 
-@media screen and (max-width: 760px) and (orientation: landscape) {
+@media screen and ( max-width : 760px ) and ( orientation : landscape ) {
 
-  .daily-comp,
-  .daily-comp-button,
+  .daily-comp ,
+  .daily-comp-button ,
   .aside-title {
     background-color: brown;
   }
 
-  .pomo-animation,
+  .pomo-animation ,
   .star-animation {
     display: none;
   }
 }
 
-  @media screen and (min-width: 761px) {
+@media screen and ( min-width : 761px ) {
 
-    .alinha-menu {
-      display: none;
+  .alinha-menu {
+    display: none;
+  }
+
+  .navbar-ulist {
+    display: flex;
+    justify-content: center;
+    margin-top: 0.5em;
+  }
+
+  .navbar-ulist li {
+    margin: 0 0.75em;
+    display: inline-block;
+    border-bottom: none;
+  }
+
+  .navbar-ulist a {
+    font-size: 3vw;
+  }
+
+  .flex-col-1 {
+    flex: 35%;
+    max-width: 35%;
+  }
+
+  .flex-col-2 {
+    flex: 65%;
+    max-width: 65%;
+  }
+
+  .main-lead-1 {
+    padding-left: 0.75em;
+  }
+
+  .main-lead-2 ,
+  .main-lead-3 {
+    column-count: 2;
+  }
+
+  .broom-lead-1 {
+    padding-left: 0.75em;
+  }
+
+  .pomo-animation {
+    transform: translate( -12% , 47% );
+    animation: pomo 10s linear 3s 3 alternate forwards;
+  }
+
+  .pomo-animation:hover {
+    animation-play-state: paused;
+    cursor: pointer;
+  }
+
+  @keyframes pomo {
+
+    0% {
+      transform: translate( -12% , 47% );
     }
 
-    .navbar-ulist {
-      display: flex;
-      justify-content: center;
-      margin-top: 0.5em;
+    45% {
+      transform: translate( 255% , 93% );
     }
 
-    .navbar-ulist li {
-      margin: 0 0.75em;
-      display: inline-block;
-      border-bottom: none;
+    50% {
+      transform: translate( 284% , 88% );
     }
 
-    .navbar-ulist a {
-      font-size: 3vw;
+    60% {
+      transform: translate( 322% , 51% );
     }
 
-    .flex-col-1 {
-      flex: 35%;
-      max-width: 35%;
+    75% {
+      transform: translate( 331% , -21% );
     }
 
-    .flex-col-2 {
-      flex: 65%;
-      max-width: 65%;
+    87.5% {
+      transform: translate( 155% , -3% );
     }
 
-    .main-lead-1 {
-      padding-left: 0.75em;
+    93% {
+      transform: translate( 224% , 7% );
     }
 
-    .main-lead-2,
-    .main-lead-3 {
-      column-count: 2;
-    }
-
-    .broom-lead-1 {
-      padding-left: 0.75em;
-    }
-
-    .pomo-animation {
-      transform: translate(-12%, 47%);
-      animation: pomo 10s linear 3s 3 alternate forwards;
-    }
-
-    .pomo-animation:hover {
-      animation-play-state: paused;
-      cursor: pointer;
-    }
-
-    @keyframes pomo {
-      0% {
-        transform: translate(-12%, 47%);
-      }
-
-      45% {
-        transform: translate(255%, 93%);
-      }
-
-      50% {
-        transform: translate(284%, 88%);
-      }
-
-      60% {
-        transform: translate(322%, 51%);
-      }
-
-      75% {
-        transform: translate(331%, -21%);
-      }
-
-      87.5% {
-        transform: translate(155%, -3%);
-      }
-
-      93% {
-        transform: translate(224%, 7%);
-      }
-
-      100% {
-        transform: translate(241%, -17%);
-      }
-    }
-
-    .broom-animation {
-      animation: broom 5s linear 1 forwards;
-    }
-
-    @keyframes broom {
-      0% {
-        transform: scale(1.0, 1.0);
-      }
-
-      12.5% {
-        transform: scale(2.0, 2.0);
-      }
-
-      25% {
-        transform: rotate(45deg);
-      }
-
-      37.5% {
-        transform: rotate(360deg);
-      }
-
-      50% {
-        transform: translate(0, -20%);
-      }
-
-      62.5% {
-        transform: translate(0, 20%);
-      }
-
-      75% {
-        transform: scaleX(-1) skew(-60deg);
-      }
-
-      87.5% {
-        transform: rotate(45deg);
-      }
-
-      100% {
-        transform: translate(4000px, -2000px);
-      }
-    }
-
-    .text-animation {
-      animation: texto 4s linear forwards;
-    }
-
-    @keyframes texto {
-      0% {
-        transform: scale(1.0, 1.0);
-        font-weight: 400;
-      }
-
-      100% {
-        transform: scale(1.5, 1.5);
-        font-weight: 700;
-      }
-    }
-
-    .star-animation {
-      animation: estrela 4s linear infinite forwards;
-    }
-
-    @keyframes estrela {
-      0% {
-        transform: scale(1.0, 1.0) rotateZ(0deg);
-      }
-
-      30% {
-        transform: rotateZ(360deg) rotateX(180deg);
-      }
-
-      45% {
-        transform: translateX(40vw) translateY(8vh);
-      }
-
-      60% {
-        transform: translateX(-40vw) translateY(-15vh);
-      }
-
-      80% {
-        transform: translateY(-20vh) scale(3, 3);
-      }
-
-      100% {
-        transform: scale(1.0, 1.0) rotateZ(540deg);
-      }
+    100% {
+      transform: translate( 241% , -17% );
     }
   }
+
+  .broom-animation {
+    animation: broom 5s linear 1 forwards;
+  }
+
+  @keyframes broom {
+
+    0% {
+      transform: scale( 1 , 1 );
+    }
+
+    12.5% {
+      transform: scale( 2 , 2 );
+    }
+
+    25% {
+      transform: rotate( 45deg );
+    }
+
+    37.5% {
+      transform: rotate( 360deg );
+    }
+
+    50% {
+      transform: translate( 0 , -20% );
+    }
+
+    62.5% {
+      transform: translate( 0 , 20% );
+    }
+
+    75% {
+      transform: scaleX( -1 ) skew( -60deg );
+    }
+
+    87.5% {
+      transform: rotate( 45deg );
+    }
+
+    100% {
+      transform: translate( 4000px , -2000px );
+    }
+  }
+
+  .text-animation {
+    animation: texto 4s linear forwards;
+  }
+
+  @keyframes texto {
+
+    0% {
+      transform: scale( 1 , 1 );
+      font-weight: 400;
+    }
+
+    100% {
+      transform: scale( 1.5 , 1.5 );
+      font-weight: 700;
+    }
+  }
+
+  .star-animation {
+    animation: estrela 4s linear infinite forwards;
+  }
+
+  @keyframes estrela {
+
+    0% {
+      transform: scale( 1 , 1 ) rotateZ( 0deg );
+    }
+
+    30% {
+      transform: rotateZ( 360deg ) rotateX( 180deg );
+    }
+
+    45% {
+      transform: translateX( 40vw ) translateY( 8vh );
+    }
+
+    60% {
+      transform: translateX( -40vw ) translateY( -15vh );
+    }
+
+    80% {
+      transform: translateY( -20vh ) scale( 3 , 3 );
+    }
+
+    100% {
+      transform: scale( 1 , 1 ) rotateZ( 540deg );
+    }
+  }
+}

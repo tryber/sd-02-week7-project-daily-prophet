@@ -8,7 +8,6 @@ const containerMain = document.querySelector('.container-main');
 
 const arrTextos = [underImg, navBar, containerLeads, containerMain];
 
-
 function clicaMenu() {
   menuAnimado.classList.toggle('change');
   navBar.classList.toggle('hide');
