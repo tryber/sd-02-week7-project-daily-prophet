@@ -61,6 +61,10 @@ nav {
   display: inline;
 }
 
+#asideTitle {
+  text-align: center;
+}
+
 @media ( max-width : 760px ) {
 
   #anuncio , #video , #lua , #severoGif , #texto1 , #estrela {
@@ -118,7 +122,6 @@ nav {
 
   #asideTitle {
     font-size: 1.4em;
-    text-align: center;
   }
 
   #asideText {
@@ -132,7 +135,6 @@ nav {
 
   #container1 {
     justify-content: space-between;
-    display: flex;
     flex-direction: column;
     align-items: center;
   }
@@ -325,10 +327,6 @@ nav {
     animation-direction: alternate;
   }
 
-  #divArticle {
-    display: flex;
-  }
-
   #voldemortImagem {
     max-width: 47%;
     height: 250px;
@@ -343,7 +341,6 @@ nav {
   }
 
   #asideTitle {
-    text-align: center;
     margin-top: 3px;
     margin-bottom: 5px;
   }
