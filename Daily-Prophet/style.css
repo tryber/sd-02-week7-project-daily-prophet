@@ -6,17 +6,17 @@
 
 @font-face {
   font-family: Mariage;
-  src: url( "./fonts/mariage.ttf" );
+  src: url( './fonts/mariage.ttf' );
 }
 
 @font-face {
   font-family: Fraktur;
-  src: url( "./fonts/Walbaum-FrakturUNZ1.ttf" );
+  src: url( './fonts/Walbaum-FrakturUNZ1.ttf' );
 }
 
 @font-face {
   font-family: Newspapper;
-  src: url( "./fonts/3\ Times\ Recycled\ Old\ Newspaper.ttf" );
+  src: url( './fonts/3\ Times\ Recycled\ Old\ Newspaper.ttf' );
 }
 
 .para-cego-ver {
@@ -162,7 +162,7 @@ article img {
   transform: scaleX( -1 );
 }
 
-p.texto-pub {
+.texto-pub {
   font-size: 300%;
   padding: 10px;
   text-align: justify;
@@ -265,7 +265,7 @@ p.texto-pub {
     height: 100%;
   }
 
-  div.container2 p {
+  .texto-section3 {
     font-size: 370%;
   }
 
