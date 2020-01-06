@@ -1,77 +1,80 @@
-
 body {
-     background: linear-gradient(black, #000099, #66c2ff, #ffcccc, #ffeee6);
+    background: linear-gradient( black , rgb( 0, 0, 153 ) , rgb( 102, 194, 255 ) , rgb( 255, 204, 204 ) , rgb( 255, 238, 230 ) );
 }
 
 #journal {
-    background: #fff8ee;
-    height: 1400px;
-    width: 98%;
-    margin-left: 1%;
+  background: #fff8ee;
+  height: 1400px;
+  width: 98%;
+  margin-left: 1%;
 }
-#star{
-    height: 150px;
-    width: auto;
-    border: none;
-    animation-name: Girar;
-    animation: 4s linear 2s infinite;
+
+#star {
+  height: 150px;
+  width: auto;
+  border: none;
+  animation-name: Girar;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
 }
 
 @keyframes Girar {
 
-    from {
-        transform: rotateX( 0deg );
-    }
+  from {
+    transform: rotateX( 0deg );
+  }
 
-    to {
-        transform: rotateX( 360deg );
-    }
+  to {
+    transform: rotateX( 360deg );
+  }
 }
 
 .articleBox {
-    border-bottom: 3px solid peru;
+  border-bottom: 3px solid peru;
 }
 
 header {
-    font-size: 100px;
-    display: flex;
-    justify-content: flex-start;
-    border-top: 5px double black;
-    border-bottom: 5px double black;
+  font-size: 100px;
+  display: flex;
+  justify-content: flex-start;
+  border-top: 5px double black;
+  border-bottom: 5px double black;
 }
 
 header > img {
-    border: 5px solid black;
-    margin-right: 5.8px;
+  border: 5px solid black;
+  margin-right: 5.8px;
 }
+
 aside > img {
-    border-radius: 60%;
-    float: right;
-    margin-right: 2%;
-    height: 250px;
-    width: auto;
+  border-radius: 60%;
+  float: right;
+  margin-right: 2%;
+  height: 250px;
+  width: auto;
 }
 
 
 nav {
-    border-bottom: 3px solid peru;
+  border-bottom: 3px solid peru;
 }
 
 #beautyDumbText {
-    font-size: larger;
-    font-weight: 500;
+  font-size: larger;
+  font-weight: 500;
 }
 
 .credits {
-    text-align: center;
-    color: black;
-    font-size: 1rem;
-    background-color: #ffeee6;
+  text-align: center;
+  color: black;
+  font-size: 1rem;
+  background-color: #ffeee6;
 }
 
 @media ( orientation : landscape ) {
 
-    #star {
-      animation: rodar 1s linear infinite;
-    }
+  #star {
+    animation: Girar 1s linear infinite;
+  }
+
 }
