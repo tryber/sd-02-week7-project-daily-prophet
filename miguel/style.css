@@ -65,7 +65,7 @@ a {
     display: flex;
     flex-direction: row;
   }
-  
+
   .coluna {
     width: 50%;
   }
