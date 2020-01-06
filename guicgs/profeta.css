@@ -5,19 +5,19 @@
 @font-face {
   font-family: headline_onehplhs;
   src: url( 'fontes/headoh__-webfont.woff2' ) format( 'woff2' ),
-        url( 'fontes/headoh__-webfont.woff' ) format( 'woff' );
+    url( 'fontes/headoh__-webfont.woff' ) format( 'woff' );
   font-style: normal;
 }
 
 @font-face {
   font-family: headline_twohplhs;
   src: url( 'fontes/headth__-webfont.woff2' ) format( 'woff2' ),
-        url( 'fontes/headth__-webfont.woff' ) format( 'woff' );
+    url( 'fontes/headth__-webfont.woff' ) format( 'woff' );
   font-style: normal;
 }
 
 body {
-  max-width: 50rem;
+  max-width: 55rem;
   margin: 1rem auto;
 }
 
@@ -95,8 +95,9 @@ p {
 
 .titulo-noticia-menor {
   font-family: headline_onehplhs, sans-serif;
-  padding: 1rem 0 0 1rem;
-  font-size: 2.1rem;
+  padding: 1rem 1rem 0 1rem;
+  font-size: 2.22rem;
+  line-height: 2rem;
 }
 
 #gif_dumb {
@@ -122,8 +123,8 @@ p {
 #titulo-lateral {
   writing-mode: vertical-rl;
   transform: rotate( 180deg );
-  padding: 0 1.5rem 0.5rem 1rem;
-  font-size: 2.5rem;
+  padding: 1rem 1.5rem 0.5rem 1.5rem;
+  font-size: 2.3rem;
 }
 
 #gif-pomo {
