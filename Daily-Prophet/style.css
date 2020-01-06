@@ -183,6 +183,7 @@ p.texto-pub {
 }
 
 @media only screen and ( min-width : 760px ) {
+
   * {
     margin: 0;
     padding: 0;
@@ -299,6 +300,7 @@ p.texto-pub {
   }
 
   @keyframes pegadas-pai {
+
     from {
       bottom: 0;
       left: 10%;
@@ -380,6 +382,7 @@ p.texto-pub {
   }
 
   @keyframes nimbus-voando {
+
     0% {
       transform: scale( 1 , 1 );
     }
@@ -435,6 +438,7 @@ p.texto-pub {
   }
 
   @keyframes estrela {
+
     0% {
       transform: scale( 1 , 1 ) rotate( 0deg );
       filter: opacity( 0% );
@@ -453,6 +457,7 @@ p.texto-pub {
   }
 
   @keyframes aumentaTexto {
+
     from {
       transform: scale( 1 , 1 );
     }
@@ -470,6 +475,7 @@ p.texto-pub {
 }
 
 @media only screen and ( max-width : 760px ) and ( orientation : landscape ) {
+  
   body {
     width: 100%;
   }
