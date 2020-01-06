@@ -42,6 +42,7 @@ a:hover {
   padding-top: 3px;
   font-weight: 700;
   text-align: center;
+  margin: 0 auto;
 }
 
 #nav-bar {
@@ -112,6 +113,17 @@ footer {
     width: 100%;
   }
 
+  #hogwarts {
+    filter: grayscale(100%);
+    width: 400px;
+  }
+
+  #ministry {
+    width: 400px;
+    padding-left: 5px;
+    filter: grayscale(100%);
+  }
+
   .weather-list {
     padding: 0 8px 0 8px;
     display: grid;
@@ -132,16 +144,29 @@ footer {
     display: none;
   }
 
-  #broom {
+  .broom-img {
     width: 200px;
     position: relative;
   }
 
   .ads {
+    margin-top: 10px;
+    font-family: "BodoniXT";
+    src: url(BodoniXT.ttf) format("truetype");
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 10px;
-    background-color: rgb( 206, 168, 33 );
+    background-color: rgb(206, 168, 33);
+  }
+
+  #ad-text {
+    text-align: justify;
+    margin-right: 10px;
+  }
+
+  #ad-link {
+    color: black;
+    font-weight: 900;
   }
 
 }
@@ -159,12 +184,32 @@ footer {
     font-size: 20px;
   }
 
+  #nav-bar {
+    height: 40px;
+  }
+
+  #nav-links {
+    padding-top: 8px;
+    font-weight: 900;
+  }
+
   #hermione {
     filter: grayscale(100%);
+    width: 800px;
   }
 
   #granger {
     display: none;
+  }
+
+  #hogwarts {
+    filter: grayscale(100%);
+    width: 800px;
+  }
+
+  #ministry {
+    filter: grayscale(100%);
+    width: 350px;
   }
 
   p {
@@ -214,36 +259,110 @@ footer {
     text-shadow: 3px 0 0px rgb(130, 209, 255);
   }
 
-#pomo {
-  animation-delay: 3s;
-  animation: pomofly 10s ease-in-out 3s 3 alternate forwards;
-  position: absolute;
-  width: 250px;
-  height: 250px;
-  top: 3%;
-  left: 3%;
-  visibility: hidden;
+  #pomo {
+    animation-delay: 3s;
+    animation: pomofly 10s ease-in-out 3s 3 alternate forwards;
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    top: 3%;
+    left: 3%;
+    visibility: hidden;
+  }
+
+  @keyframes pomofly {
+    0% {
+      visibility: unset;
+    }
+
+    100% {
+      top: 30%;
+      left: 70%;
+      visibility: unset;
+    }
+  }
+
+  #pomo:hover {
+    animation-play-state: paused;
+  }
+
+  .ads {
+    margin: 10px 0 0 10px;
+    font-family: "BodoniXT";
+    src: url(BodoniXT.ttf) format("truetype");
+    position: absolute;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+    background-color: rgb(206, 168, 33);
+  }
+
+  .broom-img {
+    width: 150px;
+    height: 150px;
+  }
+
+
+  .broom-animation {
+    width: 150px;
+    height: 150px;
+    animation: broomfly 10s linear 1s 1 alternate forwards;
+  }
+
+  @keyframes broomfly {
+    0% {
+      transform: scale(1, 1);
+    }
+
+    10% {
+      transform: scale(2, 2);
+    }
+
+    20% {
+      transform: rotate(0deg);
+    }
+
+    30% {
+      transform: rotate(360deg);
+    }
+
+    50% {
+      transform: translate(0px, -100px);
+    }
+
+    55% {
+      transform: translate(0px, 100px);
+    }
+
+    75% {
+      transform: skew(-60deg, 30deg);
+    }
+
+    80% {
+      transform: skew(0deg, 0deg);
+    }
+
+    100% {
+      transform: translate(4000px, -10px);
+    }
+  }
+
+.bigger-section {
+  animation: growth 4s linear 1s 1 alternate forwards;
+  transition-duration: 4s;
 }
 
-@keyframes pomofly {
+@keyframes growth {
   0% {
-    visibility: unset;
+    transform: scale(1, 1);
   }
-
+  70% {
+    font-weight: 600;
+  }
   100% {
-    top: 30%;
-    left: 70%;
-    visibility: unset;
+    font-weight: 700;
+    transform: scale(1.5, 1.5)
   }
-}
-
-#pomo:hover {
-  animation-play-state: paused;
-}
-
-#broom {
-  width: 150px;
-  height: 150px;
 }
 
 }
