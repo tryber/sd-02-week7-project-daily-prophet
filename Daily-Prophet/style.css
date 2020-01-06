@@ -91,7 +91,7 @@ article {
 h3 {
   font-size: 200%;
   text-align: center;
-  font-family: "Newspapper", serif;
+  font-family: 'Newspapper', serif;
 }
 
 hr {
@@ -102,7 +102,7 @@ p {
   font-size: 200%;
   width: 100%;
   text-align: justify;
-  font-family: "Mariage", serif;
+  font-family: 'Mariage', serif;
   padding: 2%;
 }
 
@@ -166,7 +166,7 @@ article img {
   font-size: 300%;
   padding: 10px;
   text-align: justify;
-  font-family: "Fraktur", serif;
+  font-family: 'Fraktur', serif;
 }
 
 .pegadas-pai {
