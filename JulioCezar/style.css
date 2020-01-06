@@ -61,33 +61,65 @@ header > hr:nth-child(4) {
   height: 0.125em;
 }
 
+.article_container {
+  display: flex;
+}
+
 section {
   height: auto;
   padding: 0 20px;
 }
 
-section > div > h1 {
+h2 {
   text-align: center;
   font-size: 61px;
 }
 
-section > div > p {
+.article_content {
   text-align: center;
   font-size: 23px;
 }
 
-#video-content {  
-  text-align: center;
+#primeira_manchete > div > img {
+  width: 70%;
+  margin-left: 20%;
+  margin-top: 50px;
+  border-radius: 50%;
+}
+
+#segunda_manchete {
   margin-top: 50px;
 }
 
-article {  
-  background: red;
+.flex_content {
+  display: flex;
+}
+
+.p_container {
+  margin-right: 10px;
+}
+
+aside {
+  width: 30%;
+}
+
+h3 {
+  font-size: 38px;
+}
+
+aside > p {
+  margin-top: 20px;
+  font-size: 15px;
+}
+
+article { 
+  width: 70%; 
   height: auto;
 }
 
 footer {
-  background: green;
+  text-align: center;
+  margin-top: 50px;
   height: auto;
 }
 
@@ -170,7 +202,7 @@ footer {
     transform: translate(0, 0) scale(2.0, 2.0) skewX(360deg);
   }
   100% {
-    transform: translate(1000px, -200px) scale(2.0, 2.0) skewX(360deg);
+    transform: translate(2000px, -300px) scale(2.0, 2.0) skewX(360deg);
   }
 }
 
@@ -204,12 +236,34 @@ footer {
     font-size: 5vw;
   }
   
-  section > div > h1 {
+  h2 {
     font-size: 8vw;
   }
 
-  section > div > p {
+  .article_content {
+    margin-top: -150px;
     font-size: 3vw;
+  }
+  
+  #primeira_manchete > div > img {
+    visibility: collapse;
+  }
+  
+  h3 {
+    font-size: 5vw;
+  }
+  
+  aside > p {
+    font-size: 2vw;
+  }
+
+  .p_container {    
+    margin-top: 150px;
+  }
+
+  .img_container {
+    width: 1%;
+    visibility: collapse;
   }
 
   .bird1 {
