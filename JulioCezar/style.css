@@ -1,15 +1,15 @@
 @font-face {
   font-family: HarryPotterFont1, sans-serif;
-  src: url( Fonts/dum3/dum3.ttf );
+  src: url( 'Fonts/dum3/dum3.ttf' );
 }
 
 @font-face {
   font-family: HarryPotterFont2, sans-serif;
-  src: url( Fonts/LUMOS.TTF );
+  src: url( 'Fonts/LUMOS.TTF' );
 }
 
 * {
-  font-family: HarryPotterFont1;
+  font-family: HarryPotterFont1 sans-serif;
   margin: 0;
   padding: 0;
 }
@@ -41,7 +41,7 @@ header {
 
 header > p {
   font-size: 38px;
-  font-family: HarryPotterFonts2;
+  font-family: HarryPotterFonts2, sans-serif;
   color: rgb( 47 , 47 , 47 );
 }
 
@@ -50,13 +50,13 @@ header > p > span {
 }
 
 header > hr:nth-child(1) {
-  border-width: 0.1875em 0 1px 0;
+  border-width: 0.188em 0 1px 0;
   border-color: black;
   height: 0.125em;
 }
 
 header > hr:nth-child(4) {
-  border-width: 1px 0 0.1875em 0;
+  border-width: 1px 0 0.188em 0;
   border-color: black;
   height: 0.125em;
 }
@@ -114,7 +114,6 @@ aside > p {
 
 article {
   width: 70%;
-
   height: auto;
 }
 
@@ -174,6 +173,7 @@ footer {
     transform: rotateZ( 0 );
     filter: brightness( 100% );
   }
+
   to {
     transform: rotateZ( 360deg );
     filter: brightness( 200% );
@@ -182,19 +182,23 @@ footer {
 
 @keyframes vassoura-magica {
   20% {
-    transform: rotateZ( 0 ) scale( 2.0 , 2.0 );
+    transform: rotateZ( 0 ) scale( 2 , 2 );
   }
+
   40% {
-    transform: rotateZ( 360deg ) translateY( 0 ) scale( 2.0 , 2.0 );
+    transform: rotateZ( 360deg ) translateY( 0 ) scale( 2 , 2 );
   }
+
   60% {
-    transform: translateY( -30px ) scale( 2.0 , 2.0 ) skewX( 0 );
+    transform: translateY( -30px ) scale( 2 , 2 ) skewX( 0 );
   }
+
   80% {
-    transform: translate( 0 , 0 ) scale( 2.0 , 2.0 ) skewX( 360deg );
+    transform: translate( 0 , 0 ) scale( 2 , 2 ) skewX( 360deg );
   }
+
   100% {
-    transform: translate( 2000px , -300px ) scale( 2.0, 2.0 ) skewX( 360deg );
+    transform: translate( 2000px , -300px ) scale( 2 , 2 ) skewX( 360deg );
   }
 }
 
@@ -203,15 +207,19 @@ footer {
     left: 40%;
     top: 5px;
   }
+
   25% {
     top: 100px;
   }
+
   50% {
     top: 80px;
   }
+
   75% {
     top: 25px;
   }
+
   100% {
     transform: rotateY( 180deg );
     left: -60%;
@@ -219,13 +227,15 @@ footer {
   }
 }
 
-@media screen and ( min-width:760px ) {
+@media screen and ( min-width: 760px ) {
+  
   .crescer_artigo {
     transition: all 0.3s steps( 10 );
   }
 }
 
-@media screen and ( max-width:760px ) {
+@media screen and ( max-width: 760px ) {
+
   #header-h1 {
     font-size: 15vw;
   }
@@ -319,28 +329,35 @@ footer {
       transform: rotateZ( 0 );
       filter: brightness( 100% );
     }
+
     to {
       transform: rotateZ( 360deg );
       filter: brightness( 200% );
     }
+
   }
 
   @keyframes vassoura-magica {
     20% {
-      transform: rotateZ( 0 ) scale( 2.0 , 2.0 );
+      transform: rotateZ( 0 ) scale( 2 , 2 );
     }
+
     40% {
-      transform: rotateZ( 360deg ) translateY( 0 ) scale( 2.0 , 2.0) ;
+      transform: rotateZ( 360deg ) translateY( 0 ) scale( 2 , 2 );
     }
+
     60% {
-      transform: translateY( -30px ) scale( 2.0 , 2.0 ) skewX( 0 );
+      transform: translateY( -30px ) scale( 2 , 2 ) skewX( 0 );
     }
+
     80% {
-      transform: translate( 0 , 0 ) scale( 2.0 , 2.0 ) skewX( 360deg );
+      transform: translate( 0 , 0 ) scale( 2 , 2 ) skewX( 360deg );
     }
+
     100% {
-      transform: translate( 1000px , -200px ) scale( 2.0 , 2.0 ) skewX( 360deg );
+      transform: translate( 1000px , -200px ) scale( 2 , 2 ) skewX( 360deg );
     }
+
   }
 
   @keyframes fly {
@@ -348,19 +365,24 @@ footer {
       left: 40%;
       top: 5px;
     }
+
     25% {
       top: 100px;
     }
+
     50% {
       top: 80px;
     }
+
     75% {
       top: 25px;
     }
+
     100% {
       transform: rotateY( 180deg );
       left: -60%;
       top: 120px;
     }
+
   }
 }
