@@ -231,8 +231,8 @@ footer {
 }
 
 @media screen and ( min-width : 760px ) {
-  .crescer_artigo {
 
+  .crescer_artigo {
     transition: all 0.3s steps( 10 );
   }
 
@@ -362,7 +362,7 @@ footer {
   }
 
   @keyframes fly {
-    
+
     0% {
       left: 40%;
       top: 5px;
