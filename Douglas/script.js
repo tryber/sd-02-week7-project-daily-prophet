@@ -30,4 +30,3 @@ article.addEventListener('click', textoGrande);
 article.addEventListener('animationend', back);
 compra.addEventListener('click', vaiVassoura);
 vassoura.addEventListener('click', vaiVassoura);
-
