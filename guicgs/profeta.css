@@ -160,6 +160,10 @@ a:hover {
   max-width: 6rem;
 }
 
+#anuncio-vassoura:hover {
+  cursor: pointer;
+}
+
 #vassoura {
   width: 6rem;
 }
@@ -224,6 +228,31 @@ a:hover {
   }
 }
 
+/* animação vassoura */
 .animacao-vassoura {
-  transform: translateX(50px) scale(2.0, 2.0);
+  animation-name: giro-skew, voar;
+  animation-duration: 5s, 1s;
+  animation-delay: 0s, 5s;
+  animation-iteration-count: 1, 1;
+  animation-fill-mode: forwards, forwards;
+}
+
+@keyframes giro-skew {
+  25% {
+    transform: rotateY(360deg) scale(2, 2);
+  }
+
+  50% {
+    transform: translateY(-50px) scale(2, 2);
+  }
+
+  75% {
+    transform: skew(360deg, 360deg) scale(2, 2);
+  }
+}
+
+@keyframes voar {
+  100% {
+    transform: translate(500rem, -500rem);
+  }
 }
