@@ -11,12 +11,12 @@
 * {
   font-family: HarryPotterFont1;
   margin: 0;
-  padding: 0;  
+  padding: 0;
 }
 
 body {  
   background-color: black;
-  font-size: 16px;
+  font-size: 16px;  
 }
 
 #body-container {
@@ -109,29 +109,44 @@ footer {
     font-size: 3vw;
   }
 
-  .bird {
-    background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/174479/bird-cells.svg);
-    background-size: auto 100%;
-    width: 350px;
-    height: 500px;
+  .bird1 {
+    position: relative;
+    width: 100px;
+    margin-top: -70px;
+  }
 
-    animation-name: fly-cycle;
-    animation-duration: 2s;
+  #bird {
+    left: 40%;
+    animation-name: fly;
+    animation-duration: 5s;
     animation-delay: 3s;
-    animation-timing-function: steps(10);
-    animation-iteration-count: infinite;
+    animation-iteration-count: 3;
+    animation-timing-function: ease-in;
+    animation-direction: alternate;
   }
 
-  .bird-container {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-80%);
+  #bird:hover {
+    background: red;
+    animation-play-state: paused;
   }
 
-  @keyframes fly-cycle {
-    100%{
-      background-position: -3600px 0;
+  @keyframes fly {
+    0% {
+      left: 40%;
+      top: 5px;
     }
+    25% {
+      top: 100px;
+    }
+    50% {
+      top: 80px;
+    }
+    75% {
+      top: 25px;
+    }
+    100% {
+      left: -60%;
+      top: 120px;
+    }    
   }
 }
