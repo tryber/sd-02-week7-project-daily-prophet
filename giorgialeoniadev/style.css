@@ -124,6 +124,10 @@ footer {
     filter: grayscale(100%);
   }
 
+  #star {
+    display: none;
+  }
+
   .weather-list {
     padding: 0 8px 0 8px;
     display: grid;
@@ -348,7 +352,7 @@ footer {
   }
 
 .bigger-section {
-  animation: growth 4s linear 1s 1 alternate forwards;
+  animation: growth 4s steps(8, end) 1s 1 alternate forwards;
   transition-duration: 4s;
 }
 
@@ -365,4 +369,29 @@ footer {
   }
 }
 
+#star {
+  animation: starFlow 4s linear 1s infinite alternate both;
+  bottom: 10%;
+}
+
+@keyframes starFlow {
+  0% {
+    transform: scale(1, 1);
+  }
+  20% {
+    transform: rotate(0deg);
+  }
+  40% {
+  transform: rotate(360deg);
+  }
+  70% {
+    transform: translate(100px, 0px);
+  }
+  85% {
+    transform: translate(200px, 0px);
+  }
+  100% {
+    transform: scale(1.0, 1.0)
+  }
+}
 }
