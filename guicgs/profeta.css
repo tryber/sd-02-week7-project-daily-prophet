@@ -70,6 +70,15 @@ p {
 
 .texto-artigo {
   padding-top: 0.5rem;
+  transition: transform 4s, font-weight 4s;
+}
+
+.inicial-artigo {
+  float: left;
+  font-family: headline_onehplhs, sans-serif;
+  font-size: 5rem; 
+  margin: 2rem 1rem 1.5rem 1rem;
+  text-shadow: -3px 0 0px yellow;
 }
 
 .cabecalho-noticia {
