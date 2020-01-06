@@ -183,239 +183,241 @@ p.texto-pub {
 }
 
 @media only screen and ( min-width : 760px ) {
-* {
-  margin: 0;
-  padding: 0;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  box-sizing: border-box;
-}
+  * {
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    box-sizing: border-box;
+  }
 
-body {
-  background-color: black;
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  align-items: center;
-  position: relative;
-}
+  body {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    position: relative;
+  }
 
-h3 {
-  font-size: 300%;
-}
+  h3 {
+    font-size: 300%;
+  }
 
-.jornal {
-  background-color: rgb( 225 , 225 , 221 );
-  margin: 1em auto;
-  padding: 1em;
-  width: 65%;
-  border-radius: 1em;
-}
+  .jornal {
+    background-color: rgb( 225 , 225 , 221 );
+    margin: 1em auto;
+    padding: 1em;
+    width: 65%;
+    border-radius: 1em;
+  }
 
-.blocoItensNavBar {
-  width: 100%;
-}
+  .blocoItensNavBar {
+    width: 100%;
+  }
 
-nav {
-  width: 100%;
-}
+  nav {
+    width: 100%;
+  }
 
-ol {
-  display: flex;
-  justify-content: space-around;
-}
+  ol {
+    display: flex;
+    justify-content: space-around;
+  }
 
-a:hover {
-  color: rgb( 156 , 243 , 24 );
-}
+  a:hover {
+    color: rgb( 156 , 243 , 24 );
+  }
 
-.itensNavBar {
-  display: inline-block;
-  background-color: rgb( 92 , 91 , 91 );
-  border-radius: 20%;
-}
+  .itensNavBar {
+    display: inline-block;
+    background-color: rgb( 92 , 91 , 91 );
+    border-radius: 20%;
+  }
 
-.container-pai {
-  flex-direction: row;
-}
+  .container-pai {
+    flex-direction: row;
+  }
 
-article {
-  width: 70%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
+  article {
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
 
-aside.publicidade {
-  width: 30%;
-}
+  aside.publicidade {
+    width: 30%;
+  }
 
-.container1 {
-  width: 40%;
-}
+  .container1 {
+    width: 40%;
+  }
 
-.container2-pai {
-  width: 70%;
-  align-content: center;
-}
+  .container2-pai {
+    width: 70%;
+    align-content: center;
+  }
 
-.container2 {
-  padding: 1%;
-  border-left: 1px solid black;
-  height: 100%;
-}
-div.container2 p {
-  font-size: 370%;
-}
+  .container2 {
+    padding: 1%;
+    border-left: 1px solid black;
+    height: 100%;
+  }
 
-.pegadas-pai {
-  display: initial;
-  width: 5%;
-  position: absolute;
-  bottom: 0;
-  left: 10%;
-  animation-name: pegadas-pai;
-  animation-delay: 3s;
-  animation-duration: 15s;
-  animation-direction: alternate;
-  animation-iteration-count: 3;
-  animation-timing-function: linear;
-  animation-fill-mode: forwards;
-  cursor: pointer;
-}
+  div.container2 p {
+    font-size: 370%;
+  }
 
-#text-pegada {
-  color: gray;
-  font-size: 200%;
-}
-
-#pegadas {
-  width: 100%;
-  text-align: center;
-}
-
-.pegadas-pai:hover {
-  animation-play-state: paused;
-}
-
-@keyframes pegadas-pai {
-  from {
+  .pegadas-pai {
+    display: initial;
+    width: 5%;
+    position: absolute;
     bottom: 0;
     left: 10%;
+    animation-name: pegadas-pai;
+    animation-delay: 3s;
+    animation-duration: 15s;
+    animation-direction: alternate;
+    animation-iteration-count: 3;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+    cursor: pointer;
   }
 
-  10% {
-    transform: rotate( 15deg );
-    bottom: 20%;
-    left: 15%;
+  #text-pegada {
+    color: gray;
+    font-size: 200%;
   }
 
-  20% {
-    transform: rotate( -15deg );
-    bottom: 30%;
-    left: 5%;
+  #pegadas {
+    width: 100%;
+    text-align: center;
   }
 
-  30% {
-    transform: rotate( 15deg );
-    bottom: 40%;
-    left: 15%;
+  .pegadas-pai:hover {
+    animation-play-state: paused;
   }
 
-  40% {
-    transform: rotate( -15deg );
-    bottom: 50%;
-    left: 5%;
+  @keyframes pegadas-pai {
+    from {
+      bottom: 0;
+      left: 10%;
+    }
+
+    10% {
+      transform: rotate( 15deg );
+      bottom: 20%;
+      left: 15%;
+    }
+
+    20% {
+      transform: rotate( -15deg );
+      bottom: 30%;
+      left: 5%;
+    }
+
+    30% {
+      transform: rotate( 15deg );
+      bottom: 40%;
+      left: 15%;
+    }
+
+    40% {
+      transform: rotate( -15deg );
+      bottom: 50%;
+      left: 5%;
+    }
+
+
+    50% {
+      transform: rotate( 180deg );
+      bottom: 100%;
+      left: 15%;
+    }
+
+    60% {
+      transform: rotate( 195deg );
+      bottom: 90%;
+      left: 5%;
+    }
+
+    70% {
+      transform: rotate( 165deg );
+      bottom: 80%;
+      left: 15%;
+    }
+
+    80% {
+      transform: rotate( 195deg );
+      bottom: 70%;
+      left: 5%;
+    }
+
+    90% {
+      transform: rotate( 165deg );
+      bottom: 50%;
+      left: 15%;
+    }
+
+    95% {
+      transform: rotate( 270deg );
+      bottom: 0%;
+      left: 15%;
+    }
+
+    to {
+      transform: rotate( 360deg );
+      bottom: 0%;
+      left: 10%;
+    }
   }
 
-  50% {
-    transform: rotate( 180deg );
-    bottom: 100%;
-    left: 15%;
+  .nimbus-voando {
+    animation-name: nimbus-voando;
+    animation-duration: 10s;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
   }
 
-  60% {
-    transform: rotate( 195deg );
-    bottom: 90%;
-    left: 5%;
+  @keyframes nimbus-voando {
+    0% {
+      transform: scale( 1 , 1 );
+    }
+
+    12.5% {
+      transform: scale( 4 , 4 );
+    }
+
+    20% {
+      transform: rotate( 0deg );
+    }
+
+    25% {
+      transform: rotate( 360deg );
+    }
+
+    37.5% {
+      transform: translateY( -100px );
+    }
+
+    50% {
+      transform: translateY( 0 ) skew( 0deg );
+    }
+
+    62.5% {
+      transform: skew( 180deg );
+    }
+
+    75% {
+      transform: rotate( -45deg );
+    }
+
+    100% {
+      transform: translateX( -100000px );
+    }
   }
 
-  70% {
-    transform: rotate( 165deg );
-    bottom: 80%;
-    left: 15%;
-  }
-
-  80% {
-    transform: rotate( 195deg );
-    bottom: 70%;
-    left: 5%;
-  }
-
-  90% {
-    transform: rotate( 165deg );
-    bottom: 50%;
-    left: 15%;
-  }
-
-  95% {
-    transform: rotate( 270deg );
-    bottom: 0%;
-    left: 15%;
-  }
-
-  to {
-    transform: rotate( 360deg );
-    bottom: 0%;
-    left: 10%;
-  }
-}
-
-.nimbus-voando {
-  animation-name: nimbus-voando;
-  animation-duration: 10s;
-  animation-fill-mode: forwards;
-  animation-timing-function: linear;
-}
-
-@keyframes nimbus-voando {
-  0% {
-    transform: scale( 1 , 1 );
-  }
-
-  12.5% {
-    transform: scale( 4 , 4 );
-  }
-
-  20% {
-    transform: rotate( 0deg );
-  }
-
-  25% {
-    transform: rotate( 360deg );
-  }
-
-  37.5% {
-    transform: translateY( -100px );
-  }
-
-  50% {
-    transform: translateY( 0 ) skew( 0deg );
-  }
-
-  62.5% {
-    transform: skew( 180deg );
-  }
-
-  75% {
-    transform: rotate( -45deg );
-  }
-
-  100% {
-    transform: translateX( -100000px );
-  }
-}
-
-.imagem-estrela {
+  .imagem-estrela {
     display: initial;
     width: 10%;
     position: absolute;
