@@ -6,7 +6,7 @@ const underImg = document.querySelector('.under-img');
 const containerLeads = document.querySelector('.container-leads');
 const containerMain = document.querySelector('.container-main');
 
-const arrTextos = [underImg, navBar, containerLeads, containerMain, ];
+const arrTextos = [underImg, navBar, containerLeads, containerMain];
 
 
 function clicaMenu() {

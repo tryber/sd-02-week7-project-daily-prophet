@@ -214,7 +214,6 @@ a:hover {
   background-color: black;
   color: white;
   width: 32%;
-  font-family: 'Kreon', serif;
   text-align: center;
   padding: 0.4em;
   position: relative;
@@ -439,6 +438,7 @@ a:hover {
   .star-animation {
     display: none;
   }
+}
 
   @media screen and (min-width: 761px) {
 
@@ -616,3 +616,4 @@ a:hover {
         transform: scale(1.0, 1.0) rotateZ(540deg);
       }
     }
+  }
