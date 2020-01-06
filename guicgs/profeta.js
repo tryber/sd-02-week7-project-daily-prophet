@@ -4,13 +4,13 @@ vassoura.addEventListener('click', function () {
 });
 
 const textos = document.getElementsByClassName('texto-artigo');
-for (const texto of textos) {
-  texto.addEventListener('click', function () {
-    texto.style.transform = 'scale(1.5)';
-    texto.style.fontWeight = 'bold';
-    texto.addEventListener('click', function () {
-      texto.style.transform = 'scale(1)';
-      texto.style.fontWeight = 'normal';
+for (let i = 0; i < textos.length; i++) {
+  textos[i].addEventListener('click', function () {
+    textos[i].style.transform = 'scale(1.5)';
+    textos[i].style.fontWeight = 'bold';
+    textos[i].addEventListener('click', function () {
+      textos[i].style.transform = 'scale(1)';
+      textos[i].style.fontWeight = 'normal';
     });
   });
 }
