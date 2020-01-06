@@ -26,12 +26,12 @@ body {
 }
 
 a:hover {
-  background: rgb(197, 197, 197);
-  color: rgb(37, 37, 37);
+  background: rgb( 197 , 197 , 197 );
+  color: rgb( 37 , 37 , 37 );
 }
 
 #top-bar {
-  background-color: rgb(37, 37, 37);
+  background-color: rgb( 37 , 37 , 37 );
   width: 100%;
   margin: auto;
   height: 25px;
@@ -46,7 +46,7 @@ a:hover {
 }
 
 #nav-bar {
-  background-color: rgb(37, 37, 37);
+  background-color: rgb( 37 , 37 , 37 );
   width: 100%;
   margin: auto;
   height: 25px;
@@ -72,7 +72,7 @@ h2 {
 }
 
 footer {
-  background-color: rgb(37, 37, 37);
+  background-color: rgb( 37 , 37 , 37 );
   text-align: center;
   flex-flow: wrap;
   justify-content: space-around;
@@ -94,13 +94,13 @@ footer {
   h2 {
     margin-top: 10px;
     margin-bottom: 5px;
-    font-family: "BodoniXT";
-    src: url(BodoniXT.ttf) format("truetype");
+    font-family: BodoniXT;
+    src: url(BodoniXT.ttf) format( "truetype" );
     font-size: 20px;
   }
 
   #nav-links {
-    color: rgb(197, 197, 197);
+    color: rgb( 197 , 197 , 197 );
     padding-top: 3px;
     font-weight: 700;
   }
@@ -114,14 +114,14 @@ footer {
   }
 
   #hogwarts {
-    filter: grayscale(100%);
+    filter: grayscale( 100% );
     width: 400px;
   }
 
   #ministry {
     width: 400px;
     padding-left: 5px;
-    filter: grayscale(100%);
+    filter: grayscale( 100% );
   }
 
   #star {
@@ -141,7 +141,7 @@ footer {
   }
 
   .external-links {
-    color: rgb(197, 197, 197);
+    color: rgb( 197 , 197 , 197 );
   }
 
   #pomo {
@@ -155,12 +155,12 @@ footer {
 
   .ads {
     margin-top: 10px;
-    font-family: "BodoniXT";
-    src: url(BodoniXT.ttf) format("truetype");
+    font-family: BodoniXT;
+    src: url(BodoniXT.ttf) format( "truetype" );
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 10px;
-    background-color: rgb(206, 168, 33);
+    background-color: rgb( 206 , 168 , 33 );
   }
 
   #ad-text {
@@ -183,8 +183,8 @@ footer {
   h2 {
     margin-top: 10px;
     margin-bottom: 5px;
-    font-family: "BodoniXT";
-    src: url(BodoniXT.ttf) format("truetype");
+    font-family: BodoniXT;
+    src: url(BodoniXT.ttf) format( "truetype" );
     font-size: 20px;
   }
 
@@ -198,7 +198,7 @@ footer {
   }
 
   #hermione {
-    filter: grayscale(100%);
+    filter: grayscale( 100% );
     width: 800px;
   }
 
@@ -207,12 +207,12 @@ footer {
   }
 
   #hogwarts {
-    filter: grayscale(100%);
+    filter: grayscale( 100% );
     width: 800px;
   }
 
   #ministry {
-    filter: grayscale(100%);
+    filter: grayscale( 100% );
     width: 350px;
   }
 
@@ -221,7 +221,7 @@ footer {
   }
 
   .external-links {
-    color: rgb(197, 197, 197);
+    color: rgb( 197 , 197 , 197 );
     font-size: 20px;
   }
 
@@ -254,13 +254,13 @@ footer {
   .warm-numbers {
     font-size: 30px;
     font-weight: 700;
-    text-shadow: 3px 0 0px rgb(209, 134, 20);
+    text-shadow: 3px 0 0px rgb( 209 , 134 , 20 );
   }
 
   .cold-numbers {
     font-size: 30px;
     font-weight: 700;
-    text-shadow: 3px 0 0px rgb(130, 209, 255);
+    text-shadow: 3px 0 0px rgb( 130 , 209 , 255 );
   }
 
   #pomo {
@@ -292,13 +292,13 @@ footer {
 
   .ads {
     margin: 10px 0 0 10px;
-    font-family: "BodoniXT";
-    src: url(BodoniXT.ttf) format("truetype");
+    font-family: BodoniXT;
+    src: url(BodoniXT.ttf) format( "truetype" );
     position: absolute;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 10px;
-    background-color: rgb(206, 168, 33);
+    background-color: rgb( 206 , 168 , 33 );
   }
 
   .broom-img {
@@ -315,11 +315,11 @@ footer {
 
   @keyframes broomfly {
     0% {
-      transform: scale(1, 1);
+      transform: scale(1 , 1);
     }
 
     10% {
-      transform: scale(2, 2);
+      transform: scale(2 , 2);
     }
 
     20% {
@@ -358,14 +358,14 @@ footer {
 
 @keyframes growth {
   0% {
-    transform: scale(1, 1);
+    transform: scale(1 , 1);
   }
   70% {
     font-weight: 600;
   }
   100% {
     font-weight: 700;
-    transform: scale(1.5, 1.5)
+    transform: scale(1.5 , 1.5);
   }
 }
 
@@ -376,7 +376,7 @@ footer {
 
 @keyframes starFlow {
   0% {
-    transform: scale(1, 1);
+    transform: scale(1 , 1);
   }
   20% {
     transform: rotate(0deg);
@@ -391,7 +391,7 @@ footer {
     transform: translate(200px, 0px);
   }
   100% {
-    transform: scale(1.0, 1.0)
+    transform: scale(1.0 , 1.0);
   }
 }
 }
