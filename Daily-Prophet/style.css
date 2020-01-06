@@ -21,8 +21,8 @@
 
 .para-cego-ver {
   border: 0;
-  clip: rect(0 0 0 0);
-  clip-path: polygon(0 0, 0 0, 0 0);
+  clip: rect( 0 0 0 0 );
+  clip-path: polygon( 0 0 , 0 0 , 0 0 );
   height: 1px;
   margin: -1px;
   overflow: hidden;
@@ -43,7 +43,7 @@ body {
 }
 
 .jornal {
-  background: rgb(209, 209, 194);
+  background: rgb( 116 , 116 , 109 );
   display: flex;
   flex-direction: column;
 }
@@ -62,7 +62,7 @@ body {
 
 .itensNavBar {
   display: inline-block;
-  background-color: rgb(92, 91, 91);
+  background-color: rgb( 92 , 91 , 91 );
   border-radius: 25%;
   margin: 1% 0;
 }
@@ -91,7 +91,7 @@ article {
 h3 {
   font-size: 200%;
   text-align: center;
-  font-family: 'Newspapper', serif;
+  font-family: "Newspapper", serif;
 }
 
 hr {
@@ -102,7 +102,7 @@ p {
   font-size: 200%;
   width: 100%;
   text-align: justify;
-  font-family: 'Mariage', serif;
+  font-family: "Mariage", serif;
   padding: 2%;
 }
 
@@ -112,7 +112,7 @@ p {
 
 article img {
   widows: 100%;
-  filter: grayscale(100%);
+  filter: grayscale( 100% );
 }
 
 img#malfoy {
@@ -159,14 +159,14 @@ img#bellatrix {
 
 #nimbus {
   width: 100%;
-  transform: scaleX(-1);
+  transform: scaleX( -1 );
 }
 
 p.texto-pub {
   font-size: 300%;
   padding: 10px;
   text-align: justify;
-  font-family: 'Fraktur', serif;
+  font-family: "Fraktur", serif;
 }
 
 .pegadas-pai {
@@ -204,7 +204,7 @@ p.texto-pub {
   }
 
   .jornal {
-    background-color: rgb(225, 225, 221);
+    background-color: rgb( 225 , 225 , 221 );
     margin: 1em auto;
     padding: 1em;
     width: 65%;
@@ -225,12 +225,12 @@ p.texto-pub {
   }
 
   a:hover {
-    color: rgb(156, 243, 24);
+    color: rgb( 156 , 243 , 24 );
   }
 
   .itensNavBar {
     display: inline-block;
-    background-color: rgb(92, 91, 91);
+    background-color: rgb( 92 , 91 , 91 );
     border-radius: 20%;
   }
 
@@ -265,7 +265,7 @@ p.texto-pub {
   }
 
   div.container2 p {
-    font-size: 370%
+    font-size: 370%;
   }
 
   .pegadas-pai {
@@ -305,68 +305,68 @@ p.texto-pub {
     }
 
     10% {
-      transform: rotate(15deg);
+      transform: rotate( 15deg );
       bottom: 20%;
       left: 15%;
     }
 
     20% {
-      transform: rotate(-15deg);
+      transform: rotate( -15deg );
       bottom: 30%;
       left: 5%;
     }
 
     30% {
-      transform: rotate(15deg);
+      transform: rotate( 15deg );
       bottom: 40%;
       left: 15%;
     }
 
     40% {
-      transform: rotate(-15deg);
+      transform: rotate( -15deg );
       bottom: 50%;
       left: 5%;
     }
 
 
     50% {
-      transform: rotate(180deg);
+      transform: rotate( 180deg );
       bottom: 100%;
       left: 15%;
     }
 
     60% {
-      transform: rotate(195deg);
+      transform: rotate( 195deg );
       bottom: 90%;
       left: 5%;
     }
 
     70% {
-      transform: rotate(165deg);
+      transform: rotate( 165deg );
       bottom: 80%;
       left: 15%;
     }
 
     80% {
-      transform: rotate(195deg);
+      transform: rotate( 195deg );
       bottom: 70%;
       left: 5%;
     }
 
     90% {
-      transform: rotate(165deg);
+      transform: rotate( 165deg );
       bottom: 50%;
       left: 15%;
     }
 
     95% {
-      transform: rotate(270deg);
+      transform: rotate( 270deg );
       bottom: 0%;
       left: 15%;
     }
 
     to {
-      transform: rotate(360deg);
+      transform: rotate( 360deg );
       bottom: 0%;
       left: 10%;
     }
@@ -381,40 +381,39 @@ p.texto-pub {
 
   @keyframes nimbus-voando {
     0% {
-      transform: scale(1.0, 1.0);
+      transform: scale( 1.0 , 1.0 );
     }
 
     12.5% {
-      transform: scale(4.0, 4.0);
+      transform: scale( 4.0 , 4.0 );
     }
 
     20% {
-      transform: rotate(0deg);
+      transform: rotate( 0deg );
     }
 
     25% {
-      transform: rotate(360deg);
+      transform: rotate( 360deg );
     }
 
     37.5% {
-      transform: translateY(-100px);
+      transform: translateY( -100px );
     }
 
     50% {
-      transform: translateY(0px);
-      transform: skew(0deg);
+      transform: translateY( 0px ) skew( 0deg );
     }
 
     62.5% {
-      transform: skew(180deg);
+      transform: skew( 180deg );
     }
 
     75% {
-      transform: rotate(-45deg);
+      transform: rotate( -45deg );
     }
 
     100% {
-      transform: translateX(-100000px);
+      transform: translateX( -100000px );
     }
   }
 
@@ -437,13 +436,13 @@ p.texto-pub {
 
   @keyframes estrela {
     0% {
-      transform: scale(1.0, 1.0) rotate(0deg);
-      filter: opacity(0%);
+      transform: scale( 1.0 , 1.0 ) rotate( 0deg );
+      filter: opacity( 0% );
     }
 
     100% {
-      transform: scale(2.0, 2.0) rotate(360deg);
-      filter: opacity(90%);
+      transform: scale( 2.0 , 2.0 ) rotate( 360deg );
+      filter: opacity( 90% );
     }
   }
 
@@ -455,16 +454,16 @@ p.texto-pub {
 
   @keyframes aumentaTexto {
     from {
-      transform: scale(1.0, 1.0);
+      transform: scale( 1.0 , 1.0 );
     }
 
     50% {
-      transform: scale(1.5, 1.5);
+      transform: scale( 1.5 , 1.5 );
       font-weight: 900;
     }
 
     to {
-      transform: scale(1.0, 1.0);
+      transform: scale( 1.0 , 1.0 );
       font-weight: normal;
     }
   }
@@ -531,8 +530,7 @@ p.texto-pub {
 
   .itensNavBar {
     display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
+    flex-flow: column wrap;
   }
 
 }
