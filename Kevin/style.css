@@ -1,10 +1,9 @@
 body {
-  background: linear-gradient( black , rgb( 0 , 0 , 153 ) , 
-  rgb( 102 , 194 , 255 ) , rgb( 255 , 204 , 204 ) , rgb( 255 , 238 , 230 ) );
+  background: linear-gradient( black , blue , lightskyblue , rgb( 255 , 204 , 204 ) , rgb( 255 , 238 , 230 ) );
 }
 
 #journal {
-  background: rgb( 255, 248, 238 );
+  background: rgb( 255 , 248 , 238 );
   height: 1400px;
   width: 98%;
   margin-left: 1%;
@@ -69,7 +68,7 @@ nav {
   text-align: center;
   color: black;
   font-size: 1rem;
-  background-color: rgb( 255, 238 , 230 );
+  background-color: rgb( 255 , 238 , 230 );
 }
 
 @media ( orientation : landscape ) {
