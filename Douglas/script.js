@@ -13,19 +13,13 @@ function vaiVassoura() {
   }, 6000);
 }
 function textoGrande() {
-  article.classList.add('animaTexto');
+  this.classList.add('animaTexto');
 }
 function back() {
-  article.classList.remove('animaTexto');
+  this.classList.remove('animaTexto');
 }
-function textoGrande2() {
-  aside.classList.add('animaTexto');
-}
-function back2() {
-  aside.classList.remove('animaTexto');
-}
-aside.addEventListener('click', textoGrande2);
-aside.addEventListener('animationend', back2);
+aside.addEventListener('click', textoGrande);
+aside.addEventListener('animationend', back);
 article.addEventListener('click', textoGrande);
 article.addEventListener('animationend', back);
 compra.addEventListener('click', vaiVassoura);
