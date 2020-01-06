@@ -5,7 +5,4 @@ function createClass (){
     broom.classList.add('broom-animation');
 }
 
-publi.addEventListener ('click', function (){
-    createClass ();
-});
-
+publi.addEventListener ('click', createClass);
