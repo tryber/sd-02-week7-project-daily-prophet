@@ -3,7 +3,7 @@ body {
   width: 100vw;
 }
 
-html ,
+html , 
 body {
   width: 100vw;
 }
@@ -53,7 +53,7 @@ a:hover {
   text-align: center;
 }
 
-article ,
+article , 
 h2 {
   margin-left: 3px;
 }
@@ -85,7 +85,8 @@ footer {
   margin: auto;
 }
 
-@media only screen and (max-width: 760px) {
+@media only screen and ( max-width : 760px ) {
+
   * {
     padding: 0;
     margin: 0;
@@ -170,9 +171,10 @@ footer {
   }
 }
 
-@media (min-width: 761px) {
+@media ( min-width : 761px ) {
+
   * {
-    cursor: url(imgs/wand.png), auto;
+    cursor: url( imgs/wand.png ), auto;
   }
 
   h2 {
@@ -214,7 +216,7 @@ footer {
   }
 
   .external-links {
-    color: rgb( 197, 197, 197 );
+    color: rgb( 197 , 197 , 197 );
     font-size: 20px;
   }
 
@@ -237,7 +239,7 @@ footer {
   }
 
   .weather-list {
-    padding: 0 8px 8px 8px;
+    padding: 8px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 10px;
@@ -247,7 +249,7 @@ footer {
   .warm-numbers {
     font-size: 30px;
     font-weight: 700;
-    text-shadow: 3px 0 0 rgb( 209 , 134, 20 );
+    text-shadow: 3px 0 0 rgb( 209 , 134 , 20 );
   }
 
   .cold-numbers {
@@ -326,7 +328,7 @@ footer {
     }
 
     55% {
-      transform: translate(0 , 100px);
+      transform: translate( 0 , 100px );
     }
 
     75% {
@@ -343,7 +345,7 @@ footer {
   }
 
   .bigger-section {
-    animation: growth 4s steps(8, end) 1s 1 alternate forwards;
+    animation: growth 4s steps( 8, end ) 1s 1 alternate forwards;
     transition-duration: 4s;
   }
 
@@ -394,7 +396,8 @@ footer {
   }
 }
 
-@media (orientation: landscape) and (max-width: 760px) {
+@media ( orientation: landscape ) and ( max-width : 760px ) {
+
   #pomo {
     display: none;
   }
