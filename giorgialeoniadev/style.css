@@ -172,7 +172,6 @@ footer {
     color: black;
     font-weight: 900;
   }
-
 }
 
 @media (min-width: 761px) {
@@ -394,4 +393,47 @@ footer {
     transform: scale(1.0 , 1.0);
   }
 }
+}
+
+@media (orientation: landscape) and (max-width: 760px) {
+#pomo {
+  display: none;
+}
+
+#ministry {
+  display: none;
+}
+
+#hogwarts {
+  display: none;
+}
+
+#star {
+  display: none;
+}
+
+#hermione {
+  display: none;
+}
+
+#granger {
+  display: none;
+}
+
+.weather-list {
+  padding: 0 8px 0 8px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 10px;
+}
+
+.weather-text {
+  margin-left: 7px;
+  margin-bottom: 10px;
+}
+
+.ads {
+  margin: 0 30px;
+}
+
 }
