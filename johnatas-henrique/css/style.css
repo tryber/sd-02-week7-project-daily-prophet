@@ -33,8 +33,7 @@ p {
   margin-bottom: 0.5em;
 }
 
-a ,
-a:visited {
+a , a:visited {
   color: black;
   font-weight: 700;
 }
@@ -67,9 +66,7 @@ a:hover {
   cursor: pointer;
 }
 
-.bar1 ,
-.bar2 ,
-.bar3 {
+.bar1 , .bar2 , .bar3 {
   width: 2.5em;
   height: 0.3em;
   background-color: black;
@@ -197,7 +194,7 @@ a:hover {
 
 .under-img {
   text-align: center;
-  font-family: 'Kreon' , serif;
+  font-family: Kreon , serif;
   font-size: 1.6vw;
   font-weight: 700;
   letter-spacing: 0.313em;
@@ -341,7 +338,7 @@ a:hover {
   padding: 0.2em 0.1em 0.1em 0.2em;
   float: left;
   font-weight: 700;
-  text-shadow: 3px 0 0px rgb( 175 , 124 , 13 );
+  text-shadow: 3px 0 0 rgb( 175 , 124 , 13 );
 }
 
 .main-lead {
@@ -360,8 +357,7 @@ a:hover {
   font-family: Mariage , cursive;
 }
 
-.main-lead-2 ,
-.main-lead-3 {
+.main-lead-2 , .main-lead-3 {
   padding: 0.625em 0.25em 0;
   text-align: justify;
   padding-bottom: 0.4em;
@@ -426,9 +422,7 @@ a:hover {
 
 @media screen and ( max-width : 760px ) and ( orientation : landscape ) {
 
-  .daily-comp ,
-  .daily-comp-button ,
-  .aside-title {
+  .daily-comp , .daily-comp-button , .aside-title {
     background-color: brown;
   }
 
