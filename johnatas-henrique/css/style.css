@@ -426,8 +426,7 @@ a:hover {
     background-color: brown;
   }
 
-  .pomo-animation ,
-  .star-animation {
+  .pomo-animation , .star-animation {
     display: none;
   }
 }
@@ -468,8 +467,7 @@ a:hover {
     padding-left: 0.75em;
   }
 
-  .main-lead-2 ,
-  .main-lead-3 {
+  .main-lead-2 , .main-lead-3 {
     column-count: 2;
   }
 
