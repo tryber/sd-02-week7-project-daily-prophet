@@ -172,7 +172,7 @@ footer {
 @media ( min-width : 761px ) {
 
   * {
-    cursor: url(  'imgs/wand.png'  ) , auto;
+    cursor: url( 'imgs/wand.png' ) , auto;
   }
 
   h2 {
@@ -257,7 +257,6 @@ footer {
   }
 
   #pomo {
-    animation-delay: 3s;
     animation: pomofly 10s ease-in-out 3s 3 alternate forwards;
     position: absolute;
     width: 250px;
