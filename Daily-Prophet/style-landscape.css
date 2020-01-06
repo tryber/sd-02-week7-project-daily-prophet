@@ -4,21 +4,21 @@
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   box-sizing: border-box;
 }
- 
+
 p {
-    color: white;
-  }
+  color: white;
+}
 
 body {
-    background-color: red;
-    width: 100%;
-  }
+  background-color: red;
+  width: 100%;
+}
 
-  .jornal {
-    background-color: black;
-    width: 80%;
-  }
+.jornal {
+  background-color: black;
+  width: 80%;
+}
 
-  h3 {
-    color: white;
-  }
+h3 {
+  color: white;
+}
