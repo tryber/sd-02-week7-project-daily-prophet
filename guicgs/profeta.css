@@ -148,6 +148,14 @@ aside {
   color: white;
 }
 
+#titulo-aside {
+  color: black;
+  background-color: white;
+  padding: 0;
+  text-align: center;
+  margin: 0 -1rem;
+}
+
 footer {
   font-family: monospace, sans-serif;
   text-align: center;
