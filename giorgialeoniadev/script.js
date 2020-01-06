@@ -7,14 +7,13 @@ function createClass() {
 }
 publi.addEventListener('click', createClass);
 
-function growSection() {
-    const item = event.target;
-    item.classList.toggle('bigger-section');
+function growSection(){
+  const item = event.target;
+  item.classList.toggle('bigger-section');
 }
 
 function clickOn(item){
-    item.addEventListener('click', growSection);
-    console.log('rolou');
+  item.addEventListener('click', growSection);
 }
 
 sectionArr.forEach(clickOn);

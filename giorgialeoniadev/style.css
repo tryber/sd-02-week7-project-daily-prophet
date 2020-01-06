@@ -94,8 +94,8 @@ footer {
   h2 {
     margin-top: 10px;
     margin-bottom: 5px;
-    font-family: BodoniXT;
-    src: url(BodoniXT.ttf) format( "truetype" );
+    font-family: 'BodoniXT';
+    src: url( BodoniXT.ttf ) format( "truetype" );
     font-size: 20px;
   }
 
@@ -155,8 +155,8 @@ footer {
 
   .ads {
     margin-top: 10px;
-    font-family: BodoniXT;
-    src: url(BodoniXT.ttf) format( "truetype" );
+    font-family: 'BodoniXT';
+    src: url( BodoniXT.ttf ) format( "truetype" );
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 10px;
@@ -182,8 +182,8 @@ footer {
   h2 {
     margin-top: 10px;
     margin-bottom: 5px;
-    font-family: BodoniXT;
-    src: url(BodoniXT.ttf) format( "truetype" );
+    font-family: 'BodoniXT';
+    src: url( BodoniXT.ttf ) format( "truetype" );
     font-size: 20px;
   }
 
@@ -291,8 +291,8 @@ footer {
 
   .ads {
     margin: 10px 0 0 10px;
-    font-family: BodoniXT;
-    src: url(BodoniXT.ttf) format( "truetype" );
+    font-family: 'BodoniXT';
+    src: url( BodoniXT.ttf ) format( "truetype" );
     position: absolute;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -314,57 +314,57 @@ footer {
 
   @keyframes broomfly {
     0% {
-      transform: scale(1 , 1);
+      transform: scale( 1 , 1 );
     }
 
     10% {
-      transform: scale(2 , 2);
+      transform: scale( 2 , 2 );
     }
 
     20% {
-      transform: rotate(0deg);
+      transform: rotate( 0deg );
     }
 
     30% {
-      transform: rotate(360deg);
+      transform: rotate( 360deg );
     }
 
     50% {
-      transform: translate(0px, -100px);
+      transform: translate( 0px , -100px );
     }
 
     55% {
-      transform: translate(0px, 100px);
+      transform: translate( 0px , 100px );
     }
 
     75% {
-      transform: skew(-60deg, 30deg);
+      transform: skew( -60deg , 30deg );
     }
 
     80% {
-      transform: skew(0deg, 0deg);
+      transform: skew( 0deg , 0deg );
     }
 
     100% {
-      transform: translate(4000px, -10px);
+      transform: translate( 4000px , -10px );
     }
   }
 
 .bigger-section {
-  animation: growth 4s steps(8, end) 1s 1 alternate forwards;
+  animation: growth 4s steps( 8 , end ) 1s 1 alternate forwards;
   transition-duration: 4s;
 }
 
 @keyframes growth {
   0% {
-    transform: scale(1 , 1);
+    transform: scale( 1 , 1 );
   }
   70% {
     font-weight: 600;
   }
   100% {
     font-weight: 700;
-    transform: scale(1.5 , 1.5);
+    transform: scale( 1.5 , 1.5 );
   }
 }
 
@@ -375,22 +375,22 @@ footer {
 
 @keyframes starFlow {
   0% {
-    transform: scale(1 , 1);
+    transform: scale( 1 , 1 );
   }
   20% {
-    transform: rotate(0deg);
+    transform: rotate( 0deg );
   }
   40% {
-  transform: rotate(360deg);
+  transform: rotate( 360deg );
   }
   70% {
-    transform: translate(100px, 0px);
+    transform: translate( 100px , 0px );
   }
   85% {
-    transform: translate(200px, 0px);
+    transform: translate( 200px , 0px );
   }
   100% {
-    transform: scale(1.0 , 1.0);
+    transform: scale( 1.0 , 1.0 );
   }
 }
 }
