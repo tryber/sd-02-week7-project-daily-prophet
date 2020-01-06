@@ -1,10 +1,9 @@
 * {
-
-  /* border: 1px solid red; */
   margin: 0;
 }
 
 body {
+  overflow-x: hidden;
   background-color: black;
   height: 100%;
   font-family: Lilita One , cursive;
@@ -377,10 +376,6 @@ nav {
     transition-property: transform font-weight background-color;
     transition-duration: 4s;
     transition-timing-function: linear;
-  }
-
-  .animaTexto:active {
-    transform: scale( 1.5 , 1.5 );
     background-color: chartreuse;
     animation-name: negrito;
     animation-duration: 4s;
@@ -391,22 +386,12 @@ nav {
 
     0% {
       font-weight: 450;
-    }
-
-    25% {
-      font-weight: 550;
-    }
-
-    50% {
-      font-weight: 650;
-    }
-
-    75% {
-      font-weight: 700;
+      transform: scale( 1 , 1 );
     }
 
     100% {
       font-weight: 800;
+      transform: scale( 1.5 , 1.5 );
     }
   }
 
