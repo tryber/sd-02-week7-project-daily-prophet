@@ -144,13 +144,16 @@ footer {
   animation-play-state: paused;
 }
 
-#vassoura {
+.img_vassoura {
+  width: 100px;
   position: relative;
   left: 30%;
-  width: 100px;
+}
+
+.vassoura {
   animation-name: vassoura-magica;
   animation-duration: 5s;
-  animation-delay: 3s;
+  animation-delay: 0.3s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
   animation-timing-function: steps(15);
@@ -163,15 +166,6 @@ footer {
   animation-duration: 5s;
   animation-iteration-count: infinite;
   animation-direction: alternate;
-}
-
-.crescer_artigo {
-  transition: all 0.3s steps(10);
-}
-
-.crescer_artigo:hover {
-  transform: scale(1.5);
-  font-weight: 1000;
 }
 
 @keyframes golden-star {
@@ -225,6 +219,12 @@ footer {
     left: -60%;
     top: 120px;
   }    
+}
+
+@media screen and (min-width:760px) {
+  .crescer_artigo {
+    transition: all 0.3s steps(10);
+  }
 }
 
 @media screen and (max-width:760px) {
@@ -287,7 +287,7 @@ footer {
     animation-play-state: paused;
   }
 
-  #vassoura {
+  .vassoura {
     position: relative;
     left: 30%;
     width: 100px;
