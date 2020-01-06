@@ -4,7 +4,7 @@ vassoura.addEventListener('click', function () {
 });
 
 const textos = document.getElementsByClassName('texto-artigo');
-for (let i = 0; i < textos.length; i++) {
+for (let i = 0; i < textos.length; i += 1) {
   textos[i].addEventListener('click', function () {
     textos[i].style.transform = 'scale(1.5)';
     textos[i].style.fontWeight = 'bold';

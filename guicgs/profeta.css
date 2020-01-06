@@ -212,7 +212,7 @@ a:hover {
   animation-delay: 3s, 6s, 9s;
 }
 
-.div-passaro:hover {
+.div-passaro:hover , .passaro:hover {
   animation-play-state: paused;
 }
 
