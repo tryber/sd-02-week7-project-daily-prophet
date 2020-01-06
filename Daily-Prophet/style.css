@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  box-sizing: border-box;
 }
 
 body {
@@ -10,19 +11,121 @@ body {
   justify-content: center;
   align-content: center;
   align-items: center;
-  box-sizing: border-box;
+  position: relative;
+}
+
+@font-face {
+  font-family: Mariage;
+  src: url(./fonts/mariage.ttf);
+}
+
+@font-face {
+  font-family: Fraktur;
+  src: url(./fonts/Walbaum-FrakturUNZ1.ttf);
+}
+
+@font-face {
+  font-family: Newspapper;
+  src: url(./fonts/3\ Times\ Recycled\ Old\ Newspaper.ttf);
 }
 
 .pegadas-pai {
   width: 5%;
   position: absolute;
   bottom: 0;
-  left: 0;
+  left: 10%;
+  animation-name: pegadas-pai;
+  animation-delay: 3s;
+  animation-duration: 15s;
+  animation-direction: alternate;
+  animation-iteration-count: 3;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+  cursor: pointer;
+}
 
+.aumentaTexto {
+  animation-name: aumentaTexto;
+  animation-duration: 8s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes aumentaTexto {
+  from {
+    transform: scale(1.0, 1.0);
+  }
+
+  50% {
+    transform: scale(1.5, 1.5);
+    font-weight: 900;
+  }
+
+  to {
+    transform: scale(1.0, 1.0);
+    font-weight: normal;
+  }
 }
 
 #pegadas {
   width: 100%;
+  text-align: center;
+}
+
+.pegadas-pai:hover {
+  animation-play-state: paused;
+}
+
+#text-pegada {
+  color: gray;
+  font-size: 2em;
+}
+
+.imagem-estrela {
+  width: 10%;
+  position: absolute;
+  top: 1%;
+  right: 10%;
+  animation-name: estrela;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  -moz-animation-direction: alternate;
+}
+
+#estrela {
+  width: 100%;
+}
+
+@keyframes estrela {
+  from {
+    transform: scale(1.0, 1.0);
+    transform: rotate(0deg);
+    filter: opacity(0%);
+  }
+
+  25% {
+    transform: scale(1.0, 1.0);
+    transform: rotate(90deg);
+    filter: opacity(25%);
+  }
+
+  50% {
+    transform: scale(1.5, 1.5);
+    transform: rotate(180deg);
+    filter: opacity(50%);
+  }
+
+  75% {
+    transform: scale(1.5, 1.5);
+    transform: rotate(270deg);
+    filter: opacity(75%);
+  }
+
+  to {
+    transform: scale(2.0, 2.0);
+    transform: rotate(360deg);
+    filter: opacity(90%);
+  }
 }
 
 .clear {
@@ -32,9 +135,8 @@ body {
 .jornal {
   background-color: rgb(225, 225, 221);
   margin: 1em auto;
-  box-sizing: border-box;
   padding: 1em;
-  width: 1600px;
+  width: 1024px;
   border-radius: 1em;
 }
 
@@ -57,7 +159,8 @@ header #dailyprophet {
 .itensNavBar {
   display: inline-block;
   background-color: rgb(92, 91, 91);
- 
+  border-radius: 20%;
+
 }
 
 li {
@@ -73,10 +176,11 @@ ol {
 a {
   color: white;
   text-decoration: none;
+  padding: 0 20px;
 }
 
 a:hover {
-  color: greenyellow;
+  color: rgb(156, 243, 24);
 }
 
 .para-cego-ver {
@@ -102,12 +206,12 @@ article {
   margin: 0;
   box-sizing: border-box;
   display: flex;
-  flex-wrap: wrap;
   width: 70%;
 }
 
 .container1 {
   width: 40%;
+  padding-right: 1em;
 }
 
 .container2-pai {
@@ -118,22 +222,34 @@ article {
 .container2 {
   border-left: 1px solid grey;
   height: 100%;
-  margin-left: 5%;
+}
+
+.imagem-malfoy {
+  width: 100%;
 }
 
 img#malfoy {
-  width: 300px;
+  width: 100%;
   border-radius: 50%;
-  float: left;
   shape-outside: circle();
   margin-right: 150px;
   filter: grayscale(100%);
 }
 
+.imagem-albus {
+  width: 90%;
+  margin: 0 auto;
+}
+
 img#albus {
-  width: 400px;
+  width: 100%;
   border-radius: 60%;
   filter: grayscale(100%);
+}
+
+.imagem-bellatrix {
+  width: 95%;
+  margin: 0 auto;
 }
 
 img#bellatrix {
@@ -143,20 +259,23 @@ img#bellatrix {
 }
 
 p.texto-section {
-  font-size: 1.2em;
+  font-size: 2.1em;
   width: 100%;
   text-align: justify;
+  font-family: 'Mariage', serif;
 }
 
 p.texto-section3 {
-  font-size: 2.3em;
+  font-size: 4em;
   width: 100%;
   text-align: center;
+  font-family: 'Mariage', serif;
 }
 
 h3 {
   font-size: 2em;
   text-align: center;
+  font-family: 'Newspapper', serif;
 }
 
 hr {
@@ -178,14 +297,28 @@ div.container-nimbus {
   flex-direction: column;
 }
 
+.imagem-nimbus {
+  width: 100%;
+
+}
+
+.nimbus-voando {
+  animation-name: nimbus-voando;
+  animation-duration: 10s;
+  animation-fill-mode: forwards;
+  animation-timing-function: linear;
+}
+
 #nimbus {
   width: 100%;
-  margin-top: 50px;
+  transform: scaleX(-1);
 }
 
 p.texto-pub {
-  font-size: 2.2em;
+  font-size: 3em;
   padding: 10px;
+  text-align: justify;
+  font-family: 'Fraktur', serif;
 }
 
 .blocoFooter {
@@ -194,3 +327,124 @@ p.texto-pub {
   align-content: center;
   margin-top: 2%;
 }
+
+@keyframes pegadas-pai {
+  from {
+    bottom: 0;
+    left: 10%;
+  }
+
+  10% {
+    transform: rotate(15deg);
+    bottom: 20%;
+    left: 15%;
+  }
+
+  20% {
+    transform: rotate(-15deg);
+    bottom: 40%;
+    left: 5%;
+  }
+
+  30% {
+    transform: rotate(15deg);
+    bottom: 60%;
+    left: 15%;
+  }
+
+  40% {
+    transform: rotate(-15deg);
+    bottom: 80%;
+    left: 5%;
+  }
+
+  45% {
+    transform: rotate(180deg);
+    bottom: 100%;
+    left: 5%;
+  }
+
+  50% {
+    transform: rotate(180deg);
+    bottom: 100%;
+    left: 15%;
+  }
+
+  60% {
+    transform: rotate(195deg);
+    bottom: 80%;
+    left: 5%;
+  }
+
+  70% {
+    transform: rotate(165deg);
+    bottom: 60%;
+    left: 15%;
+  }
+
+  80% {
+    transform: rotate(195deg);
+    bottom: 40%;
+    left: 5%;
+  }
+
+  90% {
+    transform: rotate(165deg);
+    bottom: 20%;
+    left: 15%;
+  }
+
+  95% {
+    transform: rotate(270deg);
+    bottom: 0%;
+    left: 15%;
+  }
+
+  to {
+    transform: rotate(360deg);
+    bottom: 0%;
+    left: 10%;
+  }
+}
+
+@keyframes nimbus-voando {
+  0% {
+    transform: scale(1.0, 1.0);
+  }
+
+  12.5% {
+    transform: scale(4.0, 4.0);
+  }
+
+  20% {
+    transform: rotate(0deg);
+  }
+
+  25% {
+    transform: rotate(360deg);
+  }
+
+  37.5% {
+    transform: translateY(-100px);
+  }
+
+  50% {
+    transform: translateY(0px);
+    transform: skew(0deg);
+  }
+
+  62.5% {
+    transform: skew(180deg);
+  }
+
+  75% {
+    transform: rotate(-45deg);
+  }
+
+  100% {
+    transform: translateX(-100000px);
+  }
+}
+
+
+@media (max-width: 760px)

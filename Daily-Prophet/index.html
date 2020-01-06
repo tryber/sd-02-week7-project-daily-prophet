@@ -5,16 +5,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Projeto Daily Prophet - Harry Potter</title>
   <link rel="stylesheet" type="text/css" href="./style.css">
+  <title>Projeto Daily Prophet - Harry Potter</title>
 </head>
 
 <body>
-  <div class="pegadas-pai">
-  <img id="pegadas" src="./images/pegadas.webp" alt="Pegadas">
-</div>
   <div class="jornal">
-    <hr>
     <header class="header">
       <h1 class="para-cego-ver">Daily Prophet</h1><img id="dailyprophet"
         src="https://fontmeme.com/permalink/191213/83623cda9b3c3311196ad876bb539f9f.png" alt="fonte-de-harry-potter"
@@ -24,7 +20,7 @@
       <h2 class="para-cego-ver">Links de Navegação</h2>
       <ol>
         <li class="itensNavBar"><a href="#">Página Inicial</a></li>
-        <li class="itensNavBar"><a href="#">Esportes</a></li>
+        <li class="itensNavBar"><a href="#">Quidditch</a></li>
         <li class="itensNavBar"><a href="#">Fale com o Profeta</a></li>
       </ol>
     </nav>
@@ -34,7 +30,9 @@
         <h2 class="para-cego-ver">Secção Notícias</h2>
         <div class="container1">
           <section class="section1">
-            <img id="malfoy" src="./images/malfoy-lancado.gif" alt="Malfoy é Lançado">
+            <div class="imagem-malfoy">
+              <img id="malfoy" src="./images/malfoy-lancado.gif" alt="Malfoy é Lançado">
+            </div>
             <h3>Malfoy Perde Combate</h3>
             <p class="texto-section">Mussum Ipsum, cacilds vidis litro abertis. Admodum accumsan disputationi eu sit.
               Vide electram sadipscing
@@ -47,8 +45,10 @@
           </section>
           <hr>
           <section class="section2">
-            <img id="albus" src="./images/albus-rouba-make.gif" alt="Albus Rouba Make">
-            <h3>Dumbledore Ladrão</h3>
+            <div class="imagem-albus">
+              <img id="albus" src="./images/albus-rouba-make.gif" alt="Albus Rouba Make">
+            </div>
+            <h3>Dumbledore Ladrao</h3>
             <p class="texto-section">Mussum Ipsum, cacilds vidis litro abertis. Admodum accumsan disputationi eu sit.
               Vide
               electram sadipscing
@@ -62,8 +62,10 @@
         </div>
         <section class="container2-pai">
           <div class="container2">
-            <h3>Sirus é ASSASINADO</h3>
-            <img id="bellatrix" src="./images/bellatrix-avada-kedrava.gif" alt="Bellatrix Mata Sirius">
+            <h3>Sirus e ASSASINADO</h3>
+            <div class="imagem-bellatrix">
+              <img id="bellatrix" src="./images/bellatrix-avada-kedrava.gif" alt="Bellatrix Mata Sirius">
+            </div>
             <p class="texto-section3">Mussum Ipsum, cacilds vidis litro abertis. Admodum accumsan disputationi eu sit.
               Vide
               electram sadipscing
@@ -78,9 +80,12 @@
       </article>
       <aside class="publicidade">
         <h3>SPONSORED</h3>
+        <br>
         <h3>Companhia Nimbus de Vassouras de Corrida</h3>
         <div class="container-nimbus">
-          <img id="nimbus" src="./images/nimbus2001.png" alt="Nimbus 2001">
+          <div class="imagem-nimbus">
+            <img id="nimbus" src="./images/nimbus2001.png" alt="Nimbus 2001">
+          </div>
           <p class="texto-pub">Mussum Ipsum, cacilds vidis litro abertis. Admodum accumsan disputationi eu sit.
             Vide
             electram sadipscing
@@ -95,8 +100,13 @@
       <h4>Projeto Daily Prophet Criado Por: Felipe A. Lima</h6>
     </footer>
   </div>
+  <div class="pegadas-pai">
+    <p id="text-pegada">Severus Snape</p>
+    <img id="pegadas" src="./images/white-footsteps-png-3.png" alt="Pegadas">
+  </div>
+  <div class="imagem-estrela">
+    <img id="estrela" src="./images/estrela-1.png" alt="">
+  </div>
 </body>
-<!-- <img src="./images/varinha-harry-potter-png-lord-voldemort-harry-pott-f24caf87dec9e055.jpg"
-      alt="Varinha do Harry Potter"> -->
-
+<script type="text/javascript" src="./script.js"></script>
 </html>
