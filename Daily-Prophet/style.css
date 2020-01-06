@@ -115,7 +115,7 @@ article img {
   filter: grayscale( 100% );
 }
 
-img#malfoy {
+#malfoy {
   width: 100%;
   border-radius: 50%;
   padding: 2%;
@@ -125,7 +125,7 @@ img#malfoy {
   width: 100%;
 }
 
-img#albus {
+#albus {
   width: 100%;
   border-radius: 60%;
   padding: 2%;
@@ -135,7 +135,7 @@ img#albus {
   width: 100%;
 }
 
-img#bellatrix {
+#bellatrix {
   width: 100%;
   border-radius: 10%;
 }
@@ -246,7 +246,7 @@ p.texto-pub {
     justify-content: space-between;
   }
 
-  aside.publicidade {
+  .publicidade {
     width: 30%;
   }
 
@@ -475,7 +475,7 @@ p.texto-pub {
 }
 
 @media only screen and ( max-width : 760px ) and ( orientation : landscape ) {
-  
+
   body {
     width: 100%;
   }
@@ -514,7 +514,7 @@ p.texto-pub {
     width: 85%;
   }
 
-  div.imagem-daily {
+  .imagem-daily {
     width: 100%;
   }
 
@@ -522,7 +522,7 @@ p.texto-pub {
     width: 85%;
   }
 
-  aside.publicidade {
+  .publicidade {
     width: 85%;
   }
 
