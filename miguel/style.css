@@ -32,6 +32,7 @@ a {
 }
 
 @media ( orientation : landscape ) and ( max-width : 760px ) {
+
   body {
     background-color: gray;
   }
@@ -47,6 +48,7 @@ a {
 }
 
 @media ( min-width : 761px ) {
+
   .artigo-principal {
     width: 70%;
   }
