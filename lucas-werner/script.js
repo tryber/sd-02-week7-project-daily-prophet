@@ -1,5 +1,5 @@
-// pomo de ouro ao invés da estrela, como havia comentado na apresentação
-// "$" declarada pro Code Climate
+/* global $ */
+
 function makeNewPosition() {
   const h = $(window).height() - 60;
   const w = $(window).width() - 60;
