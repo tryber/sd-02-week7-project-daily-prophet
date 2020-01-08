@@ -329,7 +329,7 @@ article img {
     animation-name: estrela;
     animation-duration: 3s;
     animation-iteration-count: infinite;
-    animation-timing-function: steps( 10 , end);
+    animation-timing-function: steps( 10 , end );
     animation-direction: alternate;
   }
 
