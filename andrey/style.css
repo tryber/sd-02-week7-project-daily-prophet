@@ -21,26 +21,42 @@ h2 {
   font-family: Ubuntu, sans-serif;
 }
 
-p {
+article {
   white-space: normal;
 }
 
-.estrela {
-  width: 90px;
-  height: 90px;
-  position: absolute;
-  top: 50px;
-  left: 270px;
-  background: rgb( 255 , 248 , 238 ) url( 'img/estrelas.gif' ) no-repeat;
-  background-position: 3px -168px;
+article , h1 , h2 {
+  font-size: 0.7em;
+  animation-name: grow;
+  animation-duration: 5000ms;
+  animation-fill-mode: forwards;
+  animation-play-state: paused;
 }
 
-.container > .titulo {
+.estrela {
+  width: 20px;
+  height: 20px;
+  position: relative;
+  top: 0px;
+  left: 200px;
+  animation: rotating 2s steps(20, end) infinite;
+}
+
+/* .chapeu {
+  transition-duration: 1s;
+  transition-property: transform;
+}
+
+.chapeu:hover {
+  transform: scale(1.5) rotate(45deg);
+} */
+
+.titulo {
   display: flex;
   justify-content: center;
 }
 
-.container > .titulo > h1 {
+ .titulo > h1 {
   margin-top: 5%;
   text-align: center;
   font-size: 3em;
@@ -48,7 +64,7 @@ p {
   text-decoration: underline;
 }
 
-.container > .titulo > img {
+.titulo > img {
   margin-top: 3%;
   margin-right: 3%;
   width: 8%;
@@ -56,22 +72,23 @@ p {
 
 .container {
   width: 70vw;
-  height: 90%;
+  height: 92%;
   margin: 2%;
+  margin-bottom: 0;
   background-color: rgb( 255 , 248 , 238 );
   border-radius: 20px;
 }
 
-.container .nota {
-  width: 20%;
+aside {
+  width: 80%;
   margin: 3%;
 }
 
-.container .nota > h2 {
+aside > h2 {
   font-size: 2em;
 }
 
-.container .nota > p {
+aside > article {
   margin: 3% auto;
 }
 
@@ -87,6 +104,10 @@ p {
   padding: 2%;
 }
 
+aside {
+  width: 20%;
+}
+
 .container .right > h2 , .container .left > h2 {
   font-size: 2em;
   text-align: center;
@@ -98,13 +119,13 @@ p {
   border-radius: 5px;
 }
 
-.container .left > p {
+.container .left > article {
   margin: 3% 6%;
 }
 
-.container .left > img {
+.container .left img {
   width: 90%;
-  margin: 0 auto;
+  margin-left: 5%;
   margin-top: 7%;
   border-radius: 5px;
 }
@@ -130,6 +151,11 @@ p {
   animation-duration: 5000ms;
   animation-fill-mode: forwards;
   animation-play-state: paused;
+}
+
+footer {
+  margin: 0 auto;
+  text-align: center;
 }
 
 @keyframes move1 {
@@ -188,14 +214,59 @@ p {
   }
 }
 
-@media ( max-width : 760px ) {
+@keyframes grow {
+
+  from {
+    transform: scale(1);
+    font-weight: normal;
+  }
+
+  to {
+    font-weight: bold;
+    transform: scale(1.5);
+  }
+}
+
+@keyframes ungrow {
+
+  from {
+    transform: scale(1);
+    font-weight: bold;
+  }
+
+  to {
+    font-weight: normal;
+    transform: scale(0.75);
+  }
+}
+
+@keyframes rotating {
+
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media ( min-width : 1000px ) {
+
+  .chapeu {
+    transition-duration: 1s;
+    transition-property: transform;
+  }
+
+  .chapeu:hover {
+    transform: scale(1.5) rotate(45deg);
+  }
+}
+
+@media screen and ( max-width : 760px ) {
 
   h1 {
     margin-bottom: 4%;
-  }
-
-  .estrela {
-    display: none;
   }
 
   .container {
@@ -206,7 +277,7 @@ p {
     display: none;
   }
 
-  .container > div:nth-of-type( 2 ) {
+  .container > div {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -224,7 +295,7 @@ p {
     width: 100%;
   }
 
-  .container .right > p {
+  .container .right > article {
     margin: 8%;
   }
 
@@ -237,27 +308,45 @@ p {
     width: 80%;
   }
 
-  .container .left > p {
+  .container .left > article {
     margin: 8% 11%;
   }
 
-  .container .left > img {
-    width: 80%;
+  footer {
+    margin:2%;
   }
 
-  .container .nota {
+  aside {
     order: 1;
     width: 100%;
     grid-column: 2;
     grid-row: 1;
   }
 
-  .container .nota > h2 {
+  aside > h2 {
     text-align: center;
   }
 
-  .container .nota > p {
+  aside > article {
     margin: 6%;
     margin-right: 10%;
   }
 }
+
+@media screen and (max-width: 760px) and (orientation: landscape) {
+
+  .container {
+    overflow: scroll;
+  }
+
+  .container > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  .container .right , .container .left , aside {
+    width: 100%;
+  }
+}
+
