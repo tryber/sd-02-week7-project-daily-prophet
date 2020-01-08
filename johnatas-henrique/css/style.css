@@ -1,0 +1,613 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: Mariage;
+  src: url( '../fonts/mariage.ttf' );
+}
+
+@font-face {
+  font-family: Impacts;
+  src: url( '../fonts/impact.ttf' );
+}
+
+body {
+  background-color: black;
+  font-family: Vollkorn , serif;
+  font-size: 16px;
+  overflow-x: hidden;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  margin-bottom: 0.5em;
+}
+
+a , a:visited {
+  color: black;
+  font-weight: 700;
+}
+
+a:hover {
+  background-color: black;
+  color: white;
+  padding: 0.25em;
+  border-radius: 0.5em;
+}
+
+.rel-anim {
+  position: relative;
+}
+
+.alinha-menu {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.menu-helper {
+  font-size: 4vw;
+  font-family: Impacts , sans-serif;
+  margin-right: 0.5em;
+}
+
+.animated-menu {
+  display: inline-block;
+  cursor: pointer;
+}
+
+.bar1 , .bar2 , .bar3 {
+  width: 2.5em;
+  height: 0.3em;
+  background-color: black;
+  margin: 0.4em 0;
+  transition: 0.4s;
+}
+
+.change .bar1 {
+  transform: rotate( -45deg ) translate( -9px , 6px );
+}
+
+.change .bar2 {
+  opacity: 0;
+}
+
+.change .bar3 {
+  transform: rotate( 45deg ) translate( -8px , -8px );
+}
+
+.hide {
+  display: none;
+}
+
+.para-cego-ver {
+  border: 0;
+  clip: rect( 0 0 0 0 );
+  clip-path: polygon( 0 0 , 0 0 , 0 0 );
+  height: 0.1em;
+  margin: -0.1em;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 0.1em;
+}
+
+.fw-b {
+  font-weight: 700;
+}
+
+.mb-2e {
+  margin-bottom: 2em;
+}
+
+.mr-1e {
+  margin-right: 1em;
+}
+
+.w-10 {
+  width: 8%;
+}
+
+.w-25 {
+  width: 25%;
+}
+
+.w-70 {
+  width: 70%;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.bg-color {
+  background-color: rgb( 255 , 248 , 238 );
+  margin: 1em auto;
+  border-radius: 1em;
+  padding: 0.5em;
+  width: 98%;
+}
+
+.navbar {
+  width: 100%;
+  padding-top: 5vw;
+}
+
+.navbar-ulist {
+  font-family: Impacts , serif;
+  text-transform: uppercase;
+  margin-bottom: 0.5em;
+}
+
+.navbar-ulist li {
+  margin: 0.25em 0;
+  text-align: center;
+  border-bottom: 1px solid black;
+}
+
+.navbar-ulist a {
+  font-size: 6vw;
+}
+
+.logo-img {
+  display: flex;
+  justify-content: center;
+  margin-top: -3%;
+  padding-bottom: 0.25em;
+}
+
+.logo-shield {
+  width: 15.625%;
+}
+
+.logo-escrito {
+  width: 83.875%;
+  z-index: 2;
+}
+
+.top-line {
+  border: none;
+  border-top: 0.188em solid rgb( 28 , 25 , 21 );
+  border-bottom: 0.063em solid rgb( 28 , 25 , 21 );
+  box-sizing: unset;
+  height: 0.125em;
+}
+
+.bottom-line {
+  border: none;
+  border-top: 0.063em solid rgb( 29 , 26 , 22 );
+  border-bottom: 0.188em solid rgb( 28 , 25 , 21 );
+  box-sizing: unset;
+  height: 0.125em;
+}
+
+.under-img {
+  text-align: center;
+  font-family: Kreon , serif;
+  font-size: 1.6vw;
+  font-weight: 700;
+  letter-spacing: 0.313em;
+}
+
+.container-leads {
+  display: flex;
+  margin-bottom: 0.5em;
+}
+
+.daily-comp {
+  background-color: black;
+  color: white;
+  width: 32%;
+  text-align: center;
+  padding: 0.4em;
+  position: relative;
+  font-size: 3vw;
+  font-family: Rokkitt , serif;
+}
+
+.daily-comp-l1 {
+  font-size: 2.5vw;
+  text-align: center;
+  display: block;
+}
+
+.daily-comp-l2 {
+  display: block;
+  font-size: 2.1vw;
+  font-weight: 700;
+}
+
+.daily-comp-button {
+  width: 5vw;
+  font-size: 1vw;
+  font-weight: 700;
+  background-color: black;
+  color: white;
+  border: none;
+  position: absolute;
+  right: 1vw;
+  bottom: 2vw;
+}
+
+.national-weather {
+  width: 34%;
+  margin-left: 0.625em;
+  text-align: justify;
+  padding-bottom: 0.4em;
+  font-size: 3vw;
+  font-family: Mariage , cursive;
+}
+
+.national-weather-title {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  font-size: 4vw;
+  font-family: Impacts , sans-serif;
+}
+
+.zodiac-lorem {
+  width: 34%;
+  margin-left: 0.625em;
+  text-align: justify;
+  padding-bottom: 0.4em;
+  font-size: 3vw;
+  font-family: Mariage , cursive;
+}
+
+.container-main {
+  display: flex;
+  border: 2px solid black;
+  position: relative;
+}
+
+.text-over-border {
+  background: rgb( 255 , 248 , 238 );
+  font-family: Kreon , serif;
+  font-weight: 700;
+  line-height: 1.5vw;
+  padding: 0 0.5em;
+  position: absolute;
+  text-transform: uppercase;
+  transform: rotateZ( 90deg );
+}
+
+.text-over-border-l1 {
+  left: -7.8em;
+  top: 70vw;
+}
+
+.text-over-border-r1 {
+  right: -7.9em;
+  top: 40vw;
+}
+
+.flex-col-1 {
+  flex: 40%;
+  max-width: 40%;
+}
+
+.flex-col-2 {
+  flex: 60%;
+  max-width: 60%;
+  padding: 0 0.75em 0 0.5em;
+}
+
+.boy-who-lived {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.aside-article {
+  width: 30%;
+  padding: 0.625em 0.75em 1.25em 0;
+  text-align: justify;
+  padding-bottom: 0.4em;
+  font-size: 3vw;
+  font-family: Mariage , cursive;
+}
+
+.aside-title {
+  background-color: black;
+  color: white;
+  padding: 1em 0.1em;
+  font-size: 6vw;
+  text-align: center;
+}
+
+.first-letter {
+  padding-top: 0.75em;
+}
+
+.first-letter:first-letter {
+  text-transform: capitalize;
+  font-size: 4em;
+  margin: 0 0.3em 0 0;
+  padding: 0.2em 0.1em 0.1em 0.2em;
+  float: left;
+  font-weight: 700;
+  text-shadow: 3px 0 0 rgb( 175 , 124 , 13 );
+}
+
+.main-lead {
+  font-size: 8vw;
+  font-family: Impacts , sans-serif;
+  text-align: center;
+  margin: 0;
+  width: 100%;
+}
+
+.main-lead-1 {
+  padding: 0.625em 0 1.25em 1.5em;
+  text-align: justify;
+  padding-bottom: 0.4em;
+  font-size: 3vw;
+  font-family: Mariage , cursive;
+}
+
+.main-lead-2 , .main-lead-3 {
+  padding: 0.625em 0.25em 0;
+  text-align: justify;
+  padding-bottom: 0.4em;
+  font-size: 3vw;
+  font-family: Mariage , cursive;
+
+}
+
+.main-img {
+  padding: 0.625em 0 0 0.25em;
+}
+
+.broom-lead {
+  font-size: 6vw;
+  font-family: Impacts , sans-serif;
+  text-align: center;
+  font-weight: 400;
+  padding: 0;
+  width: 100%;
+}
+
+.broom-lead-1 {
+  padding: 0.625em 0 1.25em 1.5em;
+  text-align: justify;
+  padding-bottom: 0.4em;
+  font-size: 3vw;
+  font-family: Mariage , cursive;
+}
+
+.broom-img {
+  width: 60%;
+  cursor: pointer;
+  transform: rotate( 45deg );
+  margin: 0 auto;
+}
+
+.rodape {
+  font-size: 5vw;
+  margin-bottom: 2.5em;
+}
+
+.texto-rodape {
+  text-align: center;
+  margin-top: 0.25em;
+}
+
+.pomo-animation {
+  position: absolute;
+  transform: translate( 241% , -17% );
+  z-index: 3;
+  cursor: pointer;
+}
+
+.star-animation {
+  position: absolute;
+  left: 46%;
+  top: 2.6%;
+  transform: rotateZ( 45deg );
+  z-index: 3;
+  cursor: pointer;
+}
+
+@media screen and ( max-width : 760px ) and ( orientation : landscape ) {
+
+  .daily-comp , .daily-comp-button , .aside-title {
+    background-color: brown;
+  }
+
+  .pomo-animation , .star-animation {
+    display: none;
+  }
+}
+
+@media screen and ( min-width : 761px ) {
+
+  .alinha-menu {
+    display: none;
+  }
+
+  .navbar-ulist {
+    display: flex;
+    justify-content: center;
+    margin-top: 0.5em;
+  }
+
+  .navbar-ulist li {
+    margin: 0 0.75em;
+    display: inline-block;
+    border-bottom: none;
+  }
+
+  .navbar-ulist a {
+    font-size: 3vw;
+  }
+
+  .flex-col-1 {
+    flex: 35%;
+    max-width: 35%;
+  }
+
+  .flex-col-2 {
+    flex: 65%;
+    max-width: 65%;
+  }
+
+  .main-lead-1 {
+    padding-left: 0.75em;
+  }
+
+  .main-lead-2 , .main-lead-3 {
+    column-count: 2;
+  }
+
+  .broom-lead-1 {
+    padding-left: 0.75em;
+  }
+
+  .pomo-animation {
+    transform: translate( -12% , 47% );
+    animation: pomo 10s linear 3s 3 alternate forwards;
+  }
+
+  .pomo-animation:hover {
+    animation-play-state: paused;
+    cursor: pointer;
+  }
+
+  @keyframes pomo {
+
+    0% {
+      transform: translate( -12% , 47% );
+    }
+
+    45% {
+      transform: translate( 255% , 93% );
+    }
+
+    50% {
+      transform: translate( 284% , 88% );
+    }
+
+    60% {
+      transform: translate( 322% , 51% );
+    }
+
+    75% {
+      transform: translate( 331% , -21% );
+    }
+
+    87.5% {
+      transform: translate( 155% , -3% );
+    }
+
+    93% {
+      transform: translate( 224% , 7% );
+    }
+
+    100% {
+      transform: translate( 241% , -17% );
+    }
+  }
+
+  .broom-animation {
+    animation: broom 5s linear 1 forwards;
+  }
+
+  @keyframes broom {
+
+    0% {
+      transform: scale( 1 , 1 );
+    }
+
+    12.5% {
+      transform: scale( 2 , 2 );
+    }
+
+    25% {
+      transform: rotate( 45deg );
+    }
+
+    37.5% {
+      transform: rotate( 360deg );
+    }
+
+    50% {
+      transform: translate( 0 , -20% );
+    }
+
+    62.5% {
+      transform: translate( 0 , 20% );
+    }
+
+    75% {
+      transform: scaleX( -1 ) skew( -60deg );
+    }
+
+    87.5% {
+      transform: rotate( 45deg );
+    }
+
+    100% {
+      transform: translate( 4000px , -2000px );
+    }
+  }
+
+  .text-animation {
+    animation: texto 4s linear forwards;
+  }
+
+  @keyframes texto {
+
+    0% {
+      transform: scale( 1 , 1 );
+      font-weight: 400;
+    }
+
+    100% {
+      transform: scale( 1.5 , 1.5 );
+      font-weight: 700;
+    }
+  }
+
+  .star-animation {
+    animation: estrela 4s linear infinite forwards;
+  }
+
+  @keyframes estrela {
+
+    0% {
+      transform: scale( 1 , 1 ) rotateZ( 0deg );
+    }
+
+    30% {
+      transform: rotateZ( 360deg ) rotateX( 180deg );
+    }
+
+    45% {
+      transform: translateX( 40vw ) translateY( 8vh );
+    }
+
+    60% {
+      transform: translateX( -40vw ) translateY( -15vh );
+    }
+
+    80% {
+      transform: translateY( -20vh ) scale( 3 , 3 );
+    }
+
+    100% {
+      transform: scale( 1 , 1 ) rotateZ( 540deg );
+    }
+  }
+}
