@@ -396,7 +396,7 @@ nav {
     transition: transform linear 2s;
     animation-name: voa;
     animation-duration: 6s;
-    animation-timing-function: steps(40);
+    animation-timing-function: steps( 40 );
     animation-fill-mode: forwards;
   }
 
