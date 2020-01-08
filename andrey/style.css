@@ -278,6 +278,10 @@ footer {
     margin: 8%;
   }
 
+  .container aside > h2 {
+    text-align: center;
+  }
+
   .container .right > h2 {
     margin-top: 5%;
   }
@@ -300,10 +304,6 @@ footer {
     width: 100%;
     grid-column: 2;
     grid-row: 1;
-  }
-
-  .container aside > h2 {
-    text-align: center;
   }
 }
 
