@@ -274,11 +274,6 @@ article img {
     font-size: 370%;
   }
 
-  .cover:hover {
-    animation-play-state: paused;
-    cursor: pointer;
-  }
-
   .nimbus-voando {
     animation-name: nimbus-voando;
     animation-duration: 10s;
@@ -369,7 +364,7 @@ article img {
     }
   }
 
-  .pegadas-pai{
+  .pegadas-pai {
     width: 30%;
     background-color: transparent;
     display: initial;
@@ -378,18 +373,18 @@ article img {
     left: -5%;
   }
 
-  .container-pegadas{
+  .container-pegadas {
     width: 100%;
   }
 
-  #pegadas{
+  #pegadas {
     width: 100%;
     background-color: transparent;
     filter: invert();
     transform: rotate( 270deg );
   }
 
-  .texto-pegada{
+  .texto-pegada {
     transform: rotate( 90deg );
     color: white;
     font-size: 150%;
@@ -399,7 +394,7 @@ article img {
 
   }
 
-  .cover{
+  .cover {
     display: flex;
     transform: rotate( 270deg );
     background: black;
@@ -411,14 +406,17 @@ article img {
     animation: andaPegada 7s ease-in-out 3s 3 alternate forwards;
   }
 
+  .cover:hover {
+    animation-play-state: paused;
+    cursor: pointer;
+  }
+
   #severus {
     position: relative;
     left: 20%;
     top: 100%;
     width: fit-content;
   }
-
-
 
   @keyframes andaPegada {
 
