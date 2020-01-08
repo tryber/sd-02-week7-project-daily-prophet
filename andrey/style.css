@@ -37,26 +37,17 @@ article , h1 , h2 {
   width: 20px;
   height: 20px;
   position: relative;
-  top: 0px;
+  top: 0;
   left: 200px;
-  animation: rotating 2s steps(20, end) infinite;
+  animation: rotating 2s steps( 20 , end ) infinite;
 }
-
-/* .chapeu {
-  transition-duration: 1s;
-  transition-property: transform;
-}
-
-.chapeu:hover {
-  transform: scale(1.5) rotate(45deg);
-} */
 
 .titulo {
   display: flex;
   justify-content: center;
 }
 
- .titulo > h1 {
+.titulo > h1 {
   margin-top: 5%;
   text-align: center;
   font-size: 3em;
@@ -217,37 +208,37 @@ footer {
 @keyframes grow {
 
   from {
-    transform: scale(1);
     font-weight: normal;
+    transform: scale( 1 );
   }
 
   to {
     font-weight: bold;
-    transform: scale(1.5);
+    transform: scale( 1.5 );
   }
 }
 
 @keyframes ungrow {
 
   from {
-    transform: scale(1);
     font-weight: bold;
+    transform: scale( 1 );
   }
 
   to {
     font-weight: normal;
-    transform: scale(0.75);
+    transform: scale( 0.75 );
   }
 }
 
 @keyframes rotating {
 
   from {
-    transform: rotate(0deg);
+    transform: rotate( 0deg );
   }
 
   to {
-    transform: rotate(360deg);
+    transform: rotate( 360deg );
   }
 }
 
@@ -259,7 +250,7 @@ footer {
   }
 
   .chapeu:hover {
-    transform: scale(1.5) rotate(45deg);
+    transform: scale( 1.5 ) rotate( 45deg );
   }
 }
 
@@ -313,27 +304,27 @@ footer {
   }
 
   footer {
-    margin:2%;
+    margin: 2%;
   }
 
-  aside {
+  .container  aside {
     order: 1;
     width: 100%;
     grid-column: 2;
     grid-row: 1;
   }
 
-  aside > h2 {
+  .container  aside > h2 {
     text-align: center;
   }
 
-  aside > article {
+  .container  aside > article {
     margin: 6%;
     margin-right: 10%;
   }
 }
 
-@media screen and (max-width: 760px) and (orientation: landscape) {
+@media screen and ( max-width: 760px ) and ( orientation: landscape ) {
 
   .container {
     overflow: scroll;
@@ -349,4 +340,3 @@ footer {
     width: 100%;
   }
 }
-

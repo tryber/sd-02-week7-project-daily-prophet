@@ -20,7 +20,7 @@ const h1 = document.querySelectorAll('h1');
 
 const array = [].concat(...articles, ...h2, ...h1);
 
-array.forEach(item => {
+array.forEach((item) => {
   item.addEventListener('click', (e) => {
     e.target.style.animationPlayState = 'running';
   });
