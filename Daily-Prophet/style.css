@@ -225,6 +225,11 @@ article img {
     justify-content: space-around;
   }
 
+  a {
+    transition-duration: 2s;
+    transition-timing-function: ease-out;
+  }
+
   a:hover {
     color: rgb( 156 , 243 , 24 );
   }
@@ -269,109 +274,9 @@ article img {
     font-size: 370%;
   }
 
-  .pegadas-pai {
-    display: initial;
-    width: 5%;
-    position: absolute;
-    bottom: 0;
-    left: 10%;
-    animation-name: pegadas-pai;
-    animation-delay: 3s;
-    animation-duration: 15s;
-    animation-direction: alternate;
-    animation-iteration-count: 3;
-    animation-timing-function: linear;
-    animation-fill-mode: forwards;
-    cursor: pointer;
-  }
-
-  #text-pegada {
-    color: gray;
-    font-size: 200%;
-  }
-
-  #pegadas {
-    width: 100%;
-    text-align: center;
-  }
-
-  .pegadas-pai:hover {
+  .cover:hover {
     animation-play-state: paused;
-  }
-
-  @keyframes pegadas-pai {
-
-    from {
-      bottom: 0;
-      left: 10%;
-    }
-
-    10% {
-      transform: rotate( 15deg );
-      bottom: 20%;
-      left: 15%;
-    }
-
-    20% {
-      transform: rotate( -15deg );
-      bottom: 30%;
-      left: 5%;
-    }
-
-    30% {
-      transform: rotate( 15deg );
-      bottom: 40%;
-      left: 15%;
-    }
-
-    40% {
-      transform: rotate( -15deg );
-      bottom: 50%;
-      left: 5%;
-    }
-
-
-    50% {
-      transform: rotate( 180deg );
-      bottom: 100%;
-      left: 15%;
-    }
-
-    60% {
-      transform: rotate( 195deg );
-      bottom: 90%;
-      left: 5%;
-    }
-
-    70% {
-      transform: rotate( 165deg );
-      bottom: 80%;
-      left: 15%;
-    }
-
-    80% {
-      transform: rotate( 195deg );
-      bottom: 70%;
-      left: 5%;
-    }
-
-    90% {
-      transform: rotate( 165deg );
-      bottom: 50%;
-      left: 15%;
-    }
-
-    95% {
-      transform: rotate( 270deg );
-      bottom: 0%;
-      left: 15%;
-    }
-
-    to {
-      transform: rotate( 360deg );
-      bottom: 0%;
-      left: 10%;
-    }
+    cursor: pointer;
   }
 
   .nimbus-voando {
@@ -408,7 +313,7 @@ article img {
     }
 
     62.5% {
-      transform: skew( 180deg );
+      transform: skew( 240deg );
     }
 
     75% {
@@ -423,13 +328,13 @@ article img {
   .imagem-estrela {
     display: initial;
     width: 10%;
-    position: absolute;
+    position: fixed;
     top: 1%;
-    right: 10%;
+    right: 2%;
     animation-name: estrela;
     animation-duration: 3s;
     animation-iteration-count: infinite;
-    animation-timing-function: linear;
+    animation-timing-function: steps( 10 , end);
     animation-direction: alternate;
   }
 
@@ -451,25 +356,80 @@ article img {
   }
 
   .aumentaTexto {
-    animation-name: aumentaTexto;
-    animation-duration: 8s;
-    animation-fill-mode: forwards;
+    animation: aumentaTexto 4s linear 0s 2 alternate;
+    font-weight: 900;
+    transition-property: font-weight;
+    transition-timing-function: ease-in-out;
   }
 
   @keyframes aumentaTexto {
 
-    from {
-      transform: scale( 1 , 1 );
-    }
-
-    50% {
+    100% {
       transform: scale( 1.5 , 1.5 );
-      font-weight: 900;
+    }
+  }
+  
+  .pegadas-pai{
+    width: 30%;
+    background-color: transparent;
+    display: initial;
+    position: absolute;
+    bottom: 10%;
+    left: -5%;
+  }
+
+  .container-pegadas{
+    width: 100%;
+  }
+
+  #pegadas{
+    width: 100%;
+    background-color: transparent;
+    filter: invert();
+    transform: rotate( 270deg );
+  }
+
+  .texto-pegada{
+    transform: rotate( 90deg );
+    color: white;
+    font-size: 150%;
+    text-align: justify;
+    width: 100%;
+    display: flex;
+
+  }
+
+  .cover{
+    display: flex;
+    transform: rotate( 270deg );
+    background: black;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    animation: andaPegada 7s ease-in-out 3s 3 alternate forwards;
+  }
+
+  #severus {
+    position: relative;
+    left: 20%;
+    top: 100%;
+    width: fit-content;
+  }
+
+
+
+  @keyframes andaPegada {
+
+    50% { bottom: 50%;
     }
 
-    to {
-      transform: scale( 1 , 1 );
-      font-weight: 100;
+    75% { bottom: 200%;
+
+    }
+
+    100% { bottom: 330%;
     }
   }
 }

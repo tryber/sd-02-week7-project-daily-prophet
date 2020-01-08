@@ -5,12 +5,15 @@ vassoura.addEventListener('click', function voaNimbus() {
   vassoura.classList.add('nimbus-voando');
 });
 
-function mudaClasse() {
-  event.target.classList.toggle('aumentaTexto');
+aumenta1.forEach(eventoClick);
+
+function eventoClick (event) {
+  event.addEventListener('click', aumentaSection)
 }
 
-function clicaTexto(item) {
-  item.addEventListener('click', mudaClasse);
-}
+function aumentaSection() {
+  event.target.classList.add('aumentaTexto');
+  event.target.addEventListener('animationend', () => event.target.classList.remove('aumentaTexto'))
+};
 
-aumenta1.forEach(clicaTexto);
+
