@@ -25,5 +25,3 @@ array.forEach((item) => {
     e.target.style.animationPlayState = 'running';
   });
 });
-
-

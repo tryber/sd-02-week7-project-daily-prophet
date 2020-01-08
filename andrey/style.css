@@ -70,11 +70,6 @@ article , h1 , h2 {
   border-radius: 20px;
 }
 
-aside {
-  width: 80%;
-  margin: 3%;
-}
-
 aside > h2 {
   font-size: 2em;
 }
@@ -97,6 +92,7 @@ aside > article {
 
 aside {
   width: 20%;
+  margin: 3%;
 }
 
 .container .right > h2 , .container .left > h2 {
@@ -208,26 +204,13 @@ footer {
 @keyframes grow {
 
   from {
-    font-weight: normal;
+    font-weight: 400;
     transform: scale( 1 );
   }
 
   to {
-    font-weight: bold;
+    font-weight: 700;
     transform: scale( 1.5 );
-  }
-}
-
-@keyframes ungrow {
-
-  from {
-    font-weight: bold;
-    transform: scale( 1 );
-  }
-
-  to {
-    font-weight: normal;
-    transform: scale( 0.75 );
   }
 }
 
@@ -286,6 +269,11 @@ footer {
     width: 100%;
   }
 
+  .container aside > article {
+    margin: 6%;
+    margin-right: 10%;
+  }
+
   .container .right > article {
     margin: 8%;
   }
@@ -307,24 +295,19 @@ footer {
     margin: 2%;
   }
 
-  .container  aside {
+  .container aside {
     order: 1;
     width: 100%;
     grid-column: 2;
     grid-row: 1;
   }
 
-  .container  aside > h2 {
+  .container aside > h2 {
     text-align: center;
-  }
-
-  .container  aside > article {
-    margin: 6%;
-    margin-right: 10%;
   }
 }
 
-@media screen and ( max-width: 760px ) and ( orientation: landscape ) {
+@media screen and ( max-width : 760px ) and ( orientation : landscape ) {
 
   .container {
     overflow: scroll;
