@@ -1,0 +1,247 @@
+body {
+  font-family: Raleway, sans-serif;
+  background-image: url( 'http://api.thumbr.it/whitenoise-361x370.png?background=ffffffff&noise=5c5c5c&density=13&opacity=62' );
+}
+
+header {
+  display: flex;
+}
+
+#estrela {
+  align-self: center;
+  animation-name: aumenta-estrela;
+  animation-duration: 2s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+}
+
+#titulo {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  align-self: center;
+}
+
+#titulo h1 , h2 {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.anima-pomo {
+  animation-name: inicial, desfoque;
+  animation-duration: 3s, 2s;
+  animation-iteration-count: 3, 1, 1;
+  animation-direction: alternate;
+  animation-fill-mode: forwards;
+  overflow: hidden;
+}
+
+#pomo:hover {
+  animation-play-state: paused;
+  cursor: pointer;
+}
+
+nav {
+  display: none;
+}
+
+#aside-section {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+}
+
+.anima-vassoura {
+  overflow: hidden;
+  animation-name: vassoura;
+  animation-duration: 5s;
+  animation-fill-mode: forwards;
+}
+
+#box-artigos {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+}
+
+aside {
+  display: flex;
+}
+
+#box-artigos img {
+  display: none;
+}
+
+.artigo {
+  margin-right: 10px;
+}
+
+.artigo p {
+  text-align: justify;
+}
+
+h3 {
+  text-align: center;
+}
+
+.cresce {
+  animation-name: scale;
+  animation-duration: 4s;
+  animation-direction: alternate;
+  animation-iteration-count: 2;
+  font-weight: 400;
+  transition-property: font-weight;
+  transition-duration: 0.5s;
+}
+
+footer {
+  display: flex;
+  flex-direction: row;
+  align-self: center;
+  justify-content: center;
+}
+
+@media ( max-width : 760px ) {
+
+  nav {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+
+  #estrela {
+    display: none;
+  }
+
+  aside {
+    display: none;
+  }
+
+  #box-artigos {
+    flex-direction: column;
+  }
+
+  #box-artigos img {
+    display: flex;
+    width: 100%;
+    height: auto;
+  }
+
+  .artigo {
+    margin-right: 2px;
+    margin-left: 2px;
+  }
+
+  .cresce {
+    animation-name: scale;
+    animation-duration: 4s;
+    animation-direction: alternate;
+    animation-iteration-count: 2;
+    font-weight: 400;
+    overflow: hidden;
+  }
+
+  footer {
+    margin: auto;
+  }
+
+  footer p , a {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .anima-vassoura {
+    overflow: hidden;
+    animation-name: vassoura-mobile;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+  }
+}
+
+@keyframes inicial {
+
+  0% {
+    transform: translate( 0 , 0 );
+  }
+
+  60% {
+    transform: translate( -10% , 0 );
+  }
+
+  100% {
+    transform: translate( -350% , 0 );
+  }
+}
+
+@keyframes desfoque {
+
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes scale {
+
+  0% {
+    transform: scale( 1 , 1 );
+  }
+
+  100% {
+    transform: scale( 1.5 , 1.5 );
+    font-weight: 700;
+  }
+}
+
+@keyframes aumenta-estrela {
+
+  0% {
+    transform: scale( 1 , 1 );
+  }
+
+  100% {
+    transform: scale( 1.5 , 1.5 );
+  }
+}
+
+@keyframes vassoura {
+
+  0% {
+    transform: rotate( 0deg );
+  }
+
+  50% {
+    transform: rotate( 360deg ) translate( 0 , -30% );
+  }
+
+  60% {
+    transform: skew( -45deg );
+  }
+
+  100% {
+    transform: translate( 800px , -10000px ) skew( -45deg );
+  }
+}
+
+@keyframes vassoura-mobile {
+
+  0% {
+    transform: rotate( 0deg );
+  }
+
+  50% {
+    transform: rotate( -80deg ) translate( 0 , -30% );
+  }
+
+  60% {
+    transform: rotate( -80deg ) skew( -60deg );
+  }
+
+  100% {
+    transform: translate( 800px , -10000px );
+  }
+}
