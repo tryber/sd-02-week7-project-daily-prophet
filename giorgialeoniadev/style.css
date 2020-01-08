@@ -1,0 +1,442 @@
+body {
+  background-color: white;
+  width: 100vw;
+}
+
+html {
+  width: 100vw;
+}
+
+.journal-header {
+  width: 100%;
+}
+
+#header {
+  align-content: center;
+  margin: auto;
+  width: 100vw;
+}
+
+.external-links {
+  text-decoration: none;
+  color: white;
+  margin: 0 8px;
+  justify-content: center;
+}
+
+a:hover {
+  background: rgb( 197 , 197 , 197 );
+  color: rgb( 37 , 37 , 37 );
+}
+
+#top-bar {
+  background-color: rgb( 37 , 37 , 37 );
+  width: 100%;
+  margin: auto;
+  height: 25px;
+}
+
+#top-text {
+  color: white;
+  padding-top: 3px;
+  font-weight: 700;
+  text-align: center;
+  margin: 0 auto;
+}
+
+#nav-bar {
+  background-color: rgb( 37 , 37 , 37 );
+  width: 100%;
+  margin: auto;
+  height: 25px;
+  text-align: center;
+}
+
+h2 {
+  margin-left: 3px;
+}
+
+.text {
+  text-align: justify;
+  padding: 4px 8px;
+  text-indent: 1em;
+}
+
+
+.weather-text {
+  text-indent: 1em;
+  margin-right: 10px;
+  text-align: justify;
+}
+
+footer {
+  background-color: rgb( 37 , 37 , 37 );
+  text-align: center;
+  flex-flow: wrap;
+  justify-content: space-around;
+  height: 40px;
+  margin-top: 25px;
+}
+
+.container-top {
+  width: 100%;
+  margin: auto;
+}
+
+@media only screen and ( max-width : 760px ) {
+
+  * {
+    padding: 0;
+    margin: 0;
+  }
+
+  h2 {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-size: 20px;
+  }
+
+  #nav-links {
+    color: rgb( 197 , 197 , 197 );
+    padding-top: 3px;
+    font-weight: 700;
+  }
+
+  #hermione {
+    display: none;
+  }
+
+  #granger {
+    width: 100%;
+  }
+
+  #hogwarts {
+    filter: grayscale( 100% );
+    width: 400px;
+  }
+
+  #ministry {
+    width: 400px;
+    padding-left: 5px;
+    filter: grayscale( 100% );
+  }
+
+  #star {
+    display: none;
+  }
+
+  .weather-list {
+    padding: 0 8px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+  }
+
+  .weather-text {
+    margin-left: 7px;
+    margin-bottom: 10px;
+  }
+
+  .external-links {
+    color: rgb( 197 , 197 , 197 );
+  }
+
+  #pomo {
+    display: none;
+  }
+
+  .broom-img {
+    width: 200px;
+    position: relative;
+  }
+
+  .ads {
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+    background-color: rgb( 206 , 168 , 33 );
+  }
+
+  #ad-text {
+    text-align: justify;
+    margin-right: 10px;
+  }
+
+  #ad-link {
+    color: black;
+    font-weight: 900;
+  }
+}
+
+@media ( min-width : 761px ) {
+
+  * {
+    cursor: url( 'imgs/wand.png' ) , auto;
+  }
+
+  h2 {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-size: 20px;
+  }
+
+  #nav-bar {
+    height: 40px;
+  }
+
+  #nav-links {
+    padding-top: 8px;
+    font-weight: 900;
+  }
+
+  #hermione {
+    filter: grayscale( 100% );
+    width: 800px;
+  }
+
+  #granger {
+    display: none;
+  }
+
+  #hogwarts {
+    filter: grayscale( 100% );
+    width: 800px;
+  }
+
+  #ministry {
+    filter: grayscale( 100% );
+    width: 350px;
+  }
+
+  p {
+    text-indent: 2em;
+  }
+
+  .external-links {
+    color: rgb( 197 , 197 , 197 );
+    font-size: 20px;
+  }
+
+  article {
+    display: inline-block;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    position: relative;
+    width: 65%;
+  }
+
+  #wheather-container {
+    display: inline-block;
+    flex-direction: column;
+    align-items: flex-end;
+    position: absolute;
+    justify-content: space-between;
+    width: 30%;
+  }
+
+  .weather-list {
+    padding: 8px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+    align-items: baseline;
+  }
+
+  .warm-numbers {
+    font-size: 30px;
+    font-weight: 700;
+    text-shadow: 3px 0 0 rgb( 209 , 134 , 20 );
+  }
+
+  .cold-numbers {
+    font-size: 30px;
+    font-weight: 700;
+    text-shadow: 3px 0 0 rgb( 130 , 209 , 255 );
+  }
+
+  #pomo {
+    animation: pomofly 10s ease-in-out 3s 3 alternate forwards;
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    top: 3%;
+    left: 3%;
+    visibility: hidden;
+  }
+
+  @keyframes pomofly {
+
+    0% {
+      visibility: unset;
+    }
+
+    100% {
+      top: 30%;
+      left: 70%;
+      visibility: unset;
+    }
+  }
+
+  #pomo:hover {
+    animation-play-state: paused;
+  }
+
+  .ads {
+    margin: 10px 0 0 10px;
+    position: absolute;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+    background-color: rgb( 206 , 168 , 33 );
+  }
+
+  .broom-img {
+    width: 150px;
+    height: 150px;
+  }
+
+
+  .broom-animation {
+    width: 150px;
+    height: 150px;
+    animation: broomfly 10s linear 1s 1 alternate forwards;
+  }
+
+  @keyframes broomfly {
+
+    0% {
+      transform: scale( 1 , 1 );
+    }
+
+    10% {
+      transform: scale( 2 , 2 );
+    }
+
+    20% {
+      transform: rotate( 0deg );
+    }
+
+    30% {
+      transform: rotate( 360deg );
+    }
+
+    50% {
+      transform: translate( 0 , -100px );
+    }
+
+    55% {
+      transform: translate( 0 , 100px );
+    }
+
+    75% {
+      transform: skew( -60deg , 30deg );
+    }
+
+    80% {
+      transform: skew( 0deg , 0deg );
+    }
+
+    100% {
+      transform: translate( 4000px , -10px );
+    }
+  }
+
+  .bigger-section {
+    animation: growth 4s steps( 8 , end ) 1s 1 alternate forwards;
+    transition-duration: 4s;
+  }
+
+  @keyframes growth {
+
+    0% {
+      transform: scale( 1 , 1 );
+    }
+
+    70% {
+      font-weight: 600;
+    }
+
+    100% {
+      font-weight: 700;
+      transform: scale( 1.5 , 1.5 );
+    }
+  }
+
+  #star {
+    animation: starFlow 4s linear 1s infinite alternate both;
+    bottom: 10%;
+  }
+
+  @keyframes starFlow {
+
+    0% {
+      transform: scale( 1 , 1 );
+    }
+
+    20% {
+      transform: rotate( 0deg );
+    }
+
+    40% {
+      transform: rotate( 360deg );
+    }
+
+    70% {
+      transform: translate( 100px , 0 );
+    }
+
+    85% {
+      transform: translate( 200px , 0 );
+    }
+
+    100% {
+      transform: scale( 1 , 1 );
+    }
+  }
+}
+
+@media ( orientation : landscape ) and ( max-width : 760px ) {
+
+  #pomo {
+    display: none;
+  }
+
+  #ministry {
+    display: none;
+  }
+
+  #hogwarts {
+    display: none;
+  }
+
+  #star {
+    display: none;
+  }
+
+  #hermione {
+    display: none;
+  }
+
+  #granger {
+    display: none;
+  }
+
+  .weather-list {
+    padding: 0 8px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+  }
+
+  .weather-text {
+    margin-left: 7px;
+    margin-bottom: 10px;
+  }
+
+  .ads {
+    margin: 0 30px;
+  }
+
+}
