@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Daily Prophet</title>
+</head>
+<body>
+    <header>
+        <h1>Daily Prophet</h1>
+        <div class="estrela-animada">
+            <img id="img-estrela" alt="star animation" src="data:image/png;base64,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">
+        </div>
+        <div class="varinha-animada">
+            <img id="img-varinha" alt="magic wand animation" src="https://cdn.pixabay.com/photo/2017/08/21/01/19/png-2663771_960_720.png">
+        </div>
+    </header>
+    <div class="conteudo-todo">
+        <section class="artigo-principal">
+            <article class="texto-artigo">
+                <div class="titulo-artigo">
+                    <h2>Maria Threatens Quidditch Playoffs</h2>
+                </div>
+                <div class="paragrafos-artigo">
+                    <div class="coluna">
+                        <p>Cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus.</p>
+                        <p>Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.</p>
+                    </div>
+                    <div class="coluna">
+                        <p>Ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui.</p>
+                        <p>Harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus.</p>
+                        <p>Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et.</p>
+                    </div>
+                </div>
+            </article>
+            <div class="imagem-artigo">
+                <img class="imagem-artigo" src="https://redonion.se/cssgrid/images/tornado508.jpg" alt="spiral cloud">
+            </div>
+
+        </section>
+        <aside>
+            <article class="artigo-secundário">
+                <h3>Rita Skeeter reports</h3>
+                <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident.</p>
+                <p>Similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus.</p>
+                <p>Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.</p>
+                <!--<p>Corrupti quos dolores.</p>-->
+            </article>
+            <div class="anuncio">
+                <h4>Compre uma vassoura voadora!</h4>
+                <div class="vassoura-animada">
+                    <img id="img-vassoura" alt="flying broom animation" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTILhiIfxVuoVEqsvBkSsdR-wHAiY0Yra44agnyQIjSVgE-mJ6x">
+                </div>
+            </div>
+        </aside>
+    </div>
+    <footer>
+        <nav>
+            <a href="#">World - Page 7</a>
+            <a href="#">Ministry Affairs - Page 12</a>
+            <a href="#">Sport - Page 4</a>
+        </nav>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
