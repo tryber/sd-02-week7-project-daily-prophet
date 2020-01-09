@@ -34,8 +34,8 @@ function adicionaEvento(e) {
   e.addEventListener('click', () => {
     e.classList.add('cresce-texto');
     setTimeout(() => {
-        e.classList.remove('cresce-texto');
-      }, 5000);
+      e.classList.remove('cresce-texto');
+    }, 5000);
   });
 }
 
