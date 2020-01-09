@@ -1,0 +1,414 @@
+@font-face {
+  font-family: HarryPotterFont1, sans-serif;
+  src: url( 'Fonts/dum3/dum3.ttf' );
+}
+
+@font-face {
+  font-family: HarryPotterFont2, sans-serif;
+  src: url( 'Fonts/LUMOS.TTF' );
+}
+
+* {
+  font-family: HarryPotterFont1, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: black;
+  font-size: 16px;
+}
+
+#body-container {
+  background-color: rgb( 233 , 193 , 163 );
+  margin: 10px 0 0;
+  padding: 0 20px;
+  border-radius: 15px;
+  height: auto;
+}
+
+header {
+  padding-top: 30px;
+  text-align: center;
+}
+
+#header-h1 {
+  padding: 0;
+  margin: 0;
+  font-weight: 100;
+  font-size: 114px;
+}
+
+header > p {
+  font-size: 38px;
+  font-family: HarryPotterFonts2, sans-serif;
+  color: rgb( 47 , 47 , 47 );
+}
+
+header > p > span {
+  color: rgb( 190 , 95 , 17 );
+}
+
+header > hr:nth-child( 1 ) {
+  border-width: 0.188em 0 1px;
+  border-color: black;
+  height: 0.125em;
+}
+
+header > hr:nth-child( 4 ) {
+  border-width: 1px 0 0.188em;
+  border-color: black;
+  height: 0.125em;
+}
+
+section {
+  height: auto;
+  padding: 0 20px;
+}
+
+h2 {
+  text-align: center;
+  font-size: 61px;
+}
+
+.article_content {
+  text-align: center;
+  font-size: 23px;
+}
+
+#primeira_manchete > div > img {
+  width: 70%;
+  margin-left: 20%;
+  margin-top: 50px;
+  border-radius: 50%;
+}
+
+#segunda_manchete {
+  margin-top: 50px;
+}
+
+.flex_content {
+  display: flex;
+}
+
+.p_container {
+  margin-right: 10px;
+}
+
+aside {
+  width: 30%;
+}
+
+h3 {
+  margin-bottom: 30px;
+  font-size: 38px;
+}
+
+aside > p {
+  margin-top: 20px;
+  font-size: 15px;
+}
+
+article {
+  height: auto;
+}
+
+footer {
+  text-align: center;
+  margin-top: 50px;
+  height: auto;
+}
+
+.bird1 {
+  position: relative;
+  width: 100px;
+  margin-top: -70px;
+}
+
+#bird {
+  left: 40%;
+  animation-name: fly;
+  animation-duration: 5s;
+  animation-delay: 3s;
+  animation-iteration-count: 3;
+  animation-timing-function: ease-in;
+  animation-direction: alternate;
+}
+
+#bird:hover {
+  background: red;
+  animation-play-state: paused;
+}
+
+.img_vassoura {
+  width: 100px;
+  position: relative;
+  left: 30%;
+}
+
+.vassoura {
+  animation-name: vassoura-magica;
+  animation-duration: 5s;
+  animation-delay: 0.3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-timing-function: steps( 15 );
+}
+
+#golden_star {
+  position: relative;
+  width: 50px;
+  animation-name: golden-star;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes golden-star {
+
+  from {
+    transform: rotateZ( 0 );
+    filter: brightness( 100% );
+  }
+
+  to {
+    transform: rotateZ( 360deg );
+    filter: brightness( 200% );
+  }
+}
+
+@keyframes vassoura-magica {
+
+  20% {
+    transform: rotateZ( 0 ) scale( 2 , 2 );
+  }
+
+  40% {
+    transform: rotateZ( 360deg ) translateY( 0 ) scale( 2 , 2 );
+  }
+
+  60% {
+    transform: translateY( -30px ) scale( 2 , 2 ) skewX( 0 );
+  }
+
+  80% {
+    transform: translate( 0 , 0 ) scale( 2 , 2 ) skewX( 360deg );
+  }
+
+  100% {
+    transform: translate( 2000px , -300px ) scale( 2 , 2 ) skewX( 360deg );
+  }
+}
+
+@keyframes fly {
+
+  0% {
+    left: 40%;
+    top: 5px;
+  }
+
+  25% {
+    top: 100px;
+  }
+
+  50% {
+    top: 80px;
+  }
+
+  75% {
+    top: 25px;
+  }
+
+  100% {
+    transform: rotateY( 180deg );
+    left: -60%;
+    top: 120px;
+  }
+}
+
+@media ( orientation : landscape ) {
+
+  article {
+    width: 70%;
+  }
+
+  aside {
+    text-align: left;
+    width: 30%;
+  }
+
+  aside > p {
+    font-size: 2vw;
+  }
+
+}
+
+@media screen and ( max-width : 760px ) and ( orientation : portrait ) {
+
+  #header-h1 {
+    font-size: 15vw;
+  }
+
+  header > p {
+    font-size: 5vw;
+  }
+
+  h2 {
+    font-size: 8vw;
+  }
+
+  .article_content {
+    margin-top: -150px;
+    font-size: 3vw;
+  }
+
+  #primeira_manchete > div > img {
+    visibility: collapse;
+  }
+
+  h3 {
+    font-size: 5vw;
+  }
+
+  aside {
+    width: auto;
+    text-align: center;
+  }
+
+  aside > p {
+    font-size: 3vw;
+  }
+
+  .p_container {
+    margin-top: 150px;
+  }
+
+  .img_container {
+    width: 1%;
+    visibility: collapse;
+  }
+
+  .bird1 {
+    position: relative;
+    width: 100px;
+    margin-top: -70px;
+  }
+
+  #bird {
+    left: 40%;
+    animation-name: fly;
+    animation-duration: 5s;
+    animation-delay: 3s;
+    animation-iteration-count: 3;
+    animation-timing-function: ease-in;
+    animation-direction: alternate;
+  }
+
+  #bird:hover {
+    background: red;
+    animation-play-state: paused;
+  }
+
+  .vassoura {
+    position: relative;
+    left: 30%;
+    width: 100px;
+    animation-name: vassoura-magica;
+    animation-duration: 5s;
+    animation-delay: 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+  }
+
+  #golden_star {
+    position: relative;
+    width: 50px;
+    animation-name: golden-star;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+  }
+
+  @keyframes golden-star {
+
+    from {
+      transform: rotateZ( 0 );
+      filter: brightness( 100% );
+    }
+
+    to {
+      transform: rotateZ( 360deg );
+      filter: brightness( 200% );
+    }
+
+  }
+
+  @keyframes vassoura-magica {
+
+    20% {
+      transform: rotateZ( 0 ) scale( 2 , 2 );
+    }
+
+    40% {
+      transform: rotateZ( 360deg ) translateY( 0 ) scale( 2 , 2 );
+    }
+
+    60% {
+      transform: translateY( -30px ) scale( 2 , 2 ) skewX( 0 );
+    }
+
+    80% {
+      transform: translate( 0 , 0 ) scale( 2 , 2 ) skewX( 360deg );
+    }
+
+    100% {
+      transform: translate( 1000px , -200px ) scale( 2 , 2 ) skewX( 360deg );
+    }
+
+  }
+
+  @keyframes fly {
+
+    0% {
+      left: 40%;
+      top: 5px;
+    }
+
+    25% {
+      top: 100px;
+    }
+
+    50% {
+      top: 80px;
+    }
+
+    75% {
+      top: 25px;
+    }
+
+    100% {
+      transform: rotateY( 180deg );
+      left: -60%;
+      top: 120px;
+    }
+
+  }
+}
+
+@media screen and ( min-width : 760px ) {
+
+  article {
+    width: 70%;
+  }
+
+  .article_container {
+    display: flex;
+  }
+
+  .crescer_artigo {
+    transition: all 4s steps( 45 );
+    transform: scale( 1.5 );
+    text-shadow: 0 0 2px black;
+  }
+
+}
