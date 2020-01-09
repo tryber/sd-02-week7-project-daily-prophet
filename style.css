@@ -114,9 +114,11 @@ footer img {
 }
 
 @keyframes estrelaAnimada {
+
   0% {
     transform: rotate( 0deg );
   }
+
   100% {
     transform: rotate( 360deg );
   }
@@ -138,26 +140,32 @@ footer img {
 }
 
 @keyframes carroVoador {
+
   20% {
     margin-top: 280px;
     margin-left: 80px;
   }
+
   30% {
     margin-top: 180px;
     margin-left: 100px;
   }
+
   40% {
     margin-top: 320px;
     margin-left: 170px;
   }
+
   60% {
     margin-top: 230px;
     margin-left: 250px;
   }
+
   80% {
     margin-top: 600px;
     margin-left: 400px;
   }
+
   100% {
     margin-top: 10px;
     margin-left: 700px;
@@ -170,21 +178,27 @@ footer img {
 }
 
 @keyframes vassouraVoando {
+
   20% {
     transform: scale( 2 );
   }
+
   40% {
     transform: scale( 2 ) rotate( 360deg );
   }
+
   60% {
     transform: scale( 2 ) translateY( -100px );
   }
+
   70% {
     transform: scale( 2 ) skew( 0deg );
   }
+
   80% {
     transform: scale( 2 ) skew( 160deg );
   }
+
   100% {
     transform: translate( 5000px , -5000px );
   }
@@ -305,7 +319,7 @@ footer img {
     height: 633.39px;
   }
 
-  #anuncios h1, #anuncios h3 {
+  #anuncios h1 , #anuncios h3 {
     text-align: center;
   }
 
@@ -403,7 +417,7 @@ footer img {
     font-size: 60px;
   }
 
-  #anuncios h1, #anuncios h3 {
+  #anuncios h1 , #anuncios h3 {
     text-align: center;
   }
 
@@ -415,37 +429,43 @@ footer img {
   #vassouras-imagens {
     display: flex;
   }
-  
+
   footer {
     padding: 20px;
   }
 
   @keyframes carroVoador {
+
     20% {
       margin-top: 280px;
       margin-left: 80px;
     }
+
     30% {
       margin-top: 180px;
       margin-left: 100px;
     }
+
     40% {
       margin-top: 320px;
       margin-left: 170px;
     }
+
     60% {
       margin-top: 230px;
       margin-left: 250px;
     }
+
     80% {
       margin-top: 600px;
       margin-left: 400px;
     }
+
     100% {
       margin-top: 10px;
       margin-left: 600px;
     }
-    }
+  }
 }
 
 
