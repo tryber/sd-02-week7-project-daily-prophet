@@ -342,7 +342,7 @@ article img {
     }
 
     50% {
-      right: 100%
+      right: 100%;
     }
 
     75% {
@@ -446,13 +446,13 @@ article img {
       opacity: 100%;
     }
 
-    100% { 
+    100% {
       bottom: 330%;
       opacity: 100%;
     }
   }
 
-  .cobrePegadas{
+  .cobrePegadas {
     position: absolute;
     bottom: 0;
     left: -5%;

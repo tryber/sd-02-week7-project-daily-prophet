@@ -23,12 +23,13 @@ aumenta1.forEach(eventoClick);
 const pausaAnimacao = () => {
   severus.style.animationPlayState = 'paused';
   pegadas.style.animationPlayState = 'paused';
-  pauseAnimation.style.cursor = 'pointer'};  
+  pauseAnimation.style.cursor = 'pointer';
+};
 
 const rodaAnimacao = () => {
   severus.style.animationPlayState = 'running';
-  pegadas.style.animationPlayState = 'running'};
-    
+  pegadas.style.animationPlayState = 'running';
+};
+
 pauseAnimation.addEventListener('mouseover', pausaAnimacao);
 pauseAnimation.addEventListener('mouseout', rodaAnimacao);
-    
