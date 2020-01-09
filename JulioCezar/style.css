@@ -61,10 +61,6 @@ header > hr:nth-child( 4 ) {
   height: 0.125em;
 }
 
-.article_container {
-  display: flex;
-}
-
 section {
   height: auto;
   padding: 0 20px;
@@ -114,7 +110,6 @@ aside > p {
 }
 
 article {
-  width: 70%;
   height: auto;
 }
 
@@ -231,7 +226,24 @@ footer {
   }
 }
 
-@media screen and ( max-width : 760px ) {
+@media ( orientation : landscape ) {
+
+  article {
+    width: 70%;
+  }
+
+  aside {
+    text-align: left;
+    width: 30%;
+  }
+
+  aside > p {
+    font-size: 2vw;
+  }
+
+}
+
+@media screen and ( max-width : 760px ) and ( orientation : portrait ) {
 
   #header-h1 {
     font-size: 15vw;
@@ -258,8 +270,13 @@ footer {
     font-size: 5vw;
   }
 
+  aside {
+    width: auto;
+    text-align: center;
+  }
+
   aside > p {
-    font-size: 2vw;
+    font-size: 3vw;
   }
 
   .p_container {
@@ -310,7 +327,7 @@ footer {
     animation-duration: 5s;
     animation-iteration-count: infinite;
     animation-direction: alternate;
-  }  
+  }
 
   @keyframes golden-star {
 
@@ -380,7 +397,15 @@ footer {
 
 @media screen and ( min-width : 760px ) {
 
-  .crescer_artigo {    
+  article {
+    width: 70%;
+  }
+
+  .article_container {
+    display: flex;
+  }
+
+  .crescer_artigo {
     transition: all 4s steps( 45 );
     transform: scale( 1.5 );
     text-shadow: 0 0 2px black;
