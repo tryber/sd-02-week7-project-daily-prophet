@@ -15,3 +15,4 @@ function eventoClick(event) {
 }
 
 aumenta1.forEach(eventoClick);
+

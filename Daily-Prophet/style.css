@@ -16,7 +16,7 @@
 
 @font-face {
   font-family: Newspapper;
-  src: url( './fonts/3\ Times\ Recycled\ Old\ Newspaper.ttf' );
+  src: url( './fonts/newspapper.ttf' );
 }
 
 .para-cego-ver {
@@ -210,6 +210,7 @@ article img {
     padding: 1em;
     width: 65%;
     border-radius: 1em;
+    z-index: 1;
   }
 
   .blocoItensNavBar {
@@ -288,49 +289,45 @@ article img {
     }
 
     12.5% {
-      transform: scale( 4 , 4 );
+      transform: scale( 1.5 , 1.5 );
     }
 
     20% {
-      transform: rotate( 0deg );
+      transform: rotate( 0deg ) scale( 1.5 , 1.5 );
     }
 
     25% {
-      transform: rotate( 360deg );
+      transform: rotate( 360deg ) scale( 1.5 , 1.5 );
     }
 
     37.5% {
-      transform: translateY( -100px );
+      transform: translateY( -100px ) scale( 1.5 , 1.5 );
     }
 
     50% {
-      transform: translateY( 0 ) skew( 0deg );
+      transform: translateY( 0 ) skew( 0deg ) scale( 1.5 , 1.5 );
     }
 
     62.5% {
-      transform: skew( 240deg );
+      transform: skew( 240deg ) scale( 1.5 , 1.5 );
     }
 
     75% {
-      transform: rotate( -45deg );
+      transform: rotate( -45deg ) scale( 1.5 , 1.5 );
     }
 
     100% {
-      transform: translateX( -100000px );
+      transform: translateX( -100000px ) scale( 1.5 , 1.5 );
     }
   }
 
   .imagem-estrela {
     display: initial;
     width: 10%;
-    position: fixed;
+    position: absolute;
     top: 1%;
     right: 2%;
-    animation-name: estrela;
-    animation-duration: 3s;
-    animation-iteration-count: infinite;
-    animation-timing-function: steps( 10 , end );
-    animation-direction: alternate;
+    animation: estrela 3s ease-in-out 0s infinite alternate;
   }
 
   #estrela {
@@ -340,27 +337,35 @@ article img {
   @keyframes estrela {
 
     0% {
-      transform: scale( 1 , 1 ) rotate( 0deg );
+      transform: scale( 1 , 1 ) rotate( 0deg ) rotateX( 0deg );
       filter: opacity( 0% );
     }
 
+    50% {
+      right: 100%
+    }
+
+    75% {
+      z-index: 2;
+    }
+
     100% {
-      transform: scale( 2 , 2 ) rotate( 360deg );
+      right: 2%;
+      transform: scale( 2 , 2 ) rotate( 540deg ) rotateX( 540deg );
       filter: opacity( 90% );
     }
   }
 
   .aumentaTexto {
     animation: aumentaTexto 4s linear 0s 2 alternate;
-    font-weight: 900;
-    transition-property: font-weight;
-    transition-timing-function: ease-in-out;
+    transition: text-shadow 4s ease-in-out alternate;
   }
 
   @keyframes aumentaTexto {
 
     100% {
       transform: scale( 1.5 , 1.5 );
+      text-shadow: 3px 0 1px currentColor;
     }
   }
 
@@ -382,6 +387,15 @@ article img {
     background-color: transparent;
     filter: invert();
     transform: rotate( 270deg );
+    clip-path: inset( 0 100% 0 0 );
+    animation: pegadas 7s steps( 6 ) 3s 3 alternate forwards;
+  }
+
+  @keyframes pegadas {
+
+    100% {
+      clip-path: inset( 0 -50% 0 0 );
+    }
   }
 
   .texto-pegada {
@@ -397,18 +411,13 @@ article img {
   .cover {
     display: flex;
     transform: rotate( 270deg );
-    background: black;
+    background: transparent;
     position: absolute;
-    bottom: 0;
+    bottom: -100%;
     left: 0;
     height: 100%;
     width: 100%;
-    animation: andaPegada 7s ease-in-out 3s 3 alternate forwards;
-  }
-
-  .cover:hover {
-    animation-play-state: paused;
-    cursor: pointer;
+    animation: andaPegada 7s steps( 6 ) 3s 3 alternate forwards;
   }
 
   #severus {
@@ -420,14 +429,12 @@ article img {
 
   @keyframes andaPegada {
 
-    50% { bottom: 50%;
+    0% {
+      bottom: 0%;
     }
 
-    75% { bottom: 200%;
-
-    }
-
-    100% { bottom: 330%;
+    100% { 
+      bottom: 330%;
     }
   }
 }
