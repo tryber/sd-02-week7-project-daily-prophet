@@ -4,16 +4,16 @@ const vassouraAnimada3 = document.getElementById('vassoura3');
 
 const articles = document.querySelectorAll('article');
 
-for (let i = 0; i < articles.length; i+=1) {
+for (let i = 0; i < articles.length; i += 1) {
   articles[i].addEventListener('click', function () {
-      articles[i].setAttribute('class', 'articleAnimado');
-    });
-  articles[i].addEventListener('animationend', function() {
-      articles[i].removeAttribute('class', 'articleAnimado');
-    });
-};
+    articles[i].setAttribute('class', 'articleAnimado');
+  });
+  articles[i].addEventListener('animationend', function () {
+    articles[i].removeAttribute('class', 'articleAnimado');
+  });
+}
 
-console.log(articles)
+console.log(articles);
 
 vassouraAnimada1.addEventListener('click', function () {
   vassouraAnimada1.setAttribute('class', 'vassoura');

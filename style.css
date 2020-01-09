@@ -1,125 +1,125 @@
 
-@import url('https://fonts.googleapis.com/css?family=Anton|Audiowide|Teko&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Anton|Audiowide|Teko&display=swap') ;
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 body {
-    font-family: 'Teko', sans-serif;
+  font-family: 'Teko';
 }
 h1 {
-    text-transform: uppercase;
+  text-transform: uppercase;
 }
 #titulo-jornal {
-    margin: 0 auto;
-    width: fit-content;
-    font-family: 'Anton', sans-serif;
+  margin: 0 auto;
+  width: fit-content;
+  font-family: 'Anton';
 }
 #borda-grossa {
-    border-top: 3px solid;
-    border-bottom: 3px solid;
-    margin: 10px auto;
+  border-top: 3px solid;
+  border-bottom: 3px solid;
+  margin: 10px auto;
 }
 #borda-fina {
-    border-top: 2px solid;
-    border-bottom: 2px solid;
-    margin: 3px 0;
+  border-top: 2px solid;
+  border-bottom: 2px solid;
+  margin: 3px 0;
 }
 nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: space-around;
-    margin: 10px auto;
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  margin: 10px auto;
 }
 nav a {
-    text-decoration: none;
-    padding: 0px 10px;
-    color: black;
-    border-radius: 5px;
+  text-decoration: none;
+  padding: 0px 10px;
+  color: black;
+  border-radius: 5px;
 }
 nav a:hover {
-    background-color: rgb(150, 129, 87);
-    color: rgb(207, 196, 174);
+  background-color: rgb( 150 , 129 , 87 );
+  color: rgb( 207 , 196 , 174 );
 }
 article {
-    border: 2px solid;
-    margin-top: 10px;
+  border: 2px solid;
+  margin-top: 10px;
 }
 .articleAnimado {
-    animation: artigoMaior 4s;
+  animation: artigoMaior 4s;
 }
 
-@keyframes artigoMaior{
-    to {
-        transform: scale(1.5);
-        text-shadow: 0 0 3px black;
-    }
+@keyframes artigoMaior {
+  to {
+    transform: scale( 1.5 );
+    text-shadow: 0 0 3px black;
+  }
 }
 aside {
-    border: 2px solid;
-    margin-top: 10px;
+  border: 2px solid;
+  margin-top: 10px;
 }
 .titulo-section {
-    color: #fff;
-    background: black;
-    font-family: 'Teko', sans-serif;
-    padding: 4px 0 0px 15px;
+  color: white;
+  background: black;
+  font-family: 'Teko';
+  padding: 4px 0 0px 15px;
 }
 #exclusivo h1 {
-    font-size: 150px;
-    line-height: 150px;
-    text-transform: uppercase;
-    text-align: center;
+  font-size: 150px;
+  line-height: 150px;
+  text-transform: uppercase;
+  text-align: center;
 }
 #exclusivo p {
-    text-align: center;
-    font-size: 40px;
-    font-style: italic;
-    padding: 0 10px;
+  text-align: center;
+  font-size: 40px;
+  font-style: italic;
+  padding: 0 10px;
 }
 footer {
-    margin-top: 30px;
-    text-align: center;
-    font-size: 30px;
-    padding: 30px;
-    background-color: rgb(150, 129, 87);
-    color: rgb(207, 196, 174);
-    display: flex;
-    justify-content: space-around;
+  margin-top: 30px;
+  text-align: center;
+  font-size: 30px;
+  padding: 30px;
+  background-color: rgb( 150 , 129 , 87 );
+  color: rgb( 207 , 196 , 174 );
+  display: flex;
+  justify-content: space-around;
 }
 footer img {
-    width: 150px;
-    animation-name: estrelaAnimada;
-    animation-duration: 5s;
-    animation-timing-function: steps(5, jump-start);
-    animation-iteration-count: infinite;
+  width: 150px;
+  animation-name: estrelaAnimada;
+  animation-duration: 5s;
+  animation-timing-function: steps( 5 , jump-start );
+  animation-iteration-count: infinite;
 }
 
-@keyframes estrelaAnimada{
+@keyframes estrelaAnimada {
     0% {
-        transform: rotate(0deg);
+        transform: rotate( 0deg );
     }
     100% {
-        transform: rotate(360deg);
+        transform: rotate( 360deg );
     }
 }
 #carro {
-    width: 100px;
-    position:absolute;
-    animation-name: carroVoador;
-    animation-delay: 3s;
-    animation-duration: 3s;
-    animation-timing-function: ease-in;
-    animation-direction: alternate;
-    animation-iteration-count: 3;
+  width: 100px;
+  position: absolute;
+  animation-name: carroVoador;
+  animation-delay: 3s;
+  animation-duration: 3s;
+  animation-timing-function: ease-in;
+  animation-direction: alternate;
+  animation-iteration-count: 3;
 }
 #carro:hover {
     animation-play-state: paused;
 }
 
-@keyframes carroVoador{
+@keyframes carroVoador {
     20% {
         margin-top: 280px;
         margin-left: 80px;
@@ -146,216 +146,216 @@ footer img {
     }
 }
 .vassoura {
-    animation-name: vassouraVoando;
-    animation-duration: 6s;
+  animation-name: vassouraVoando;
+  animation-duration: 6s;
 }
 
-@keyframes vassouraVoando{
+@keyframes vassouraVoando {
     20% {
-        transform: scale(2);
+        transform: scale( 2 );
     }
     40% {
-        transform: scale(2) rotate(360deg);
+        transform: scale( 2 ) rotate( 360deg );
     }
     60% {
-        transform: scale(2) translateY(-100px);
+        transform: scale( 2 ) translateY( -100px );
     }
     70% {
-        transform: scale(2) skew(0deg);
+        transform: scale( 2 ) skew( 0deg );
     }
     80% {
-        transform: scale(2) skew(160deg);
+        transform: scale( 2 ) skew( 160deg );
     }
     100% {
-        transform: translate(5000px, -5000px);
+        transform: translate( 5000px , -5000px );
     }
 }
 
-@media (min-width: 761px){
-    body {
-        background-image: url(/imagens/hogwartsfundo.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-attachment: fixed;
-    }
-    #versao-desktop {
-        width: 960px;
-        margin: 0 auto;
-        background-color: rgb(207, 196, 174);
-        padding-top: 10px;
-    }
-    #titulo-jornal {
-        font-size: 77px;
-    }
-    #borda-grossa {
-        width: 900px;
-    }
-    nav ul {
-        width: 900px;
-    }
-    nav a {
-        font-size: 35px;
-    }
-    #exclusivo {
-        width: 600px;
-        margin-top: 10px;
-    }
-    #exclusivo h1 {
-        font-size: 100px;
-        line-height: 100px;
-    }
-    .titulo-section {
-        font-size: 45px;
-    }
-    #exclusivo article {
-        margin-top: 10px;
-        width: 600px;
-    }
-    #exclusivo img {
-        width: 550px;
-        margin: 10px 25px;
-    }
-    #secoes-lado-a-lado {
-        margin: 10px auto;
-        display: flex;
-        justify-content: space-between;
-        width: 900px;
-    }
-    #secoes-lado-a-lado section {
-        width: 430px;
-    }
-    #secoes-lado-a-lado article {
-        width: 430px;
-        padding: 9px;
-    }
-    #secoes-lado-a-lado h1 {
-        font-size: 50px;
-        line-height: 50px;
-    }
-    #secoes-lado-a-lado p {
-        font-size: 35px;
-        line-height: 35px;
-        margin: 10px 0;
-        font-style: italic;
-    }
-    #secoes-lado-a-lado img {
-        width: 350px;
-        margin: 20px 30px;
-    }
-    #secoes-lado-a-lado #loremIpsum-article {
-        margin-top: 39px;
-        height: 250px;
-    }
-    #exclusivo-anuncios {
-        display: flex;
-        justify-content: space-between;
-        margin: 0 auto;
-        width: 900px;
-    }
-    #anuncios {
-        width: 290px;
-        margin-top: 10px;
-    }
+@media (min-width: 761px) {
+  body {
+    background-image: url("/imagens/hogwartsfundo.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+  #versao-desktop {
+    width: 960px;
+    margin: 0 auto;
+    background-color: rgb(207 , 196 , 174);
+    padding-top: 10px;
+  }
+  #titulo-jornal {
+    font-size: 77px;
+  }
+  #borda-grossa {
+    width: 900px;
+  }
+  nav ul {
+    width: 900px;
+  }
+  nav a {
+    font-size: 35px;
+  }
+  #exclusivo {
+    width: 600px;
+    margin-top: 10px;
+  }
+  #exclusivo h1 {
+    font-size: 100px;
+    line-height: 100px;
+  }
+  .titulo-section {
+    font-size: 45px;
+  }
+  #exclusivo article {
+    margin-top: 10px;
+    width: 600px;
+  }
+  #exclusivo img {
+    width: 550px;
+    margin: 10px 25px;
+  }
+  #secoes-lado-a-lado {
+    margin: 10px auto;
+    display: flex;
+    justify-content: space-between;
+    width: 900px;
+  }
+  #secoes-lado-a-lado section {
+    width: 430px;
+  }
+  #secoes-lado-a-lado article {
+    width: 430px;
+    padding: 9px;
+  }
+  #secoes-lado-a-lado h1 {
+    font-size: 50px;
+    line-height: 50px;
+  }
+  #secoes-lado-a-lado p {
+    font-size: 35px;
+    line-height: 35px;
+    margin: 10px 0;
+    font-style: italic;
+  }
+  #secoes-lado-a-lado img {
+    width: 350px;
+    margin: 20px 30px;
+  }
+  #secoes-lado-a-lado #loremIpsum-article {
+    margin-top: 39px;
+    height: 250px;
+  }
+  #exclusivo-anuncios {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 900px;
+  }
+  #anuncios {
+    width: 290px;
+    margin-top: 10px;
+  }
     #anuncios h1 {
-        font-size: 30px;
-        line-height: 30px;
-    }
+    font-size: 30px;
+    line-height: 30px;
+  }
     aside {
-        height: 633.39px;
-    }
-    #anuncios h1, #anuncios h3 {
-        text-align: center;
-    }
-    #anuncios img {
-        width: 150px;
-        margin-top: 15px;
-    }
-    #vassouras-imagens {
-        display: flex;
-        flex-direction: column;
-        margin-top: 24px;
-        align-items: center;
-    }
+    height: 633.39px;
+  }
+  #anuncios h1, #anuncios h3 {
+    text-align: center;
+  }
+  #anuncios img {
+    width: 150px;
+    margin-top: 15px;
+  }
+  #vassouras-imagens {
+    display: flex;
+    flex-direction: column;
+    margin-top: 24px;
+    align-items: center;
+  }
 }
 
-@media (max-width: 760px){
-    body {
-        width: 760px;
-        background-color: rgb(207, 196, 174);
-    }
-    #titulo-jornal {
-        font-size: 70px;
-    }
-    #borda-grossa {
-        width: 700px;
-    }
-    nav ul {
-        width: 700px;
-    }
-    nav a {
-        font-size: 25px;
-    }
-    #exclusivo, #anuncios {
-        width: 700px;
-        margin: 10px auto;
-    }
-    .titulo-section {
-        font-size: 40px;
-    }
-    #exclusivo article {
-        margin-top: 10px;
-        width: 700px;
-    }
-    #exclusivo img {
-        width: 650px;
-        margin: 15px 25px;
-    }
-    #secoes-lado-a-lado {
-        width: 700px;
-        display: flex;
-        justify-content: space-between;
-        margin: 0 auto;
-    }
-    #secoes-lado-a-lado section {
-        width: 345px;
-    }
-    #secoes-lado-a-lado article {
-        width: 345px;
-        padding: 10px;
-    }
-    #secoes-lado-a-lado h1 {
-        font-size: 40px;
-        line-height: 40px;
-    }
-    #secoes-lado-a-lado p {
-        font-size: 28px;
-        margin: 10px 0;
-        font-style: italic;
-    }
-    #secoes-lado-a-lado img {
-        width: 323px;
-    }
-    #secoes-lado-a-lado #loremIpsum-article {
-        margin-top: 25px;
-    }
-    #anuncios h1 {
-        font-size: 60px;
-    }
-    #anuncios h1, #anuncios h3 {
-        text-align: center;
-    }
-    #anuncios img {
-        width: 200px;
-        margin: 10px;
-    }
-    #vassouras-imagens {
-        display: flex;
-    }
-    footer {
-        padding: 20px;
-    }
+@media (max-width: 760px) {
+  body {
+    width: 760px;
+    background-color: rgb(207 , 196 , 174);
+  }
+  #titulo-jornal {
+    font-size: 70px;
+  }
+  #borda-grossa {
+    width: 700px;
+  }
+  nav ul {
+    width: 700px;
+  }
+  nav a {
+    font-size: 25px;
+  }
+  #exclusivo, #anuncios {
+    width: 700px;
+    margin: 10px auto;
+  }
+  .titulo-section {
+    font-size: 40px;
+  }
+  #exclusivo article {
+    margin-top: 10px;
+    width: 700px;
+  }
+  #exclusivo img {
+    width: 650px;
+    margin: 15px 25px;
+  }
+  #secoes-lado-a-lado {
+    width: 700px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+  }
+  #secoes-lado-a-lado section {
+    width: 345px;
+  }
+  #secoes-lado-a-lado article {
+    width: 345px;
+    padding: 10px;
+  }
+  #secoes-lado-a-lado h1 {
+    font-size: 40px;
+    line-height: 40px;
+  }
+  #secoes-lado-a-lado p {
+    font-size: 28px;
+    margin: 10px 0;
+    font-style: italic;
+  }
+  #secoes-lado-a-lado img {
+    width: 323px;
+  }
+  #secoes-lado-a-lado #loremIpsum-article {
+    margin-top: 25px;
+  }
+  #anuncios h1 {
+    font-size: 60px;
+  }
+  #anuncios h1, #anuncios h3 {
+    text-align: center;
+  }
+  #anuncios img {
+    width: 200px;
+    margin: 10px;
+  }
+  #vassouras-imagens {
+    display: flex;
+  }
+  footer {
+    padding: 20px;
+  }
 
-    @keyframes carroVoador{
+    @keyframes carroVoador {
         20% {
             margin-top: 280px;
             margin-left: 80px;
