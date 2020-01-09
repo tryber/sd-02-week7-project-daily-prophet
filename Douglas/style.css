@@ -370,7 +370,8 @@ nav {
   }
 
   .animaTexto {
-    transition-property: transform font-weight background-color;
+    z-index: 50;
+    transition-property: background-color;
     transition-duration: 4s;
     transition-timing-function: linear;
     background-color: chartreuse;
@@ -393,7 +394,6 @@ nav {
   }
 
   .voar {
-    transition: transform linear 2s;
     animation-name: voa;
     animation-duration: 6s;
     animation-timing-function: steps( 40 );
