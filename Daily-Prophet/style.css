@@ -210,7 +210,7 @@ article img {
     padding: 1em;
     width: 65%;
     border-radius: 1em;
-    z-index: 1;
+    z-index: 3;
   }
 
   .blocoItensNavBar {
@@ -346,7 +346,7 @@ article img {
     }
 
     75% {
-      z-index: 2;
+      z-index: 4;
     }
 
     100% {
@@ -413,10 +413,11 @@ article img {
     transform: rotate( 270deg );
     background: transparent;
     position: absolute;
-    bottom: -100%;
+    bottom: 0%;
     left: 0;
     height: 100%;
     width: 100%;
+    opacity: 0;
     animation: andaPegada 7s steps( 6 ) 3s 3 alternate forwards;
   }
 
@@ -430,12 +431,23 @@ article img {
   @keyframes andaPegada {
 
     0% {
-      bottom: 0%;
+      opacity: 100%;
     }
 
     100% { 
       bottom: 330%;
+      opacity: 100%;
     }
+  }
+
+  .cobrePegadas{
+    position: absolute;
+    bottom: 0;
+    left: -5%;
+    width: 500px;
+    height: 1000px;
+    z-index: 1;
+    opacity: 50%;
   }
 }
 
