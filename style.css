@@ -1,4 +1,3 @@
-
 @import url('https://fonts.googleapis.com/css?family=Anton|Audiowide|Teko&display=swap') ;
 
 * {
@@ -62,6 +61,7 @@ article {
 }
 
 @keyframes artigoMaior {
+
   to {
     transform: scale( 1.5 );
     text-shadow: 0 0 3px black;
@@ -359,7 +359,7 @@ footer img {
     font-size: 25px;
   }
 
-  #exclusivo, #anuncios {
+  #exclusivo , #anuncios {
     width: 700px;
     margin: 10px auto;
   }
