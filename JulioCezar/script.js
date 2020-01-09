@@ -1,8 +1,6 @@
 function crescerArtigo(event) {
   const artigo = event.target;
-  artigo.classList.add('crescer_artigo');
-  artigo.style.transform = 'scale(1.5)';
-  artigo.style.fontWeight = 1000;
+  artigo.classList.toggle('crescer_artigo');
 }
 
 function animacaoVassoura(event) {
