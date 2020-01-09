@@ -1,0 +1,440 @@
+* {
+  margin: 0;
+}
+
+body {
+  overflow-x: hidden;
+  background-color: black;
+  height: 100%;
+  font-family: Lilita One , cursive;
+  justify-content: space-around;
+}
+
+h1 {
+  color: white;
+  font-family: Anton , sans-serif;
+  letter-spacing: 5px;
+  line-height: 1.15;
+  text-align: center;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+#informacoes {
+  display: flex;
+  width: 80%;
+  margin: auto;
+  height: 100%;
+  background-color: rgb( 237 , 232 , 220 );
+  flex-direction: column;
+  border: 1px solid white;
+}
+
+#divArticle {
+  display: flex;
+}
+
+footer {
+  background-color: black;
+  color: white;
+  border-top: 1px white solid;
+  text-align: center;
+  width: 100%;
+  height: 25px;
+}
+
+h4 {
+  display: inline;
+}
+
+#container1 {
+  display: flex;
+}
+
+.icone {
+  height: 20px;
+  width: 20px;
+  padding-left: 3px;
+}
+
+nav {
+  display: inline;
+}
+
+#asideTitle {
+  text-align: center;
+}
+
+@media ( max-width : 760px ) {
+
+  #anuncio , #video , #lua , #severoGif , #texto1 , #estrela {
+    display: none;
+  }
+
+  .shield {
+    display: none;
+  }
+
+  #informacoes {
+    align-items: center;
+  }
+
+  h1 {
+    font-size: 2em;
+    margin-block-start: 0;
+    color: black;
+  }
+
+  #divArticle {
+    flex-direction: row;
+  }
+
+  #lados {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+  }
+
+  #ladoEsquerdo {
+    max-width: 290px;
+  }
+
+  #ladoDireito {
+    max-width: 290px;
+  }
+
+  article {
+    width: 100%;
+    text-align: center;
+  }
+
+  #titleArticle {
+    display: block;
+    width: 100%;
+  }
+
+  #voldemortImagem {
+    max-width: 95%;
+    max-height: 247px;
+    border: 1px solid black;
+    align-self: flex-start;
+  }
+
+  #asideTitle {
+    font-size: 1.4em;
+  }
+
+  #asideText {
+    max-width: 280px;
+    padding-top: 5px;
+  }
+
+  #severoImagem {
+    height: 350px;
+  }
+
+  #container1 {
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media ( max-width : 760px ) and ( orientation : landscape ) {
+
+  #lados {
+    justify-content: space-between;
+    flex-direction: row;
+  }
+
+  #texto1 {
+    display: block;
+  }
+
+  #texto {
+    display: none;
+  }
+}
+
+@media ( min-width : 761px ) {
+
+  * {
+    cursor: url( 'the-daily-prophet-cursor-wand.png' ), auto;
+  }
+
+  #animaLua , #animaEstrela {
+    overflow: hidden;
+  }
+
+  #lua , #estrela {
+    height: 90px;
+    position: absolute;
+  }
+
+  .shield {
+    top: 0;
+    animation-name: aparecer;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+  }
+
+  @keyframes aparecer {
+
+    0% {
+      opacity: 0;
+    }
+
+    100% {
+      opacity: 1;
+    }
+  }
+
+  #estrela {
+    right: 2%;
+    top: 1%;
+    animation-delay: 2s;
+    animation-name: rodear;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+  }
+
+  @keyframes rodear {
+
+    0% {
+      transform: rotate( 0 );
+    }
+
+    100% {
+      transform: rotate( 360deg );
+    }
+  }
+
+  #lua {
+    top: 0;
+    animation-delay: 3s;
+    animation-name: translating;
+    animation-duration: 5s;
+    animation-timing-function: ease-in;
+    animation-iteration-count: 3;
+    animation-direction: alternate;
+    animation-fill-mode: forwards;
+  }
+
+  #lua:hover {
+    animation-play-state: paused;
+  }
+
+  @keyframes translating {
+
+    0% {
+      transform: translate( 0 , 0 );
+    }
+
+    50% {
+      transform: translate( 30em , 30em ) rotate( 360deg );
+    }
+
+    100% {
+      transform: translate( 58em , 0 );
+    }
+  }
+
+  #arrumaPropaganda {
+    display: flex;
+  }
+
+  #anuncio {
+    position: absolute;
+    top: 250px;
+    left: 10px;
+    color: white;
+    max-width: 7%;
+    border: solid white 1px;
+    padding: 3px;
+    animation-delay: 1s;
+    animation-duration: 0.3s;
+    animation-name: corAnuncio;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+  }
+
+  @keyframes corAnuncio {
+
+    from {
+      background-color: black;
+    }
+
+    to {
+      background-color: blue;
+    }
+  }
+
+  #compra:hover {
+    cursor: pointer;
+  }
+
+  #fuga {
+    display: none;
+  }
+
+  .vassoura {
+    height: 100px;
+  }
+
+  .vassoura:hover {
+    cursor: pointer;
+  }
+
+  p {
+    padding: 0 5px;
+  }
+
+  #titleArticle {
+    text-align: center;
+  }
+
+  h1 {
+    font-size: 5em;
+    border: none;
+    align-self: center;
+  }
+
+  @keyframes corTitulo {
+
+    from {
+      background-color: rgb ( 237 , 232 , 220 );
+    }
+
+    to {
+      background-color: black;
+    }
+  }
+
+  header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  #cabecalho {
+    animation-delay: 1s;
+    animation-duration: 2s;
+    animation-name: corTitulo;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+  }
+
+  #voldemortImagem {
+    max-width: 47%;
+    height: 250px;
+    border: 1px solid black;
+    align-self: flex-start;
+  }
+
+  #midia {
+    display: flex;
+    justify-content: space-around;
+    margin: 5px 0;
+  }
+
+  #asideTitle {
+    margin-top: 3px;
+    margin-bottom: 5px;
+  }
+
+  #asideText {
+    text-align: center;
+  }
+
+  #container1 {
+    justify-content: space-around;
+  }
+
+  #severoImagem {
+    height: 251px;
+  }
+
+  #severoGif {
+    height: 56%;
+  }
+
+  .icone:hover {
+    cursor: pointer;
+  }
+
+  #texto1 {
+    display: none;
+  }
+
+  .animaTexto {
+    z-index: 50;
+    transition-property: background-color;
+    transition-duration: 4s;
+    transition-timing-function: linear;
+    background-color: chartreuse;
+    animation-name: negrito;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+  }
+
+  @keyframes negrito {
+
+    0% {
+      font-weight: 450;
+      transform: scale( 1 , 1 );
+    }
+
+    100% {
+      font-weight: 800;
+      transform: scale( 1.5 , 1.5 );
+    }
+  }
+
+  .voar {
+    animation-name: voa;
+    animation-duration: 6s;
+    animation-timing-function: steps( 40 );
+    animation-fill-mode: forwards;
+  }
+
+  @keyframes voa {
+
+    0% {
+      transform: scale( 1 , 1 ) translate( 0 , 0 ) rotate( 0 );
+    }
+
+    30% {
+      transform: scale( 2 , 2 ) translate( 30px , -50px ) rotate( 0 );
+    }
+
+    50% {
+      transform: scale( 2 , 2 ) translate( 30px , -15px ) rotate( 0 );
+    }
+
+    60% {
+      transform: scale( 2 , 2 ) translate( 30px , -15px ) rotate( 360deg );
+    }
+
+    75% {
+      transform: scale( 2 , 2 ) translate( 30px , -15px ) skew( -20deg , -20deg );
+    }
+
+    100% {
+      transform: translate( 5000px , -5000px );
+    }
+  }
+}
+
+@media ( min-width : 761px ) and ( max-width : 1000px ) {
+
+  #texto {
+    display: none;
+  }
+
+  #texto1 {
+    display: block;
+  }
+}
