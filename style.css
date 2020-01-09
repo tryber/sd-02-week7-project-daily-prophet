@@ -45,6 +45,15 @@ article{
     border: 2px solid;
     margin-top: 10px;
 }
+.articleAnimado{
+    animation: artigoMaior 4s;
+}
+@keyframes artigoMaior{
+    to{
+        transform: scale(1.5);
+        text-shadow: 0 0 3px black;
+    }
+}
 aside{
     border: 2px solid;
     margin-top: 10px;
@@ -74,6 +83,23 @@ footer{
     padding: 30px;
     background-color: rgb(150, 129, 87);
     color: rgb(207, 196, 174);
+    display: flex;
+    justify-content: space-around;
+}
+footer img{
+    width: 150px;
+    animation-name: estrelaAnimada;
+    animation-duration: 5s;
+    animation-timing-function: steps(5, jump-start);
+    animation-iteration-count: infinite;
+}
+@keyframes estrelaAnimada{
+    0%{
+       transform: rotate(0deg);
+    }
+    100%{
+       transform: rotate(360deg);
+    }
 }
 #carro{
     width: 100px;
@@ -115,15 +141,27 @@ footer{
     }
 }
 .vassoura{
-    animation-name: girandoVassoura;
-    animation-duration: 3s;
+    animation-name: vassouraVoando;
+    animation-duration: 6s;
 }
-@keyframes girandoVassoura{
-    0%{
-        transform: rotate(0deg);
+@keyframes vassouraVoando{
+    20%{
+        transform: scale(2);
+    }
+    40%{
+        transform: scale(2) rotate(360deg);
+    }
+    60%{
+        transform: scale(2) translateY(-100px);
+    }
+    70%{
+        transform: scale(2) skew(0deg);
+    }
+    80%{
+        transform: scale(2) skew(160deg);
     }
     100%{
-        transform: rotate(360deg);
+        transform: translate(5000px, -5000px);
     }
 }
 @media (min-width: 761px){
