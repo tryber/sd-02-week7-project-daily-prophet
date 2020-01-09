@@ -32,9 +32,9 @@ const artigo1 = document.getElementsByTagName('article')[1];
 
 function adicionaEvento(e) {
   e.addEventListener('click', () => {
-      e.classList.add('cresce-texto');
-      setTimeout(() => {
-          e.classList.remove('cresce-texto');
+    e.classList.add('cresce-texto');
+    setTimeout(() => {
+        e.classList.remove('cresce-texto');
       }, 5000);
   });
 }
