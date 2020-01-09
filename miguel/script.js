@@ -2,14 +2,11 @@ const anuncio = document.getElementsByClassName('anuncio')[0];
 const vassoura = document.getElementById('img-vassoura');
 
 anuncio.addEventListener('click', () => {
-    vassoura.classList.add('animacao-js');
+  vassoura.classList.add('animacao-js');
 });
 
 const artigo0 = document.getElementsByTagName('article')[0];
 const artigo1 = document.getElementsByTagName('article')[1];
-
-adicionaEvento(artigo0);
-adicionaEvento(artigo1);
 
 // artigo0.addEventListener('click', () => {
 //     artigo0.classList.add('cresce-texto');
@@ -34,10 +31,13 @@ adicionaEvento(artigo1);
 // });
 
 function adicionaEvento(e) {
-    e.addEventListener('click', () => {
-        e.classList.add('cresce-texto');
-        setTimeout(() => {
-            e.classList.remove('cresce-texto');
-        }, 5000);
-    });
+  e.addEventListener('click', () => {
+      e.classList.add('cresce-texto');
+      setTimeout(() => {
+          e.classList.remove('cresce-texto');
+      }, 5000);
+  });
 }
+
+adicionaEvento(artigo0);
+adicionaEvento(artigo1);

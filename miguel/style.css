@@ -139,7 +139,7 @@ h3 {
     animation-name: varinha-vai-e-vem;
     animation-duration: 4s;
     animation-delay: 3s;
-    animation-timing-function: cubic-bezier( 0.8 , 0.3 , 0.7 , 0.5 ); /* Lembre de verificar */
+    animation-timing-function: cubic-bezier( 0.8 , 0.3 , 0.7 , 0.5 );
     animation-iteration-count: 3;
     animation-direction: alternate;
     animation-fill-mode: forwards;
@@ -174,17 +174,17 @@ h3 {
     align-items: center;
     position: relative;
 
-  /* animation: vassoura-doida 6s 1s infinite; */
+    /* animation: vassoura-doida 6s 1s infinite; */
   }
 
   #img-vassoura {
     width: 20%;
 
-  /* align-self: center; */
+    /* align-self: center; */
     margin-top: 50px;
 
-  /* animation: vassoura-doida 4s 1s forwards; */
-}
+    /* animation: vassoura-doida 4s 1s forwards; */
+  }
 
   .animacao-js {
     animation: vassoura-doida 4s 200ms forwards;
@@ -242,10 +242,10 @@ h3 {
   }
 
   90% {
-    transform: skew( 50deg ) scale( 2 , 2);
+    transform: skew( 50deg ) scale( 2 , 2 );
   }
-  
+
   100% {
-    transform: translate(500px , -500px);
+    transform: translate( 500px , -500px );
   }
 }
