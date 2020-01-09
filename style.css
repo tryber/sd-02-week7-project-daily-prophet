@@ -8,7 +8,7 @@
 }
 
 body {
-  font-family: "Teko";
+  font-family: Teko , sans-serif;
 }
 
 h1 {
@@ -18,7 +18,7 @@ h1 {
 #titulo-jornal {
   margin: 0 auto;
   width: fit-content;
-  font-family: "Aton";
+  font-family: Aton , sans-serif;
 }
 
 #borda-grossa {
@@ -42,7 +42,7 @@ nav ul {
 
 nav a {
   text-decoration: none;
-  padding: 0px 10px;
+  padding: 0 10px;
   color: black;
   border-radius: 5px;
 }
@@ -76,8 +76,8 @@ aside {
 .titulo-section {
   color: white;
   background: black;
-  font-family: "Teko";
-  padding: 4px 0 0px 15px;
+  font-family: Teko , sans-serif;
+  padding: 4px 0 0 15px;
 }
 
 #exclusivo h1 {
@@ -136,7 +136,7 @@ footer img {
 }
 
 #carro:hover {
-    animation-play-state: paused;
+  animation-play-state: paused;
 }
 
 @keyframes carroVoador {
@@ -207,7 +207,7 @@ footer img {
 @media ( min-width : 761px ) {
 
   body {
-    background-image: url( "/imagens/hogwartsfundo.jpg" );
+    background-image: url( '/imagens/hogwartsfundo.jpg' );
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -266,7 +266,7 @@ footer img {
     justify-content: space-between;
     width: 900px;
   }
-  
+
   #secoes-lado-a-lado section {
     width: 430px;
   }
@@ -467,5 +467,3 @@ footer img {
     }
   }
 }
-
-
