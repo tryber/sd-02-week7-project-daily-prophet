@@ -1,0 +1,531 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: Mariage;
+  src: url( './fonts/mariage.ttf' );
+}
+
+@font-face {
+  font-family: Fraktur;
+  src: url( './fonts/Walbaum-FrakturUNZ1.ttf' );
+}
+
+@font-face {
+  font-family: Newspapper;
+  src: url( './fonts/newspapper.ttf' );
+}
+
+.para-cego-ver {
+  border: 0;
+  clip: rect( 0 0 0 0 );
+  clip-path: polygon( 0 0 , 0 0 , 0 0 );
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+.clear {
+  clear: both;
+}
+
+body {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.jornal {
+  background: rgb( 116 , 116 , 109 );
+  display: flex;
+  flex-direction: column;
+}
+
+#dailyprophet {
+  width: 100%;
+  filter: grayscale( 40% );
+  padding: 1%;
+}
+
+.blocoItensNavBar {
+  margin: 10px 0 30px;
+  background-color: gray;
+  text-align: center;
+}
+
+.itensNavBar {
+  display: inline-block;
+  background-color: rgb( 92 , 91 , 91 );
+  border-radius: 25%;
+  margin: 1% 0;
+}
+
+li {
+  font-size: 2em;
+  text-align: center;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  padding: 0 20px;
+}
+
+.container-pai {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+}
+
+article {
+  width: 100%;
+}
+
+h3 {
+  font-size: 200%;
+  text-align: center;
+  font-family: Newspapper, serif;
+}
+
+hr {
+  display: none;
+}
+
+p {
+  font-size: 200%;
+  width: 100%;
+  text-align: justify;
+  font-family: Mariage, serif;
+  padding: 2%;
+}
+
+.imagem-malfoy {
+  width: 100%;
+}
+
+article img {
+  widows: 100%;
+  filter: grayscale( 100% );
+}
+
+#malfoy {
+  width: 100%;
+  border-radius: 50%;
+  padding: 2%;
+}
+
+.imagem-albus {
+  width: 100%;
+}
+
+#albus {
+  width: 100%;
+  border-radius: 60%;
+  padding: 2%;
+}
+
+.imagem-bellatrix {
+  width: 100%;
+}
+
+#bellatrix {
+  width: 100%;
+  border-radius: 10%;
+}
+
+.publicidade {
+  width: 100%;
+  border: 1px solid gray;
+  display: flex;
+  flex-direction: column;
+}
+
+.container-nimbus {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.imagem-nimbus {
+  width: 100%;
+}
+
+#nimbus {
+  width: 100%;
+  transform: scaleX( -1 );
+}
+
+.texto-pub {
+  font-size: 300%;
+  padding: 10px;
+  text-align: justify;
+  font-family: Fraktur, serif;
+}
+
+.pegadas-pai {
+  display: none;
+}
+
+.imagem-estrela {
+  display: none;
+}
+
+.blocoFooter {
+  text-align: center;
+  margin-top: 2%;
+}
+
+@media only screen and ( min-width : 760px ) {
+
+  * {
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    box-sizing: border-box;
+  }
+
+  body {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    position: relative;
+  }
+
+  h3 {
+    font-size: 300%;
+  }
+
+  .jornal {
+    background-color: rgb( 225 , 225 , 221 );
+    margin: 1em auto;
+    padding: 1em;
+    width: 65%;
+    border-radius: 1em;
+    z-index: 3;
+  }
+
+  .blocoItensNavBar {
+    width: 100%;
+  }
+
+  nav {
+    width: 100%;
+  }
+
+  ol {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  a {
+    transition-duration: 2s;
+    transition-timing-function: ease-out;
+  }
+
+  a:hover {
+    color: rgb( 156 , 243 , 24 );
+  }
+
+  .itensNavBar {
+    display: inline-block;
+    background-color: rgb( 92 , 91 , 91 );
+    border-radius: 20%;
+  }
+
+  .container-pai {
+    flex-direction: row;
+  }
+
+  article {
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .publicidade {
+    width: 30%;
+  }
+
+  .container1 {
+    width: 40%;
+  }
+
+  .container2-pai {
+    width: 70%;
+    align-content: center;
+  }
+
+  .container2 {
+    padding: 1%;
+    border-left: 1px solid black;
+    height: 100%;
+  }
+
+  .texto-section3 {
+    font-size: 370%;
+  }
+
+  .nimbus-voando {
+    animation-name: nimbus-voando;
+    animation-duration: 10s;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+  }
+
+  @keyframes nimbus-voando {
+
+    0% {
+      transform: scale( 1 , 1 );
+    }
+
+    12.5% {
+      transform: scale( 1.5 , 1.5 );
+    }
+
+    20% {
+      transform: rotate( 0deg ) scale( 1.5 , 1.5 );
+    }
+
+    25% {
+      transform: rotate( 360deg ) scale( 1.5 , 1.5 );
+    }
+
+    37.5% {
+      transform: translateY( -100px ) scale( 1.5 , 1.5 );
+    }
+
+    50% {
+      transform: translateY( 0 ) skew( 0deg ) scale( 1.5 , 1.5 );
+    }
+
+    62.5% {
+      transform: skew( 240deg ) scale( 1.5 , 1.5 );
+    }
+
+    75% {
+      transform: rotate( -45deg ) scale( 1.5 , 1.5 );
+    }
+
+    100% {
+      transform: translateX( -100000px ) scale( 1.5 , 1.5 );
+    }
+  }
+
+  .imagem-estrela {
+    display: initial;
+    width: 10%;
+    position: absolute;
+    top: 1%;
+    right: 2%;
+    animation: estrela 3s ease-in-out 0s infinite alternate;
+  }
+
+  #estrela {
+    width: 100%;
+  }
+
+  @keyframes estrela {
+
+    0% {
+      transform: scale( 1 , 1 ) rotate( 0deg ) rotateX( 0deg );
+      filter: opacity( 0% );
+    }
+
+    50% {
+      right: 100%;
+    }
+
+    75% {
+      z-index: 4;
+    }
+
+    100% {
+      right: 2%;
+      transform: scale( 2 , 2 ) rotate( 540deg ) rotateX( 540deg );
+      filter: opacity( 90% );
+    }
+  }
+
+  .aumentaTexto {
+    animation: aumentaTexto 4s linear 0s 2 alternate;
+    transition: text-shadow 4s ease-in-out alternate;
+  }
+
+  @keyframes aumentaTexto {
+
+    100% {
+      transform: scale( 1.5 , 1.5 );
+      text-shadow: 3px 0 1px currentColor;
+    }
+  }
+
+  .pegadas-pai {
+    width: 30%;
+    background-color: transparent;
+    display: initial;
+    position: absolute;
+    bottom: 10%;
+    left: -5%;
+  }
+
+  .container-pegadas {
+    width: 100%;
+  }
+
+  #pegadas {
+    width: 100%;
+    background-color: transparent;
+    filter: invert();
+    transform: rotate( 270deg );
+    clip-path: inset( 0 100% 0 0 );
+    animation: pegadas 7s steps( 6 ) 3s 3 alternate forwards;
+  }
+
+  @keyframes pegadas {
+
+    0% {
+      clip-path: inset( 0 100% 0 0 );
+    }
+
+    12.5% {
+      clip-path: inset( 0 90% 0 0 );
+    }
+
+    25% {
+      clip-path: inset( 0 70% 0 0 );
+    }
+
+    100% {
+      clip-path: inset( 0 -50% 0 0 );
+    }
+  }
+
+  .texto-pegada {
+    transform: rotate( 90deg );
+    color: white;
+    font-size: 150%;
+    text-align: justify;
+    width: 100%;
+    display: flex;
+
+  }
+
+  .cover {
+    display: flex;
+    transform: rotate( 270deg );
+    background: transparent;
+    position: absolute;
+    bottom: 0%;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    animation: andaPegada 7s ease-in-out 3s 3 alternate forwards;
+  }
+
+  #severus {
+    position: relative;
+    left: 20%;
+    top: 100%;
+    width: fit-content;
+  }
+
+  @keyframes andaPegada {
+
+    0% {
+      opacity: 100%;
+    }
+
+    100% {
+      bottom: 330%;
+      opacity: 100%;
+    }
+  }
+
+  .cobrePegadas {
+    position: absolute;
+    bottom: 0;
+    left: -5%;
+    width: 500px;
+    height: 1000px;
+    z-index: 1;
+    opacity: 50%;
+  }
+}
+
+@media only screen and ( max-width : 760px ) and ( orientation : landscape ) {
+
+  body {
+    width: 100%;
+  }
+
+  .jornal {
+    width: 100%;
+    background-color: black;
+  }
+
+  h3 {
+    color: white;
+  }
+
+  p {
+    color: white;
+  }
+
+  .imagem-estrela {
+    display: none;
+  }
+
+  .pegadas-pai {
+    display: none;
+  }
+
+  .container-pai {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .container2-pai {
+    border-left: 1px solid white;
+  }
+
+  header {
+    width: 85%;
+  }
+
+  .imagem-daily {
+    width: 100%;
+  }
+
+  article {
+    width: 85%;
+  }
+
+  .publicidade {
+    width: 85%;
+  }
+
+  footer {
+    color: white;
+  }
+
+  .blocoItensNavBar {
+    width: 85%;
+  }
+
+  .itensNavBar {
+    display: flex;
+    flex-flow: column wrap;
+  }
+
+}
