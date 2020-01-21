@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css?family=Anton');
+@import url('https://fonts.googleapis.com/css?family=Skranji');
+@import url('https://fonts.googleapis.com/css?family=Passion+One');
+@import url('https://fonts.googleapis.com/css?family=Changa+One');
+@import url('https://fonts.googleapis.com/css?family=Vollkorn');
+@import url('https://fonts.googleapis.com/css?family=Berkshire+Swash');
+@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Mono');
+@import url('https://fonts.googleapis.com/css?family=Homemade+Apple');
+@import url('https://fonts.googleapis.com/css?family=Shadows+Into+Light');
+@font-face {
+    font-family: 'icomoon';
+    src: url('fonts/icomoon.eot?6qeiwg');
+    src: url('fonts/icomoon.eot?6qeiwg#iefix') format('embedded-opentype'), url('fonts/icomoon.ttf?6qeiwg') format('truetype'), url('fonts/icomoon.woff?6qeiwg') format('woff'), url('fonts/icomoon.svg?6qeiwg#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+[class^="icon-"],
+[class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body,
+html {
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    background-color: rgb(73, 73, 73);
+    color: #221F1C
+}
+
+#jornal {
+    width: 92%;
+    height: auto;
+    background-color: #FFF7EE;
+    margin: auto;
+    border-radius: 19px;
+    background-image: url(http://estanciasantaisabel.com.br/wp-content/uploads/2015/01/ivory-off-white-paper-texture.jpg);
+    background-size: cover;
+}
+
+header {
+    padding-bottom: 20px;
+}
+
+header>img {
+    margin-bottom: -20px;
+    margin-top: 15px;
+    width: 130px;
+    margin-left: 15%;
+}
+
+header>h1 {
+    margin: 0;
+    font-size: 89px;
+    font-family: 'Anton', Arial;
+    text-decoration: overline;
+    display: inline-block;
+}
+
+header>h2 {
+    margin: -15px;
+    ;
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Skranji', Arial;
+    padding-bottom: 10px;
+}
+
+.inlineBlock {
+    display: inline-block;
+}
+
+.espacamentoHeader {
+    border-top: 6px dashed black;
+}
+
+.filtroPadrao {
+    filter: grayscale(100%);
+}
+
+menu {
+    margin: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 100%;
+}
+
+.float {
+    float: left;
+}
+
+menu>.col1 {
+    font-size: 32px;
+    width: 25%;
+    background-color: #221F1C;
+    text-align: center;
+    color: white;
+}
+
+menu>.col2 {
+    font-size: 23px;
+    width: 70%;
+    text-align: center;
+    border: 1px solid black;
+}
+
+section {
+    padding: 20px 25px 0px 25px;
+}
+
+section.historiaPrincipal h1 {
+    text-align: center;
+    margin-left: 3%;
+    margin-top: 10px;
+    ;
+    font-size: 80px;
+    font-family: 'Changa One', Arial;
+    letter-spacing: 6px;
+    margin: 0;
+}
+
+section>p>img {
+    float: right;
+    width: 31%;
+    margin-left: 12px;
+}
+
+section.historiaPrincipal>p:first-of-type::first-letter {
+    font-size: 300%;
+    color: rgb(0, 0, 0);
+    float: left;
+    margin-top: -6px;
+    padding-right: 4px;
+    font-family: 'Berkshire Swash', Arial;
+    text-shadow: 2px 2px rgb(145, 145, 145);
+}
+
+section.historiaPrincipal>p {
+    text-align: justify;
+    margin-right: 25px;
+}
+
+section>h1 {
+    font-size: 40px;
+    font-family: 'Changa One', Arial;
+    letter-spacing: 6px;
+    margin: 0;
+    padding-bottom: 10px;
+}
+
+h1 {
+    font-size: 40px;
+    font-family: 'Changa One', Arial;
+    letter-spacing: 6px;
+    margin-left: 25px;
+    margin-bottom: 0;
+}
+
+.colunaMenor img {
+    width: 85%;
+}
+
+section.cacaPalavras {
+    width: 100%;
+    height: 530px;
+    font-family: 'Shadows Into Light';
+}
+
+small {
+    text-align: center;
+    display: block;
+}
+
+.colunaMenor {
+    width: 18%;
+}
+
+.coluna {
+    width: 40%;
+}
+
+.fontPrimariaTexto {
+    font-family: 'Vollkorn', Arial;
+}
+
+.urgente {
+    padding: 5px 10px 0 10px;
+    background-color: #221F1C;
+    color: white;
+}
+
+.extra {
+    font-family: 'Homemade Apple', Arial;
+    padding-top: 0;
+}
+
+.acoes {
+    display: inline;
+    word-wrap: break-word;
+    padding-left: 4px;
+    font-family: 'IBM Plex Mono', Arial;
+}
+
+marquee {
+    padding-top: 10px;
+    padding-bottom: 4px;
+}
+
+.teste1 {
+    width: 50%;
+    font-size: 0;
+    float: left;
+    margin: auto;
+    background-image: url('http://3.bp.blogspot.com/-cUfIY-u5OFo/TZi1-vIO5hI/AAAAAAAAAIA/yEXdzWJiUk8/s640/ca%25C3%25A7apalavras.jpg');
+    filter: grayscale(100%);
+    height: 490px;
+    width: 604px;
+    border: 2px solid black;
+}
+
+.teste1:hover {
+    width: 80%;
+    font-size: 0;
+    float: left;
+    margin: auto;
+    background-image: url('http://2.bp.blogspot.com/-nOziUdwUnkI/TZjSbnMcNaI/AAAAAAAAAIE/EAJ_7m-ao6o/s640/ca%25C3%25A7apalavras2.jpg');
+    filter: grayscale(100%);
+    height: 490px;
+    width: 604px;
+    border: 2px solid black;
+}
+
+.teste2 {
+    width: 20%;
+    font-size: 0;
+    float: left;
+    margin: auto;
+    filter: grayscale(100%);
+    height: 490px;
+    width: 475px;
+    border: 2px solid black;
+}
+
+.teste2 p {
+    font-size: initial;
+    padding-left: 10px;
+}
+
+.vertical-text {
+    transform: rotate(180deg);
+}
