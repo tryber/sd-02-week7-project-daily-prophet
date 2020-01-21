@@ -43,6 +43,10 @@ html {
     font-family: 'Open Sans', sans-serif;
 }
 
+a {
+    text-decoration: none;
+}
+
 body {
     background-color: rgb(0, 0, 0);
     color: #221F1C
