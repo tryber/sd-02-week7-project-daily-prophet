@@ -1,0 +1,173 @@
+body {
+  background: linear-gradient( black , blue , lightskyblue , pink , papayawhip );
+}
+
+#journal {
+  background: rgb( 255 , 248 , 238 );
+}
+
+#star {
+  height: 150px;
+  width: auto;
+  border: none;
+  animation-name: Girar;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes Girar {
+
+  from {
+    transform: rotateX( 0deg );
+  }
+
+  to {
+    transform: rotateX( 360deg );
+  }
+}
+
+.articleBox {
+  border-bottom: 3px solid peru;
+}
+
+header {
+  font-size: 100px;
+  display: flex;
+  justify-content: flex-start;
+  border-top: 5px double black;
+  border-bottom: 5px double black;
+}
+
+header > img {
+  border: 5px solid black;
+  margin-right: 5.8px;
+}
+
+aside > img {
+  border-radius: 60%;
+  float: right;
+  margin-right: 2%;
+  height: 250px;
+  width: auto;
+}
+
+#owl {
+  animation: crazy_owl 5s ease-in 2s 3 alternate forwards;
+  transform: rotateY( 180deg );
+}
+
+#owl:hover {
+  animation-play-state: paused;
+}
+
+@keyframes crazy_owl {
+
+  0% {
+    margin-left: 0%;
+  }
+
+  50% {
+    transform: rotateX( 220deg );
+  }
+
+  100% {
+    margin-left: 93%;
+  }
+}
+
+.nimbus2000 {
+  animation-name: flying-nimbus;
+  animation-duration: 10s;
+  animation-fill-mode: forwards;
+  animation-timing-function: linear;
+  transition: steps( 10 , end );
+}
+
+@keyframes flying-nimbus {
+
+  0% {
+    transform: scale( 1 , 1 );
+  }
+
+  12.5% {
+    transform: scale( 1.5 , 1.5 );
+  }
+
+  20% {
+    transform: rotate( 0deg ) scale( 1.5 , 1.5 );
+  }
+
+  25% {
+    transform: rotate( 360deg ) scale( 1.5 , 1.5 );
+  }
+
+  37.5% {
+    transform: translateY( -100px ) scale( 1.5 , 1.5 );
+  }
+
+  50% {
+    transform: translateY( 0 ) skew( 0deg ) scale( 1.5 , 1.5 );
+  }
+
+  62.5% {
+    transform: skew( 240deg ) scale( 1.5 , 1.5 );
+  }
+
+  75% {
+    transform: rotate( -45deg ) scale( 1.5 , 1.5 );
+  }
+
+  100% {
+    transform: translateX( -100000px ) scale( 1.5 , 1.5 );
+  }
+}
+
+nav {
+  border-bottom: 3px solid peru;
+}
+
+#beautyDumbText {
+  font-size: larger;
+  font-weight: 500;
+}
+
+.credits {
+  text-align: center;
+  color: black;
+  font-size: 1rem;
+  background-color: rgb( 255 , 238 , 230 );
+}
+
+.biggerText {
+  animation: aumentaTexto 4s linear 0s 2 alternate;
+  transition: text-shadow 4s ease-in-out alternate;
+}
+
+@keyframes aumentaTexto {
+
+  100% {
+    transform: scale( 1.5 , 1.5 );
+    text-shadow: 3px 0 1px currentColor;
+  }
+}
+
+@media only screen and ( max-width : 760px ) {
+
+  #journal {
+    height: 1800px;
+    width: 98%;
+    margin-left: 1%;
+  }
+
+  .biggerText {
+    animation: aumentaTexto 4s linear 0s 2 alternate;
+  }
+}
+
+@media ( orientation : landscape ) {
+
+  #star {
+    animation: Girar 1s linear infinite;
+  }
+
+}
